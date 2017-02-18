@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../res/bootstrap.grid.min.css">
+    <link rel="stylesheet" href="../webfonts/fonts.css">
+    <link rel="stylesheet" href="../res/lightslider/lightslider.min.css">
+    <link rel="stylesheet" href="../res/perfectScrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <header>
+        <div id="top">
+        <div class="icon">
+    		<div></div>
+    		<span>Меню</span>
+    	</div>
+            <a class="active responsive" href="index.html">Разработки</a>
+
+        <div class="container">
+            <div class="row perfect-scroll">
+                <nav class="col-lg-13 col-md-12">
+                    <a href="index.html">Разработки</a>
+                    <a class="active" href="video.html">Видеоуроки</a>
+                    <a href="#">Тесты</a>
+                    <a href="#">Комплекты <span>3</span></a>
+                    <a href="#">Олимпиады <span class="null">0</span></a>
+                    <a href="blog.html">Блог</a>
+                </nav>
+                <div class="col-lg-3 col-md-4">
+                    <a class="pull-right" href="#"><img src="../images/ico/corona.svg" alt=""> Премиум–доступ</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="bot">
+            <div class="container">
+                <div class="row v-center">
+                    <div class="col-md-3 col-sm-8 col-xs-16">
+                        <a href="index.html" id="logo"><img src="../images/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-md-5 col-sm-8 col-xs-16">
+                        <div class="search-wrp">
+                            <input type="text" id="search" placeholder="Введите текст для поиска...">
+                            <button><svg width="16px" height="16px" viewBox="0 0 16 16"><path fillRule="evenodd" d="M 6-0C 9.31-0 12 2.68 12 6 12 7.39 11.52 8.66 10.73 9.67 10.73 9.67 15.78 14.72 15.78 14.72 15.93 14.86 16 15.06 16 15.25 16 15.44 15.93 15.63 15.78 15.78 15.63 15.93 15.44 16 15.25 16 15.06 16 14.87 15.93 14.72 15.78 14.72 15.78 9.67 10.73 9.67 10.73 8.66 11.52 7.39 12 6 12 2.69 12-0 9.31-0 6-0 2.68 2.69-0 6-0ZM 6 10.5C 8.48 10.5 10.5 8.48 10.5 6 10.5 3.52 8.48 1.5 6 1.5 3.52 1.5 1.5 3.52 1.5 6 1.5 8.48 3.52 10.5 6 10.5Z"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-9 col-xs-16">
+                        <div class="pull-right profile">
+                             <div class="bell">
+                                 <div class="click">
+                                     <img src="../images/ico/bell.svg" alt="">
+                                     <div class="circle">1</div>
+                                 </div>
+                                 <div class="pop" id="notifications">
+                                     <h2>Уведомления  <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+                                         <div class="perfect-scroll">
+                                             <div class="item row cheked">
+                                                 <div class="col-xs-1 pl0">
+                                                     <svg width="9px" height="8px" viewBox="0 0 9 8"><path fillRule="evenodd" d="M 4.67 7.68C 4.45 7.89 4.16 8 3.87 8 3.59 8 3.3 7.89 3.08 7.68 3.08 7.68 0.33 5.04 0.33 5.04 0.1 4.82-0 4.52 0.01 4.23 0.02 3.96 0.12 3.7 0.33 3.5 0.54 3.3 0.81 3.2 1.08 3.19 1.38 3.18 1.69 3.28 1.92 3.5 1.92 3.5 3.87 5.37 3.87 5.37 3.87 5.37 7.08 0.32 7.08 0.32 7.31 0.09 7.62-0 7.92 0.01 8.19 0.02 8.46 0.12 8.67 0.32 8.88 0.52 8.98 0.78 8.99 1.05 9 1.34 8.9 1.64 8.67 1.86 8.67 1.86 4.67 7.68 4.67 7.68Z"/></svg>
+                                                 </div>
+                                                 <div class="col-xs-15 pl0">
+                                                     <div class="info">Сегодня в 11:27 <div class="close-notification pull-right"><img src="../images/ico/close-notification.svg" alt=""></div></div>
+                                                     <p>Поздравляем! Вы получили повышенную скидку <span class="through">30</span> <span class="green">20 рублей</span>.  Скидка скоро уменьшится! <a href="#">Успейте выгодно подать заявки</a></p>
+                                                 </div>
+                                             </div>
+                                             <div class="item row">
+                                                 <div class="col-xs-1 pl0">
+                                                     <svg width="9px" height="8px" viewBox="0 0 9 8"><path fillRule="evenodd" d="M 4.67 7.68C 4.45 7.89 4.16 8 3.87 8 3.59 8 3.3 7.89 3.08 7.68 3.08 7.68 0.33 5.04 0.33 5.04 0.1 4.82-0 4.52 0.01 4.23 0.02 3.96 0.12 3.7 0.33 3.5 0.54 3.3 0.81 3.2 1.08 3.19 1.38 3.18 1.69 3.28 1.92 3.5 1.92 3.5 3.87 5.37 3.87 5.37 3.87 5.37 7.08 0.32 7.08 0.32 7.31 0.09 7.62-0 7.92 0.01 8.19 0.02 8.46 0.12 8.67 0.32 8.88 0.52 8.98 0.78 8.99 1.05 9 1.34 8.9 1.64 8.67 1.86 8.67 1.86 4.67 7.68 4.67 7.68Z"/></svg>
+                                                 </div>
+                                                 <div class="col-xs-15 pl0">
+                                                     <div class="info">5.04.2016 в 18:49 <div class="close-notification pull-right"><img src="../images/ico/close-notification.svg" alt=""></div></div>
+                                                     <p>Новые олимпиады «Проверь себя» <a href="#"> уже доступны</a></p>
+                                                 </div>
+                                             </div>
+                                             <div class="item row">
+                                                 <div class="col-xs-1 pl0">
+                                                     <svg width="9px" height="8px" viewBox="0 0 9 8"><path fillRule="evenodd" d="M 4.67 7.68C 4.45 7.89 4.16 8 3.87 8 3.59 8 3.3 7.89 3.08 7.68 3.08 7.68 0.33 5.04 0.33 5.04 0.1 4.82-0 4.52 0.01 4.23 0.02 3.96 0.12 3.7 0.33 3.5 0.54 3.3 0.81 3.2 1.08 3.19 1.38 3.18 1.69 3.28 1.92 3.5 1.92 3.5 3.87 5.37 3.87 5.37 3.87 5.37 7.08 0.32 7.08 0.32 7.31 0.09 7.62-0 7.92 0.01 8.19 0.02 8.46 0.12 8.67 0.32 8.88 0.52 8.98 0.78 8.99 1.05 9 1.34 8.9 1.64 8.67 1.86 8.67 1.86 4.67 7.68 4.67 7.68Z"/></svg>
+                                                 </div>
+                                                 <div class="col-xs-15 pl0">
+                                                     <div class="info">5.04.2016 в 18:49 <div class="close-notification pull-right"><img src="../images/ico/close-notification.svg" alt=""></div></div>
+                                                     <p>Новые олимпиады «Проверь себя» <a href="#"> уже доступны</a></p>
+                                                 </div>
+                                             </div>
+                                             <div class="item row">
+                                                 <div class="col-xs-1 pl0">
+                                                     <svg width="9px" height="8px" viewBox="0 0 9 8"><path fillRule="evenodd" d="M 4.67 7.68C 4.45 7.89 4.16 8 3.87 8 3.59 8 3.3 7.89 3.08 7.68 3.08 7.68 0.33 5.04 0.33 5.04 0.1 4.82-0 4.52 0.01 4.23 0.02 3.96 0.12 3.7 0.33 3.5 0.54 3.3 0.81 3.2 1.08 3.19 1.38 3.18 1.69 3.28 1.92 3.5 1.92 3.5 3.87 5.37 3.87 5.37 3.87 5.37 7.08 0.32 7.08 0.32 7.31 0.09 7.62-0 7.92 0.01 8.19 0.02 8.46 0.12 8.67 0.32 8.88 0.52 8.98 0.78 8.99 1.05 9 1.34 8.9 1.64 8.67 1.86 8.67 1.86 4.67 7.68 4.67 7.68Z"/></svg>
+                                                 </div>
+                                                 <div class="col-xs-15 pl0">
+                                                     <div class="info">29.03.2016 в 10:05<div class="close-notification pull-right"><img src="../images/ico/close-notification.svg" alt=""></div></div>
+                                                     <p>Видеоуроки и тесты теперь можно <a href="#">скачать!</a> <br> В разы дешевле!</p>
+                                                 </div>
+                                             </div>
+                                             <div class="item more">Загрузить более ранние уведомления</div>
+                                         </div>
+                                 </div>
+                            </div>
+                             <div class="mail">
+                                 <img src="../images/ico/mail.svg" alt="">
+                             </div>
+                             <div class="avatar">
+                                 <div class="click">
+                                     <img src="../images/profile/1.png" alt="">
+                                     <img src="../images/ar_down.svg" alt="">
+                                 </div>
+                                 <div class="pop" id="user-menu">
+                                     <ul>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/1.svg" alt="">
+                                             </div>Моя страница</a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/tests.svg" alt="">
+                                             </div>Тесты <span>2</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/files.svg" alt="">
+                                             </div>Файлы <span>6</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/class.svg" alt="">
+                                             </div>Классы <span>9</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/students.svg" alt="">
+                                             </div>Ученики <span>2</span></a></li>
+                                     </ul>
+                                     <ul>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/bookmarks.svg" alt="">
+                                             </div>Подписки <span>2</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/basket.svg" alt="">
+                                             </div>Заказы <span>23</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/clipboard.svg" alt="">
+                                             </div>Заявки <span>2</span></a></li>
+                                     </ul>
+                                     <ul>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/gear.svg" alt="">
+                                             </div>Мой профиль</a></li>
+                                     </ul>
+                                     <ul>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/exit.svg" alt="">
+                                             </div>Выйти</a></li>
+                                     </ul
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="path">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-16">
+                    <a href="video.html">Видеоуроки</a>/
+                    <a href="#">Математика</a>/
+                    <a href="#">Презентации</a>/
+                    <a href="#">9 класс</a>/
+                    <a href="#">Четырехугольники. Основные элементы четырехугольника</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="main">
+        <div id="blog">
+            <div class="container" id="video">
+                <div class="row">
+                    <aside class="col-lg-3 col-md-4" id="left">
+                        <div class="wrp">
+                            <a href="#"><span><img src="../images/ico/predmets/briefcase.svg" alt=""></span>Все предметы</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/info.svg" alt=""></span>Информатика</a>
+                            <a href="category.html" class="active"><span><img src="../images/ico/predmets/math.svg" alt=""></span>Математика</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/him.svg" alt=""></span>Химия</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/phys.svg" alt=""></span>Физика</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/pero.svg" alt=""></span>Русский язык</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/eng.svg" alt=""></span>Английский язык</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/history.svg" alt=""></span>История</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/bio.svg" alt=""></span>Биология</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/global.svg" alt=""></span>Обществознание</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/lit.svg" alt=""></span>Литература</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/geo.svg" alt=""></span>География</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/music.svg" alt=""></span>Музыка</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/teh.svg" alt=""></span>Технология</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/fiz.svg" alt=""></span>Физкультура</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/iso.svg" alt=""></span>ИЗО, МХК</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/obj.svg" alt=""></span>ОБЖ</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/first.svg" alt=""></span>Начальные классы</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/vne.svg" alt=""></span>Внеурочка</a>
+                            <a href="category.html"><span><img src="../images/ico/predmets/deutsch.svg" alt=""></span>Немецкий язык</a>
+                        </div>
+                    </aside>
+                    <div class="col-lg-9 col-md-12" id="center" itemscope itemtype="http://schema.org/Article">
+                        <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="http://trgng.xyz/1/vu/pages/index-article.html" content="Формирование понятийного аппарата на уроках истории и обществознания"/>
+                        <div itemprop="publisher author" itemscope itemtype="https://schema.org/Organization">
+                            <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+                                <img itemprop="url image" src="http://trgng.xyz/1/vu/images/logo.png" style="display:none;"/>
+                                <meta itemprop="width" content="140">
+                                <meta itemprop="height" content="16">
+                            </div>
+                            <meta itemprop="name" content="Видеоуроки">
+                            <meta itemprop="telephone" content="+7 xxx xxx xx xx">
+                            <meta itemprop="address" content="ГОРОД">
+                        </div>
+                        <meta itemprop="dateModified" content="2016-04-28"/>
+                        <div class="wrp pt0">
+                            <div class="block row" id="article">
+                                <div class="col-xs-16">
+                                    <h1 itemprop="headline">Четырехугольники. Основные элементы четырехугольника </h1>
+                                    <h4>Урок 15. Подготовка к ОГЭ по математике 9 класс</h4>
+                                    <div class="kursiv">
+                                        <p>Успешное усвоение знаний по истории и обществознанию невозможно без мыслительной деятельности. А понятие — основа мыслительной деятельности. История — наука, система знаний, и, чтобы понять логику исторического процесса</p>
+                                        <a href="#"><span>...</span><span> Показать полностью</span></a>
+                                        <span>ие знаний по истории и обществознанию невозможно без мыслительной деятельности. А понятие — основа мыслительной деятельности. История — наука, система знаний, и, чтобы понять логику исторического процес ие знаний по истории и обществознанию невозможно без мыслительной деятельности. А понятие — основа мыслительной деятельности. История — наука, система знаний, и, чтобы понять логику исторического процес.</span> <span> Скрыть</span>
+                                    </div>
+                                    <iframe src="//content.jwplatform.com/players/lsVaba0P-imJgYJh2.html" width="100" height="330" frameborder="0" scrolling="auto" allowfullscreen></iframe>
+                                    <a class="download-video" href="#">Скачать видеоурок «Четырехугольники. Основные элементы четырехугольника» <span>(mp4, 210МБ)</span></a>
+                                    <time datetime="2016-03-23" itemprop="datePublished" style="display:none">23 марта 2016</time>
+                                    <div style="display:none" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                                        <img itemprop="url image" src="../images/profile/2.png" alt="" class="w100">
+                                        <meta itemprop="width" content="42">
+                                        <meta itemprop="height" content="42">
+                                    </div>
+                                    <div class="panel">
+                                        <h3>Конспект урока "Четырехугольники. Основные элементы четырехугольника"</h3>
+                                        <div class="pull-right">
+                                            <a href="#" id="scroll-top"><svg width="27" height="27" viewBox="0 0 27 27">  <rect id="bg" class="cls-1" width="27" height="27" rx="2" ry="2"/><path id="arrow" class="cls-2" d="M1193.81,524.106l-3.81-3.9a0.673,0.673,0,0,0-.97,0l-3.81,3.9a0.7,0.7,0,0,0,.48,1.2h1.71a0.7,0.7,0,0,1,.69.7v1.952a1.021,1.021,0,0,0,1.01,1.035h0.81a1.021,1.021,0,0,0,1.01-1.035v-1.952a0.7,0.7,0,0,1,.69-0.7h1.71A0.7,0.7,0,0,0,1193.81,524.106Z" transform="translate(-1176 -511)"/></svg></a>
+                                            <a href="#" id="scroll-bot"><svg width="27" height="27" viewBox="0 0 27 27">  <rect id="bg" class="cls-1" width="27" height="27" rx="2" ry="2"/><path id="arrow" class="cls-2" d="M1222.19,524.894l3.81,3.9a0.673,0.673,0,0,0,.97,0l3.81-3.9a0.7,0.7,0,0,0-.48-1.2h-1.71a0.7,0.7,0,0,1-.69-0.7V521.04a1.021,1.021,0,0,0-1.01-1.035h-0.81a1.021,1.021,0,0,0-1.01,1.035v1.952a0.7,0.7,0,0,1-.69.7h-1.71A0.7,0.7,0,0,0,1222.19,524.894Z" transform="translate(-1213 -511)"/></svg></a>
+                                            <a href="#" id="expand"><svg width="27" height="27" viewBox="0 0 27 27"><rect id="bg" class="cls-1" width="27" height="27" rx="2" ry="2"/><path fill-rule="evenodd" fill="#999" d="M1231.94,796.544l0.05-4.034a0.5,0.5,0,0,0-.51-0.507l-4.02.047a0.526,0.526,0,0,0-.38.882l0.9,0.894a0.524,0.524,0,0,1-.01.726l-1.02,1.02a0.758,0.758,0,0,0-.01,1.07l0.42,0.423a0.757,0.757,0,0,0,1.07-.012l1.02-1.021a0.505,0.505,0,0,1,.72-0.008l0.89,0.894A0.52,0.52,0,0,0,1231.94,796.544Z" transform="translate(-1213 -784)"/><path fill-rule="evenodd" fill="#999" d="M1221.06,798.555l-0.05,3.946a0.492,0.492,0,0,0,.5.5l3.93-.047a0.511,0.511,0,0,0,.37-0.862l-0.87-.874a0.505,0.505,0,0,1,0-.711l1-1a0.738,0.738,0,0,0,.01-1.046l-0.41-.414a0.744,0.744,0,0,0-1.05.012l-0.99,1a0.5,0.5,0,0,1-.71.009l-0.87-.875A0.509,0.509,0,0,0,1221.06,798.555Z" transform="translate(-1213 -784)"/></svg></a>
+                                        </div>
+                                    </div>
+                                    <div class="perfect-scroll" id="content" itemprop="articleBody">
+                                        <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div>
+                                        <div id="content-wrp">
+                                            <html>
+
+                                                        <head>
+                                                        <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+                                                        <meta name=Generator content="Microsoft Word 14 (filtered)">
+                                                        <style>
+                                                        <!--
+                                                         /* Font Definitions */
+                                                         @font-face
+                                                            {font-family:Calibri;
+                                                            panose-1:2 15 5 2 2 2 4 3 2 4;}
+                                                        @font-face
+                                                            {font-family:Tahoma;
+                                                            panose-1:2 11 6 4 3 5 4 4 2 4;}
+                                                         /* Style Definitions */
+                                                         p.MsoNormal, li.MsoNormal, div.MsoNormal
+                                                            {margin-top:0cm;
+                                                            margin-right:0cm;
+                                                            margin-bottom:10.0pt;
+                                                            margin-left:0cm;
+                                                            line-height:115%;
+                                                            font-size:11.0pt;
+                                                            font-family:"Calibri","sans-serif";}
+                                                        p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+                                                            {mso-style-link:"Текст выноски Знак";
+                                                            margin:0cm;
+                                                            margin-bottom:.0001pt;
+                                                            font-size:8.0pt;
+                                                            font-family:"Tahoma","sans-serif";}
+                                                        span.a
+                                                            {mso-style-name:"Текст выноски Знак";
+                                                            mso-style-link:"Текст выноски";
+                                                            font-family:"Tahoma","sans-serif";}
+                                                        .MsoChpDefault
+                                                            {font-family:"Calibri","sans-serif";}
+                                                        .MsoPapDefault
+                                                            {margin-bottom:10.0pt;
+                                                            line-height:115%;}
+                                                        @page WordSection1
+                                                            {size:595.3pt 841.9pt;
+                                                            margin:2.0cm 42.5pt 2.0cm 3.0cm;}
+                                                        div.WordSection1
+                                                            {page:WordSection1;}
+                                                        -->
+                                                        </style>
+
+                                                        </head>
+
+                                                        <body lang=RU>
+
+                                                        <div class=WordSection1>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><b><span style='font-size:14.0pt;line-height:115%'>                      Древние
+                                                        германцы и Римская империя.</span></b></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>К началу </span><span
+                                                        lang=EN-US style='font-size:14.0pt;line-height:115%'>V</span><span
+                                                        style='font-size:14.0pt;line-height:115%'> века германцы расселились на большей
+                                                        части Западной Римской империи. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><b><i><span style='font-size:14.0pt;line-height:115%'>
+                                                        Расселение германцев</span></i></b></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'><img width=515
+                                                        height=275 id="Рисунок 1" src="drevnie_germantcy.files/image001.png"></span><img
+                                                        width=197 height=200 src="drevnie_germantcy.files/image002.jpg" align=left
+                                                        hspace=12
+                                                        alt="Описание: http://the-barbarians.ru/images/stories/Images/01/03celts.jpg"><span
+                                                        style='font-size:14.0pt;line-height:115%'> </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+                                                        style='font-size:14.0pt;line-height:115%'>Тут они, несли военную службу, защищали
+                                                        границы страны от других племён. За это они получали землю, леса, рабов. Больше
+                                                        всех получали <b>вожди племён</b>. Постепенно росло их могущество. Теперь они
+                                                        могли не обращать внимания на приказы из Рима. Так как власть на местах
+                                                        принадлежала им. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+                                                        style='font-size:14.0pt;line-height:115%'>И постепенно из вождей они стали независимыми
+                                                        правителями – <b>королями</b>. В конце концов, власть Рима стала мешать королям
+                                                        германцев. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><img width=195 height=197 src="drevnie_germantcy.files/image003.jpg"
+                                                        align=left hspace=12
+                                                        alt="Описание: http://historiosophy.ru/images/photos/medium/shop8187-1.jpg"><span
+                                                        style='font-size:14.0pt;line-height:115%'>В <b>476 году</b>, вождь германцев <b>Одоа&#768;кр
+                                                        </b>сверг последнего римского императора – <b>Ро&#768;мула Авгу&#768;стула</b>,
+                                                        тем самым прекратив существование Западной Римской империи.</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Большую часть
+                                                        населения в новых германских землях составляли жители бывшей Римской империи.
+                                                        Хотя и жили они вместе, но подчинялись каждый своим законам. Налоги королям
+                                                        платили только римляне, в армии же служили только германцы. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Германские короли
+                                                        хотели стереть разницу между римлянами и германцами, поэтому начали принимать
+                                                        общие для всех законы. Отменили запрет на браки, уравняли в правах римлян и
+                                                        германцев. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>В итоге германцы и
+                                                        римляне постепенно сливаются и создают <b>новое общество</b> с одним языком,
+                                                        культурой, религией и властью.</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><i><span
+                                                        style='font-size:14.0pt;line-height:115%'>                                   Германо-романское
+                                                        общество</span></i></b><b><i><span style='font-size:14.0pt;line-height:115%'><img
+                                                        width=624 height=268 id="Рисунок 4" src="drevnie_germantcy.files/image004.png"></span></i></b></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>С началом господства
+                                                        германцев на территории бывшей Римской империи начался упадок. Было разрушено
+                                                        множество городов, дворцов, храмов. Разрушались дороги, прекратилась торговля,
+                                                        опустели порты.</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><img
+                                                        width=321 height=201 src="drevnie_germantcy.files/image005.png" align=left
+                                                        hspace=12><span style='font-size:14.0pt;line-height:115%'>Но германцы принесли
+                                                        с собой и много нового. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+                                                        style='font-size:14.0pt;line-height:115%'>Они селились преимущественно в
+                                                        долинах рек и у ручьёв. Их поселки состояли из нескольких дворов или чаще одной
+                                                        большой усадьбы. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+                                                        style='font-size:14.0pt;line-height:115%'>В них жило несколько поколений одной
+                                                        семьи. Такая община называлась <b>ро&#768;довой</b>. Несколько родов составляли
+                                                        <b>племя.</b> Несколько племён <b>союз племён</b> во главе с вождём. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Германцы разводили
+                                                        скот и птицу, охотились, занимались рыбной ловлей. Но главным было земледелие.</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Сначала они
+                                                        использовали <b>подсе&#768;чно-огневу&#768;ю</b> форму обработки земли. Брался
+                                                        участок леса, деревья вырубались, а пни сжигались. После на этой земле сеяли
+                                                        зерно. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Когда земля истощалась,
+                                                        переходили на новый участок. Но такая форма ведения хозяйства была очень трудоёмкой.</span>
+                                                        </p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><i><span
+                                                        style='font-size:14.0pt;line-height:115%'>Подсечно-огневое земледелие</span></i></b></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+                                                        style='font-size:14.0pt;line-height:115%'><img width=624 height=156
+                                                        id="Рисунок 7" src="drevnie_germantcy.files/image006.png"></span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Поэтому германцы переняли
+                                                        от римлян <b>двупо&#768;лье</b>. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Пашню делили на две
+                                                        части, одну засевали, а вторую оставляли <i>под паром</i>, то есть отдыхать.
+                                                        Ежегодно эти поля менялись местами. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>В итоге германцы
+                                                        получили большой прирост пищи. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><i><span
+                                                        style='font-size:14.0pt;line-height:115%'>Двуполье</span></i></b></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><span
+                                                        style='font-size:14.0pt;line-height:115%'><img width=624 height=185
+                                                        id="Рисунок 8" src="drevnie_germantcy.files/image007.png"></span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Как уже было сказано,
+                                                        германцы жили большими семьями, или <b>родовыми общинами</b>. Они вместе
+                                                        обрабатывали поля, делили полученный урожай. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Но постепенно община
+                                                        разрасталась, а земли и еды полученной с неё оставалось столько же. Также кто-то
+                                                        работал лучше, кто-то хуже.</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>В итоге отдельные
+                                                        семьи начали переселяться на новые земли, где уже работали сами на себя и ни с
+                                                        кем не делились. Но <i>выгоны для скота, леса, реки оставались общими</i>. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><b><i><span
+                                                        style='font-size:14.0pt;line-height:115%'>Распад родовой общин</span></i></b><b><i><span
+                                                        style='font-size:14.0pt;line-height:115%'><img width=637 height=200
+                                                        id="Рисунок 9" src="drevnie_germantcy.files/image008.png"></span></i></b></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Люди стали жить малыми
+                                                        семьями вместо одной большой. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>В итоге родовая община
+                                                        в </span><span lang=EN-US style='font-size:14.0pt;line-height:115%'>V</span><span
+                                                        style='font-size:14.0pt;line-height:115%'>–</span><span lang=EN-US
+                                                        style='font-size:14.0pt;line-height:115%'>VI</span><span style='font-size:14.0pt;
+                                                        line-height:115%'> веках уступила место <b>сосе&#768;дской</b>, тем самым
+                                                        обозначив закрепление неравенства в обществе германцев.</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><img
+                                                        width=209 height=234 src="drevnie_germantcy.files/image009.jpg" align=left
+                                                        hspace=12
+                                                        alt="Описание: http://the300spartans.ru/wp-content/uploads/2013/02/%D1%81%D0%BE%D1%8E%D0%B7%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D0%B5-%D0%BE%D1%82%D0%BD%D0%BE%D1%88%D0%B5%D0%BD%D0%B8%D1%8F-%D0%B3%D0%B5%D1%80%D0%BC%D0%B0%D0%BD%D1%86%D0%B5%D0%B2-%D1%81-%D1%81%D0%BE%D1%81%D0%B5%D0%B4%D0%BD%D0%B5%D0%BC%D0%B8-%D0%BF%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D0%B0%D0%BC%D0%B8.jpg"><span
+                                                        style='font-size:14.0pt;line-height:115%'>Знатные германцы, или вожди поступали
+                                                        по-другому. Они раздавали в пользование свои обширные земли бывшим римским
+                                                        рабам или земледельцам, получая за это от них часть урожая. Тем самым ещё больше
+                                                        укрепляя своё богатство и власть.</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>За период </span><span
+                                                        lang=EN-US style='font-size:14.0pt;line-height:115%'>V</span><span
+                                                        style='font-size:14.0pt;line-height:115%'> века германские короли создали на
+                                                        территории бывшей Римской империи свои государства. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>&nbsp;</span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><b><i><span style='font-size:14.0pt;line-height:115%'>Варварские
+                                                        королевства</span></i></b></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt'><img
+                                                        width=379 height=276 src="drevnie_germantcy.files/image010.jpg" align=left
+                                                        hspace=12><span style='font-size:14.0pt;line-height:115%'>Наиболее крупными из
+                                                        них были <b>Королевство Ванда&#768;лов</b> в северной Африке, <b>Королевство</b>
+                                                        <b>Вестго&#768;тов </b>в Испании, <b>Королевство Фра&#768;нков</b> в Галлии, <b>Королевство
+                                                        Остго&#768;тов</b> в Италии. Самым могущественным было Королевство Франков. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><span style='font-size:14.0pt;line-height:115%'>Кроме того, ещё
+                                                        сохранилась Восточная Римская империя или <b>Византи&#768;я</b>. </span></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><b><span style='font-size:14.0pt;line-height:115%'>Подведём итоги.</span></b></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><i><span style='font-size:14.0pt;line-height:115%'>Таким образом, к </span></i><i><span
+                                                        lang=EN-US style='font-size:14.0pt;line-height:115%'>V</span></i><i><span
+                                                        style='font-size:14.0pt;line-height:115%'>–</span></i><i><span lang=EN-US
+                                                        style='font-size:14.0pt;line-height:115%'>VII</span></i><i><span
+                                                        style='font-size:14.0pt;line-height:115%'> векам германцы завершили переход к
+                                                        соседской общине. </span></i></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><i><span style='font-size:14.0pt;line-height:115%'>У них в обществе
+                                                        возникло неравенство. </span></i></p>
+
+                                                        <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;text-indent:
+                                                        35.45pt'><i><span style='font-size:14.0pt;line-height:115%'>В это же время
+                                                        германцы создали свои королевства. </span></i></p>
+
+                                                        </div>
+
+                                                        </body>
+
+                                                        </html>
+                                        </div>
+
+                                    </div>
+                                    <div class="info v-center">
+                                        <div class="rate">
+                                            <span>Оцените видеоурок</span>
+                                            <div class="stars">
+                                                <a class="active" href="#"><svg width="13.781" height="14" viewBox="0 0 13.781 14"><path fill-rule="evenodd" d="M739.862,1485.75c1.231-.63,3.374-1.72,3.374-1.72s2.105,1.06,3.445,1.74c-0.435-.22,1.119.96,0.976-0.68-0.137-1.57-.358-4.09-0.358-4.09s1.535-1.84,2.5-3c-0.4.48,1.1-.83-0.3-1.11-1.414-.29-3.949-0.49-3.949-0.49s-1.008-2.51-1.753-3.9c0.347,0.65-.392-1.43-1.135-0.03s-1.82,3.94-1.82,3.94-2.458.21-3.873,0.5c0.554-.12-1.3-0.06-0.356,1.06,0.959,1.14,2.554,3.05,2.554,3.05s-0.213,2.53-.346,4.1C738.853,1484.72,738.335,1486.53,739.862,1485.75Z" transform="translate(-736.344 -1471.97)"/></svg></a>
+                                                <a href="#"><svg width="13.781" height="14" viewBox="0 0 13.781 14"><path fill-rule="evenodd" d="M739.862,1485.75c1.231-.63,3.374-1.72,3.374-1.72s2.105,1.06,3.445,1.74c-0.435-.22,1.119.96,0.976-0.68-0.137-1.57-.358-4.09-0.358-4.09s1.535-1.84,2.5-3c-0.4.48,1.1-.83-0.3-1.11-1.414-.29-3.949-0.49-3.949-0.49s-1.008-2.51-1.753-3.9c0.347,0.65-.392-1.43-1.135-0.03s-1.82,3.94-1.82,3.94-2.458.21-3.873,0.5c0.554-.12-1.3-0.06-0.356,1.06,0.959,1.14,2.554,3.05,2.554,3.05s-0.213,2.53-.346,4.1C738.853,1484.72,738.335,1486.53,739.862,1485.75Z" transform="translate(-736.344 -1471.97)"/></svg></a>
+                                                <a href="#"><svg width="13.781" height="14" viewBox="0 0 13.781 14"><path fill-rule="evenodd" d="M739.862,1485.75c1.231-.63,3.374-1.72,3.374-1.72s2.105,1.06,3.445,1.74c-0.435-.22,1.119.96,0.976-0.68-0.137-1.57-.358-4.09-0.358-4.09s1.535-1.84,2.5-3c-0.4.48,1.1-.83-0.3-1.11-1.414-.29-3.949-0.49-3.949-0.49s-1.008-2.51-1.753-3.9c0.347,0.65-.392-1.43-1.135-0.03s-1.82,3.94-1.82,3.94-2.458.21-3.873,0.5c0.554-.12-1.3-0.06-0.356,1.06,0.959,1.14,2.554,3.05,2.554,3.05s-0.213,2.53-.346,4.1C738.853,1484.72,738.335,1486.53,739.862,1485.75Z" transform="translate(-736.344 -1471.97)"/></svg></a>
+                                                <a href="#"><svg width="13.781" height="14" viewBox="0 0 13.781 14"><path fill-rule="evenodd" d="M739.862,1485.75c1.231-.63,3.374-1.72,3.374-1.72s2.105,1.06,3.445,1.74c-0.435-.22,1.119.96,0.976-0.68-0.137-1.57-.358-4.09-0.358-4.09s1.535-1.84,2.5-3c-0.4.48,1.1-.83-0.3-1.11-1.414-.29-3.949-0.49-3.949-0.49s-1.008-2.51-1.753-3.9c0.347,0.65-.392-1.43-1.135-0.03s-1.82,3.94-1.82,3.94-2.458.21-3.873,0.5c0.554-.12-1.3-0.06-0.356,1.06,0.959,1.14,2.554,3.05,2.554,3.05s-0.213,2.53-.346,4.1C738.853,1484.72,738.335,1486.53,739.862,1485.75Z" transform="translate(-736.344 -1471.97)"/></svg></a>
+                                                <a href="#"><svg width="13.781" height="14" viewBox="0 0 13.781 14"><path fill-rule="evenodd" d="M739.862,1485.75c1.231-.63,3.374-1.72,3.374-1.72s2.105,1.06,3.445,1.74c-0.435-.22,1.119.96,0.976-0.68-0.137-1.57-.358-4.09-0.358-4.09s1.535-1.84,2.5-3c-0.4.48,1.1-.83-0.3-1.11-1.414-.29-3.949-0.49-3.949-0.49s-1.008-2.51-1.753-3.9c0.347,0.65-.392-1.43-1.135-0.03s-1.82,3.94-1.82,3.94-2.458.21-3.873,0.5c0.554-.12-1.3-0.06-0.356,1.06,0.959,1.14,2.554,3.05,2.554,3.05s-0.213,2.53-.346,4.1C738.853,1484.72,738.335,1486.53,739.862,1485.75Z" transform="translate(-736.344 -1471.97)"/></svg></a>
+                                            </div>
+                                            <span>(1 из 5)</span>
+                                        </div>
+                                        <div class="right">
+                                            <div class="num"><img src="../images/ico/comments.svg" alt="">  3</div>
+                                            <div class="num"><img src="../images/ico/viewed.svg" alt=""> 1 123</div>
+                                            <div class="num"><img src="../images/ico/rating.svg" alt=""> 4.1</div>
+                                        </div>
+                                    </div>
+                                    <div class="video-nav">
+                                        <div>
+                                            <div class="prev-video box">
+                                                <a href="#"><svg width="9px" height="16px" viewBox="0 0 9 16"><path fillRule="evenodd" d="M-0.01 8C-0.01 8 7.05 0.37 7.05 0.37 7.49-0.11 8.21-0.11 8.65 0.37 9.09 0.84 9.09 1.62 8.65 2.1 8.65 2.1 3.19 8 3.19 8 3.19 8 8.65 13.91 8.65 13.91 9.09 14.38 9.09 15.16 8.65 15.64 8.21 16.12 7.49 16.12 7.05 15.64 7.05 15.64-0.01 8-0.01 8Z"/></svg></a>
+                                                <div class="link" href="#"><span>Предыдущий урок 14</span>
+                                                <a href="#">Преобразование выражений, содержащих знак корня</a></div>
+                                            </div>
+                                            <div class="next-video box">
+                                                <div class="link"><span>Следующий урок 16</span>
+                                                <a href="#">Линейное уравнение с одним неизвестным</a></div>
+                                                <a href="#"><svg width="9px" height="16px" viewBox="0 0 9 16"><path class="arrow" fillRule="evenodd" d="M 9.01 8C 9.01 8 1.93 15.63 1.93 15.63 1.49 16.11 0.77 16.11 0.33 15.63-0.12 15.15-0.12 14.38 0.33 13.9 0.33 13.9 5.8 8 5.8 8 5.8 8 0.33 2.09 0.33 2.09-0.12 1.61-0.12 0.84 0.33 0.36 0.77-0.12 1.49-0.12 1.93 0.36 1.93 0.36 9.01 8 9.01 8Z"></svg></a>
+                                            </div>
+                                        </div>
+                                        <br class="clear">
+                                        <a class="full-complect v-center" href="#">
+                                            <img src="../images/dvd/1.png" alt="">
+                                            <h3><span>Комплект материалов</span>
+                                            Полный комплект материалов по математике для подготовки к ОГЭ<span>, 9 класс</span></h3>
+                                            <svg width="9px" height="16px" viewBox="0 0 9 16"><path class="arrow" fillRule="evenodd" d="M 9.01 8C 9.01 8 1.93 15.63 1.93 15.63 1.49 16.11 0.77 16.11 0.33 15.63-0.12 15.15-0.12 14.38 0.33 13.9 0.33 13.9 5.8 8 5.8 8 5.8 8 0.33 2.09 0.33 2.09-0.12 1.61-0.12 0.84 0.33 0.36 0.77-0.12 1.49-0.12 1.93 0.36 1.93 0.36 9.01 8 9.01 8Z"></svg>
+                                        </a>
+                                    </div>
+                                    <div class="coments">
+                                        <h2>Комментарии <span>32</span></h2>
+                                        <div class="item" id="add-coment">
+                                            <img src="../images/profile/1.png" alt="">
+                                            <textarea rows="1" name="" placeholder="Оставьте свой комментарий"></textarea>
+                                            <input type="submit" class="btn" value="Добавить">
+                                        </div>
+                                        <div class="item">
+                                            <img src="../images/profile/2.png" alt="">
+                                            <div class="item-wrp">
+                                                <div class="info">Нина Кондратьева, 24.03.2016 в 16:23</div>
+                                                <p>Спасибо большое за полезный материал)))</p>
+                                                <a href="#" class="ans">Ответить</a>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="../images/profile/3.png" alt="">
+                                            <div class="item-wrp">
+                                                <div class="info">Альфия Мухамедовна, 23.03.2016 в 18:07</div>
+                                                <p>Огромное спасибо! успехов в работе</p>
+                                                <a href="#" class="ans">Ответить</a>
+                                                <div class="item">
+                                                    <img src="../images/profile/2.png" alt="">
+                                                    <div class="item-wrp">
+                                                        <div class="info">Нина Кондратьева, 24.03.2016 в 16:23</div>
+                                                        <p>Спасибо большое за полезный материал)))</p>
+                                                        <a href="#" class="ans">Ответить</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <img src="../images/profile/4.png" alt="">
+                                            <div class="item-wrp">
+                                                <div class="info">Тамара, 24.03.2016 в 16:23</div>
+                                                <p>Спасибо большое за полезный материал)))</p>
+                                                <a href="#" class="ans">Ответить</a>
+                                            </div>
+                                        </div>
+                                        <div class="more">Ещё комментарии</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="col-lg-4 col-md-12 col-md-offset-4 col-lg-offset-0" id="right">
+                        <div class="wrp best">
+                            <h2>Лучшее для учителя</h2>
+                            <div class="h-center">
+                                <img src="../images/aside/dvd.png" alt="">
+                            </div>
+                            <p>Химия 9 класс — полный комплект видеоуроков и тестов для учителей и учащихся</p>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="wrp podrobnee">
+                            <h2>Участникам олимпиад</h2>
+                            <img src="../images/aside/screen.png" alt="" class="w100">
+                            <h3>Стартовал приём заявок на олимпиады «Проверь себя»!</h3>
+                            <ul>
+                                <li>Удобное участие от 40 рублей</li>
+                                <li>Проверка знаний учащихся</li>
+                                <li>Подарки учителям и ученикам</li>
+                            </ul>
+                            <a href="#">Подробнее</a>
+                        </div>
+                        <div class="wrp podrobnee" id="smotrite">
+                            <h2>Смотрите также</h2>
+                            <div class="watch">
+                                <div class="v-center">
+                                    <div href="#" class="video-href">
+                                        <img src="../images/video/1.jpg" alt="">
+                                        <svg class="play-btn" width="32" height="32" viewBox="0 0 32 32">      <circle class="cls-3" cx="16" cy="16" r="16"/><path class="cls-4" d="M1033,1353.63v-9.27a1.261,1.261,0,0,1,1.81-1.22l8.49,4.64a1.415,1.415,0,0,1,0,2.43l-8.49,4.64A1.261,1.261,0,0,1,1033,1353.63Z" transform="translate(-1021 -1333)"/></svg>
+                                    </div>
+                                    <div class="info">Урок 15 <br> Подготовка к ОГЭ по математике 9 класс</div>
+                                </div>
+                                <a href="#">Понятие функции. Область определения и область значений функции</a>
+                            </div>
+                            <div class="watch">
+                                <div class="v-center">
+                                    <div href="#" class="video-href">
+                                        <img src="../images/video/1.jpg" alt="">
+                                        <svg class="play-btn" width="32" height="32" viewBox="0 0 32 32">      <circle class="cls-3" cx="16" cy="16" r="16"/><path class="cls-4" d="M1033,1353.63v-9.27a1.261,1.261,0,0,1,1.81-1.22l8.49,4.64a1.415,1.415,0,0,1,0,2.43l-8.49,4.64A1.261,1.261,0,0,1,1033,1353.63Z" transform="translate(-1021 -1333)"/></svg>
+                                    </div>
+                                    <div class="info">Урок 15 <br> Подготовка к ОГЭ по математике 9 класс</div>
+                                </div>
+                                <a href="#">Понятие функции. Область определения и область значений функции</a>
+                            </div>
+                            <div class="watch">
+                                <div class="v-center">
+                                    <div href="#" class="video-href">
+                                        <img src="../images/video/1.jpg" alt="">
+                                        <svg class="play-btn" width="32" height="32" viewBox="0 0 32 32">      <circle class="cls-3" cx="16" cy="16" r="16"/><path class="cls-4" d="M1033,1353.63v-9.27a1.261,1.261,0,0,1,1.81-1.22l8.49,4.64a1.415,1.415,0,0,1,0,2.43l-8.49,4.64A1.261,1.261,0,0,1,1033,1353.63Z" transform="translate(-1021 -1333)"/></svg>
+                                    </div>
+                                    <div class="info">Урок 15 <br> Подготовка к ОГЭ по математике 9 класс</div>
+                                </div>
+                                <a href="#">Понятие функции. Область определения и область значений функции</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="views">
+        <div class="container">
+            <div class="row">
+               <div class="col-xs-12">
+                   <h2>Вы смотрели</h2>
+               </div>
+                <div class="col-xs-16">
+                    <div id="sl-1">
+                        <div class="item">
+                            <div class="wrp">
+                                <img src="../images/thumbs/6.png" alt="">
+                                <a href="#">Видеоурок "Параллельные прямые"</a>
+                                <br class="clear">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wrp">
+                                <img src="../images/thumbs/7.png" alt="">
+                                <a href="#">Строение и грамматическое значение словосочетаний</a>
+                                <br class="clear">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wrp">
+                                <img src="../images/thumbs/8.png" alt="">
+                                <a href="#">Виды словосочетаний по характеру главного слова: именные, глагольные...</a>
+                                <br class="clear">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wrp">
+                                <img src="../images/thumbs/9.png" alt="">
+                                <a href="#">Типы спряжения глаголов. 1 и 2 спряжение</a>
+                                <br class="clear">
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="wrp">
+                                <img src="../images/thumbs/6.png" alt="">
+                                <a href="#">Видеоурок "Параллельные прямые"</a>
+                                <br class="clear">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="sl-prev" class="arrow">
+                            <svg width="9px" height="16px" viewBox="0 0 9 16"><path fillRule="evenodd" d="M-0.01 8C-0.01 8 7.05 0.37 7.05 0.37 7.49-0.11 8.21-0.11 8.65 0.37 9.09 0.84 9.09 1.62 8.65 2.1 8.65 2.1 3.19 8 3.19 8 3.19 8 8.65 13.91 8.65 13.91 9.09 14.38 9.09 15.16 8.65 15.64 8.21 16.12 7.49 16.12 7.05 15.64 7.05 15.64-0.01 8-0.01 8Z"/></svg>
+                    </div>
+                    <div id="sl-next" class="arrow">
+                            <svg width="9px" height="16px" viewBox="0 0 9 16"><path class="arrow" fillRule="evenodd" d="M 9.01 8C 9.01 8 1.93 15.63 1.93 15.63 1.49 16.11 0.77 16.11 0.33 15.63-0.12 15.15-0.12 14.38 0.33 13.9 0.33 13.9 5.8 8 5.8 8 5.8 8 0.33 2.09 0.33 2.09-0.12 1.61-0.12 0.84 0.33 0.36 0.77-0.12 1.49-0.12 1.93 0.36 1.93 0.36 9.01 8 9.01 8Z"></svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-16 col-sm-4 col-md-3">
+                    <p>© 2008–2016 ООО «КОМПЭДУ»</p>
+                    <div class="social">
+                        <a href="#">
+                            <svg width="32px" height="19px" viewBox="0 0 32 19"><path fillRule="evenodd" d="M 15.36 18.01C 15.36 18.01 17.24 18.01 17.24 18.01 17.24 18.01 17.81 17.94 18.1 17.64 18.36 17.37 18.35 16.85 18.35 16.85 18.35 16.85 18.32 14.41 19.49 14.05 20.64 13.7 22.12 16.4 23.69 17.45 24.87 18.23 25.77 18.06 25.77 18.06 25.77 18.06 29.97 18.01 29.97 18.01 29.97 18.01 32.16 17.87 31.12 16.21 31.03 16.07 30.51 14.97 28 12.72 25.37 10.35 25.72 10.74 28.89 6.65 30.82 4.16 31.59 2.65 31.35 2 31.12 1.38 29.7 1.54 29.7 1.54 29.7 1.54 24.98 1.57 24.98 1.57 24.98 1.57 24.63 1.52 24.37 1.67 24.12 1.82 23.95 2.16 23.95 2.16 23.95 2.16 23.21 4.09 22.21 5.72 20.11 9.18 19.27 9.36 18.92 9.15 18.12 8.65 18.32 7.14 18.32 6.07 18.32 2.72 18.85 1.32 17.3 0.96 16.79 0.84 16.41 0.76 15.1 0.75 13.41 0.73 11.99 0.76 11.18 1.14 10.64 1.39 10.23 1.96 10.48 1.99 10.79 2.03 11.5 2.18 11.88 2.67 12.36 3.31 12.34 4.74 12.34 4.74 12.34 4.74 12.62 8.68 11.69 9.17 11.06 9.5 10.18 8.82 8.31 5.68 7.35 4.08 6.62 2.3 6.62 2.3 6.62 2.3 6.48 1.97 6.23 1.8 5.93 1.58 5.51 1.51 5.51 1.51 5.51 1.51 1.02 1.54 1.02 1.54 1.02 1.54 0.35 1.56 0.1 1.84-0.12 2.09 0.08 2.62 0.08 2.62 0.08 2.62 3.6 10.57 7.57 14.57 11.22 18.25 15.36 18.01 15.36 18.01 15.36 18.01 15.36 18.01 15.36 18.01Z"/></svg></a>
+                        <a href="#">
+                            <svg width="26px" height="25px" viewBox="0 0 26 25"><path fillRule="evenodd" d="M 24.33-0C 24.33-0 1.96-0 1.96-0 1.19-0 0.57 0.62 0.57 1.38 0.57 1.38 0.57 23.62 0.57 23.62 0.57 24.38 1.19 25 1.96 25 1.96 25 14 25 14 25 14 25 14 15.32 14 15.32 14 15.32 10.72 15.32 10.72 15.32 10.72 15.32 10.72 11.54 10.72 11.54 10.72 11.54 14 11.54 14 11.54 14 11.54 14 8.76 14 8.76 14 5.53 15.98 3.77 18.88 3.77 20.27 3.77 21.46 3.88 21.81 3.92 21.81 3.92 21.81 7.3 21.81 7.3 21.81 7.3 19.8 7.3 19.8 7.3 18.22 7.3 17.92 8.04 17.92 9.13 17.92 9.13 17.92 11.54 17.92 11.54 17.92 11.54 21.68 11.54 21.68 11.54 21.68 11.54 21.19 15.32 21.19 15.32 21.19 15.32 17.92 15.32 17.92 15.32 17.92 15.32 17.92 25 17.92 25 17.92 25 24.33 25 24.33 25 25.09 25 25.71 24.38 25.71 23.62 25.71 23.62 25.71 1.38 25.71 1.38 25.71 0.62 25.09-0 24.33-0Z"/></svg>
+                        </a>
+                        <a href="#">
+                            <svg width="26px" height="19px" viewBox="0 0 26 19"><path fillRule="evenodd" d="M 25.75 14.46C 25.75 14.46 25.5 16.18 24.75 16.93 23.79 17.92 22.72 17.93 22.23 17.99 18.71 18.24 13.43 18.25 13.43 18.25 13.43 18.25 6.89 18.19 4.88 18 4.32 17.89 3.06 17.92 2.11 16.93 1.35 16.18 1.11 14.46 1.11 14.46 1.11 14.46 0.86 12.45 0.86 10.44 0.86 10.44 0.86 8.55 0.86 8.55 0.86 6.54 1.11 4.52 1.11 4.52 1.11 4.52 1.35 2.81 2.11 2.05 3.06 1.06 4.14 1.06 4.63 1 8.15 0.75 13.42 0.75 13.42 0.75 13.42 0.75 13.43 0.75 13.43 0.75 13.43 0.75 18.71 0.75 22.23 1 22.72 1.06 23.79 1.06 24.75 2.05 25.5 2.81 25.75 4.52 25.75 4.52 25.75 4.52 26 6.54 26 8.55 26 8.55 26 10.44 26 10.44 26 12.45 25.75 14.46 25.75 14.46ZM 10.83 5.73C 10.83 5.73 10.83 12.72 10.83 12.72 10.83 12.72 17.62 9.24 17.62 9.24 17.62 9.24 10.83 5.73 10.83 5.73Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-16 links">
+                    <h4>Для учителя</h4>
+                    <a href="#">Разработки</a>
+                    <a href="video.html">Видеоуроки</a>
+                    <a href="#">Тесты</a>
+                    <a href="#">Комплекты</a>
+                    <a href="#">Олимпиады</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-16 links">
+                    <h4>О проекте</h4>
+                    <a href="#">О нас</a>
+                    <a href="#">Обратная связь</a>
+                    <a href="#">Вопросы и ответы</a>
+                    <a href="#">Блог</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-16 links">
+                    <h4>Компания</h4>
+                    <a href="#">Вакансии</a>
+                    <a href="#">Друзьям</a>
+                </div>
+            </div>
+            <div class="row v-center">
+                <div class="col-md-8 col-xs-16">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Лицензия на продукты</a>
+                </div>
+                <div class="col-md-8 col-xs-16">
+                    <div class="share pull-right">
+                        <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script> <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script> <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus" data-counter=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#bot" id="to-top">
+        <svg width="50px" height="50px" viewBox="0 0 50 50"><circle cx="25.00" cy="25.00" r="25.00" fill="rgb(0,0,0)" opacity="0.37"/><path fillRule="evenodd" d="M 33.94 24.46C 33.94 24.46 25.89 16.3 25.89 16.3 25.32 15.73 24.41 15.73 23.84 16.3 23.84 16.3 15.79 24.46 15.79 24.46 14.88 25.38 15.52 26.97 16.81 26.97 16.81 26.97 20.43 26.97 20.43 26.97 21.23 26.97 21.88 27.62 21.88 28.43 21.88 28.43 21.88 32.51 21.88 32.51 21.88 33.71 22.83 34.68 24.01 34.68 24.01 34.68 25.72 34.68 25.72 34.68 26.9 34.68 27.86 33.71 27.86 32.51 27.86 32.51 27.86 28.43 27.86 28.43 27.86 27.62 28.5 26.97 29.31 26.97 29.31 26.97 32.92 26.97 32.92 26.97 34.21 26.97 34.85 25.38 33.94 24.46Z" fill="rgb(241,241,241)"/></svg>
+    </a>
+    <div class="overlay"></div>
+    <div class="popup" id="premium-pop">
+        <div class="perfect-scroll">
+            <h2>Премиум-доступ <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+            <p>Все преимущества проекта с премиум-доступом. Смотрите и скачивайте любые видеоуроки. Получите в подарок бесплатное участие в олимпиадах.</p>
+            <div class="col">
+                <img src="../images/bronse.svg" alt="">
+                <h4>1 месяц</h4>
+                <h5>300 <span>рублей</span></h5>
+                <h6><span>Неограниченный</span> доступ к просмотру видеоуроков</h6>
+                <h6><span>5 скачиваний</span>видеоуроков в неделю</h6>
+                <h6>—</h6>
+                <div class="btn">Получить доступ</div>
+            </div>
+            <div class="col">
+                <img src="../images/silver.svg" alt="">
+                <h4>6 месяцев</h4>
+                <h5>600 <span>рублей</span></h5>
+                <h6><span>Неограниченный</span> доступ к просмотру видеоуроков</h6>
+                <h6><span>10 скачиваний</span> видеоуроков в неделю</h6>
+                <h6><span>5 бесплатных</span> участников олимпиад</h6>
+                <div class="btn">Получить доступ</div>
+            </div>
+            <div class="col">
+                <img src="../images/gold.svg" alt="">
+                <h4>12 месяцев</h4>
+                <h5>1 200 <span>рублей</span></h5>
+                <h6><span>Неограниченный</span> доступ к просмотру видеоуроков</h6>
+                <h6><span>20 скачиваний</span> видеоуроков в неделю</h6>
+                <h6><span>15 бесплатных</span> участников олимпиад</h6>
+                <div class="btn">Получить доступ</div>
+            </div>
+        </div>
+    </div>
+    <script src="../res/jquery-2.2.3.min.js"></script>
+    <script src="../res/lightslider/lightslider.min.js"></script>
+    <script src="../res/jquery.validate.min.js"></script>
+    <script src="../res/autosize-master/autosize.min.js"></script>
+    <script src="../res/perfectScrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../js/views.js"></script>
+</body>
+</html>

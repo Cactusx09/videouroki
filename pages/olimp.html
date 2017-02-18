@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../res/bootstrap.grid.min.css">
+    <link rel="stylesheet" href="../webfonts/fonts.css">
+    <link rel="stylesheet" href="../res/perfectScrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../res/lightslider/lightslider.min.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <header>
+        <div id="top">
+        <div class="icon">
+    		<div></div>
+    		<span>Меню</span>
+    	</div>
+            <a class="active responsive" href="index.html">Разработки</a>
+        <div class="container">
+            <div class="row perfect-scroll">
+                <nav class="col-lg-13 col-md-12">
+                    <a href="index.html">Разработки</a>
+                    <a href="video.html">Видеоуроки</a>
+                    <a href="#">Тесты</a>
+                    <a href="#">Комплекты <span>3</span></a>
+                    <a class="active" href="#">Олимпиады <span class="null">2</span></a>
+                    <a href="blog.html">Блог</a>
+                </nav>
+                <div class="col-lg-3 col-md-4">
+                    <a class="pull-right" href="#"><img src="../images/ico/corona.svg" alt=""> Премиум–доступ</a>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div id="bot">
+            <div class="container">
+                <div class="row v-center">
+                    <div class="col-md-3 col-sm-8 col-xs-16">
+                        <a href="index.html" id="logo"><img src="../images/logo.png" alt=""></a>
+                    </div>
+                    <div class="col-md-5 col-sm-8 col-xs-16">
+                        <div class="search-wrp">
+                            <input type="text" id="search" placeholder="Введите текст для поиска...">
+                            <button><svg width="16px" height="16px" viewBox="0 0 16 16"><path fillRule="evenodd" d="M 6-0C 9.31-0 12 2.68 12 6 12 7.39 11.52 8.66 10.73 9.67 10.73 9.67 15.78 14.72 15.78 14.72 15.93 14.86 16 15.06 16 15.25 16 15.44 15.93 15.63 15.78 15.78 15.63 15.93 15.44 16 15.25 16 15.06 16 14.87 15.93 14.72 15.78 14.72 15.78 9.67 10.73 9.67 10.73 8.66 11.52 7.39 12 6 12 2.69 12-0 9.31-0 6-0 2.68 2.69-0 6-0ZM 6 10.5C 8.48 10.5 10.5 8.48 10.5 6 10.5 3.52 8.48 1.5 6 1.5 3.52 1.5 1.5 3.52 1.5 6 1.5 8.48 3.52 10.5 6 10.5Z"/></svg></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-md-9 col-xs-16 sticky">
+                        <div class="pull-right profile">
+                             <a href="#" class="btn yellow"><img src="../images/ico/add.svg" alt="">Подать заявку</a>
+                             <div class="bell">
+                                 <div class="click">
+                                     <img src="../images/ico/bell.svg" alt="">
+                                     <div class="circle">1</div>
+                                 </div>
+                                 <div class="pop" id="notifications">
+                                     <h2>Уведомления  <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+                                         <div class="perfect-scroll">
+                                             <div class="item row cheked">
+                                                 <div class="col-xs-1 pl0">
+                                                     <svg width="9px" height="8px" viewBox="0 0 9 8"><path fillRule="evenodd" d="M 4.67 7.68C 4.45 7.89 4.16 8 3.87 8 3.59 8 3.3 7.89 3.08 7.68 3.08 7.68 0.33 5.04 0.33 5.04 0.1 4.82-0 4.52 0.01 4.23 0.02 3.96 0.12 3.7 0.33 3.5 0.54 3.3 0.81 3.2 1.08 3.19 1.38 3.18 1.69 3.28 1.92 3.5 1.92 3.5 3.87 5.37 3.87 5.37 3.87 5.37 7.08 0.32 7.08 0.32 7.31 0.09 7.62-0 7.92 0.01 8.19 0.02 8.46 0.12 8.67 0.32 8.88 0.52 8.98 0.78 8.99 1.05 9 1.34 8.9 1.64 8.67 1.86 8.67 1.86 4.67 7.68 4.67 7.68Z"/></svg>
+                                                 </div>
+                                                 <div class="col-xs-15 pl0">
+                                                     <div class="info">Сегодня в 11:27 <div class="close-notification pull-right"><img src="../images/ico/close-notification.svg" alt=""></div></div>
+                                                     <p>Поздравляем! Вы получили повышенную скидку <span class="through">30</span> <span class="green">20 рублей</span>.  Скидка скоро уменьшится! <a href="#">Успейте выгодно подать заявки</a></p>
+                                                 </div>
+                                             </div>
+                                             <div class="item row">
+                                                 <div class="col-xs-1 pl0">
+                                                     <svg width="9px" height="8px" viewBox="0 0 9 8"><path fillRule="evenodd" d="M 4.67 7.68C 4.45 7.89 4.16 8 3.87 8 3.59 8 3.3 7.89 3.08 7.68 3.08 7.68 0.33 5.04 0.33 5.04 0.1 4.82-0 4.52 0.01 4.23 0.02 3.96 0.12 3.7 0.33 3.5 0.54 3.3 0.81 3.2 1.08 3.19 1.38 3.18 1.69 3.28 1.92 3.5 1.92 3.5 3.87 5.37 3.87 5.37 3.87 5.37 7.08 0.32 7.08 0.32 7.31 0.09 7.62-0 7.92 0.01 8.19 0.02 8.46 0.12 8.67 0.32 8.88 0.52 8.98 0.78 8.99 1.05 9 1.34 8.9 1.64 8.67 1.86 8.67 1.86 4.67 7.68 4.67 7.68Z"/></svg>
+                                                 </div>
+                                                 <div class="col-xs-15 pl0">
+                                                     <div class="info">5.04.2016 в 18:49 <div class="close-notification pull-right"><img src="../images/ico/close-notification.svg" alt=""></div></div>
+                                                     <p>Новые олимпиады «Проверь себя» <a href="#"> уже доступны</a></p>
+                                                 </div>
+                                             </div>
+                                             <div class="item row">
+                                                 <div class="col-xs-1 pl0">
+                                                     <svg width="9px" height="8px" viewBox="0 0 9 8"><path fillRule="evenodd" d="M 4.67 7.68C 4.45 7.89 4.16 8 3.87 8 3.59 8 3.3 7.89 3.08 7.68 3.08 7.68 0.33 5.04 0.33 5.04 0.1 4.82-0 4.52 0.01 4.23 0.02 3.96 0.12 3.7 0.33 3.5 0.54 3.3 0.81 3.2 1.08 3.19 1.38 3.18 1.69 3.28 1.92 3.5 1.92 3.5 3.87 5.37 3.87 5.37 3.87 5.37 7.08 0.32 7.08 0.32 7.31 0.09 7.62-0 7.92 0.01 8.19 0.02 8.46 0.12 8.67 0.32 8.88 0.52 8.98 0.78 8.99 1.05 9 1.34 8.9 1.64 8.67 1.86 8.67 1.86 4.67 7.68 4.67 7.68Z"/></svg>
+                                                 </div>
+                                                 <div class="col-xs-15 pl0">
+                                                     <div class="info">5.04.2016 в 18:49 <div class="close-notification pull-right"><img src="../images/ico/close-notification.svg" alt=""></div></div>
+                                                     <p>Новые олимпиады «Проверь себя» <a href="#"> уже доступны</a></p>
+                                                 </div>
+                                             </div>
+                                             <div class="item row">
+                                                 <div class="col-xs-1 pl0">
+                                                     <svg width="9px" height="8px" viewBox="0 0 9 8"><path fillRule="evenodd" d="M 4.67 7.68C 4.45 7.89 4.16 8 3.87 8 3.59 8 3.3 7.89 3.08 7.68 3.08 7.68 0.33 5.04 0.33 5.04 0.1 4.82-0 4.52 0.01 4.23 0.02 3.96 0.12 3.7 0.33 3.5 0.54 3.3 0.81 3.2 1.08 3.19 1.38 3.18 1.69 3.28 1.92 3.5 1.92 3.5 3.87 5.37 3.87 5.37 3.87 5.37 7.08 0.32 7.08 0.32 7.31 0.09 7.62-0 7.92 0.01 8.19 0.02 8.46 0.12 8.67 0.32 8.88 0.52 8.98 0.78 8.99 1.05 9 1.34 8.9 1.64 8.67 1.86 8.67 1.86 4.67 7.68 4.67 7.68Z"/></svg>
+                                                 </div>
+                                                 <div class="col-xs-15 pl0">
+                                                     <div class="info">29.03.2016 в 10:05<div class="close-notification pull-right"><img src="../images/ico/close-notification.svg" alt=""></div></div>
+                                                     <p>Видеоуроки и тесты теперь можно <a href="#">скачать!</a> <br> В разы дешевле!</p>
+                                                 </div>
+                                             </div>
+                                             <div class="item more">Загрузить более ранние уведомления</div>
+                                         </div>
+                                 </div>
+                            </div>
+                             <div class="mail">
+                                 <img src="../images/ico/mail.svg" alt="">
+                             </div>
+                             <div class="avatar">
+                                 <div class="click">
+                                     <img src="../images/profile/1.png" alt="">
+                                     <img src="../images/ar_down.svg" alt="">
+                                 </div>
+                                 <div class="pop" id="user-menu">
+                                     <ul>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/1.svg" alt="">
+                                             </div>Моя страница</a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/tests.svg" alt="">
+                                             </div>Тесты <span>2</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/files.svg" alt="">
+                                             </div>Файлы <span>6</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/class.svg" alt="">
+                                             </div>Классы <span>9</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/students.svg" alt="">
+                                             </div>Ученики <span>2</span></a></li>
+                                     </ul>
+                                     <ul>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/bookmarks.svg" alt="">
+                                             </div>Подписки <span>2</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/basket.svg" alt="">
+                                             </div>Заказы <span>23</span></a></li>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/clipboard.svg" alt="">
+                                             </div>Заявки <span>2</span></a></li>
+                                     </ul>
+                                     <ul>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/gear.svg" alt="">
+                                             </div>Мой профиль</a></li>
+                                     </ul>
+                                     <ul>
+                                         <li><a href="#"><div class="ico-wrp">
+                                                 <img src="../images/ico/user/exit.svg" alt="">
+                                             </div>Выйти</a></li>
+                                     </ul
+                                 </div>
+                             </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="big_baner">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-16">
+                    <div class="wrp v-center">
+                        <div>
+                            <h3>Самые масштабные международные олимпиады для учителей и школьников</h3>
+                            <h6>Организатор: ООО «КОМПЭДУ», УНН 790867878, представитель в России ООО «Мультиурок», ИНН 6732109381, КПП 673201001</h6>
+                        </div>
+                        <ul>
+                            <li>
+                                <img src="../images/ico/1.svg" alt="">
+                                <p>Бесплатные наградные <span>материалы</span></p>
+                            </li>
+                            <li>
+                                <img src="../images/ico/adv_gift.svg" alt="">
+                                <p>Полезные подарки <span>учителям и учащимся</span></p>
+                            </li>
+                            <li>
+                                <img src="../images/ico/adv_tasks.svg" alt="">
+                                <p>Интересные задания <span>по всем предметам</span></p>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <img src="../images/ico/adv_enter.svg" alt="">
+                                <p>Самостоятельный ввод ответов <span>и получение результатов учениками</span></p>
+                            </li>
+                            <li>
+                                <img src="../images/ico/adv_errors.svg" alt="">
+                                <p>Просмотр ошибок и решений <span>по окончании</span></p>
+                            </li>
+                            <li>
+                                <img class="slozhnuy_sluchai" src="../images/ico/plus.svg" alt="">
+                                <p><span>Занимательные викторины</span></p>
+                            </li>
+                        </ul>
+                        <img src="../images/baner-olimp/img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="main" class="olindex">
+        <div id="blog">
+            <div class="container">
+                <div class="row mb70" id="olimp">
+                    <aside class="col-lg-3 col-md-4" id="left">
+                        <div class="wrp">
+                            <a href="#"><span><img src="../images/olimp/ico/home.svg" alt=""></span>Главная</a>
+                            <a href="#"><span><img src="../images/olimp/ico/add_request.svg" alt=""></span>Подать заявку</a>
+                            <a class="active" href="#"><span><img src="../images/olimp/ico/requests.svg" alt=""></span>Мои заявки</a>
+                            <a href="#"><span><img src="../images/olimp/ico/results.svg" alt=""></span>Результаты и награды</a>
+                            <a href="#"><span><img src="../images/olimp/ico/arhiv.svg" alt=""></span>Архив мероприятий</a>
+                        </div>
+                        <div class="wrp rating l_nav">
+                            <div class="hamb_left mb"><svg width="13px" height="21px" viewBox="0 0 9 16"><path fillRule="evenodd" d="M 9.01 8C 9.01 8 1.93 15.63 1.93 15.63 1.49 16.11 0.77 16.11 0.33 15.63-0.12 15.15-0.12 14.38 0.33 13.9 0.33 13.9 5.8 8 5.8 8 5.8 8 0.33 2.09 0.33 2.09-0.12 1.61-0.12 0.84 0.33 0.36 0.77-0.12 1.49-0.12 1.93 0.36 1.93 0.36 9.01 8 9.01 8Z"></svg></div>
+                            <a href="#nav_1"><span><img src="../images/ico/star.svg" alt=""></span>О мероприятии</a>
+                            <a href="#nav_2"><span><img src="../images/ico/gray-gift.svg" alt=""></span>Выгоды учителям</a>
+                            <a href="#nav_3"><span><img src="../images/ico/honor.svg" alt=""></span>Подарки ученикам</a>
+                            <a href="#nav_4"><span><img src="../images/ico/interesting.svg" alt=""></span>Интересные задания</a>
+                            <a href="#nav_5"><span><img src="../images/ico/comfort.svg" alt=""></span>Удобное участие</a>
+                            <a href="#nav_6"><span><img src="../images/ico/reviews.svg" alt=""></span>Отзывы</a>
+                            <a href="#nav_7"><span><img src="../images/ico/faq.svg" alt=""></span>Ответы на вопросы</a>
+                            <a href="#nav_8"><span><img src="../images/ico/fac.svg" alt=""></span>Зачем участвовать</a>
+                            <a href="#" class="btn yellow">Подать заявку</a>
+                        </div>
+                    </aside>
+                    <div class="col-lg-9 col-md-12 req" id="center">
+                        <div class="wrp">
+                            <div class="b_flag">
+                                <p>Участие <span>30</span> рублей</p>
+                                <h6>до 10.09!</h6>
+                            </div>
+                            <div class="nav_1">
+                                <h1>Олимпиады «Октябрь 2016»</h1>
+                                <div class="b_iwant">
+                                    <img src="../images/olindex/teacher.png" alt="">
+                                    <ul>
+                                        <h2>Учителям</h2>
+                                        <li>250 комплектов видеоуроков</li>
+                                        <li>500 сертификатов на олимпиады</li>
+                                        <li>1000 купонов на вебинары </li>
+                                        <li>Компенсация расходов и скидки</li>
+                                        <li>Бесплатные благодарности и свидетельства</li>
+                                    </ul>
+                                    <img src="../images/olindex/student.png" alt="">
+                                    <ul>
+                                        <h2>Ученикам</h2>
+                                        <li>Дипломы с личным фото и свидетельства</li>
+                                        <li>Благодарность родителям</li>
+                                        <li>Видеокурс по шахматам</li>
+                                        <li>Дополнительные интересные подарки</li>
+                                    </ul>
+                                </div>
+                                <div class="btn_wrp">
+                                    <div class="btn green big">Хочу участвовать</div>
+                                </div>
+                                <p>Лето, как всегда, пролетело очень быстро, и мы спешим поздравить вас с началом нового учебного года. Впереди у ребят - непростая дорога к знаниям,  да и учителей ждет напряженная работа. Но несмотря на все трудности, пусть этот учебный год запомнится вам и вашим ученикам новыми победами, открытиями и достижениями!</p>
+                                <p>Новая серия олимпиад «Октябрь 2016» от проекта «Видеоуроки в Интернет» — это прекрасная возможность для учителей проверить готовность учащихся к новому учебному году, а самим ученикам - вспомнить изученный ранее материал.</p>
+                                <p><strong>Организационный взнос:</strong> <span class="red trg">80 рублей</span> <strong class="green">70 рублей</strong> с одного участника до 19 августа.</p>
+                                <p>Активные учителя и участники прошлых олимпиад поощряются дополнительными скидками, сведения о которых появляются в информационной панели личного кабинета.</p>
+                                <div class="b_order full">
+                                    <h2>Порядок проведения</h2>
+                                    <div class="b_order_flex">
+                                        <div>
+                                            <img src="../images/ico/st1.svg" alt="">
+                                            <h3>С 23 августа <br>по 26 октября</h3>
+                                            <p>регистрация, <br>подача заявок</p>
+                                        </div>
+                                        <div>
+                                            <img src="../images/ico/st2.svg" alt="">
+                                            <h3>С 12 по 26 октября</h3>
+                                            <p>получение заданий, проведение мероприятия, внесение ответов</p>
+                                        </div>
+                                        <div>
+                                            <img src="../images/ico/st3.svg" alt="">
+                                            <h3>27 октября</h3>
+                                            <p>публикация результатов, выдача наградных материалов</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b_predmets">
+                                    <h2>Предметы и классы</h2>
+                                    <div class="b_predmets_flex">
+                                        <div>
+                                            <p><span><img src="../images/ico/predmets/teh.svg" alt=""></span>Технология<span> 1-4 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/math.svg" alt=""></span>Математика<span> 1-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/info.svg" alt=""></span>Информатика<span> 1-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/him.svg" alt=""></span>Химия<span> 7-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/phys.svg" alt=""></span>Физика<span> 7-11 классы</span> </p>
+                                            <p><span><img src="../images/ico/predmets/pero.svg" alt=""></span>Русский язык<span> 7-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/liter.svg" alt=""></span>Русская литература<span> 5-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/eng.svg" alt=""></span>Английский язык<span> 2-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/deutsch.svg" alt=""></span>Немецкий язык<span> 2-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/history.svg" alt=""></span>История<span> 5-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/bio.svg" alt=""></span>Биология<span> 6-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/global.svg" alt=""></span>Обществознание<span> 6-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/geo.svg" alt=""></span>География<span> 5-11 классы</span></p>
+                                        </div>
+                                        <div>
+                                            <p><span><img src="../images/ico/predmets/zozh.svg" alt=""></span>ЗОЖ<span> 1-4 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/obj.svg" alt=""></span>ОБЖ<span> 5-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/tech.svg" alt=""></span>Технология (девочки)<span> 5-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/music.svg" alt=""></span>Музыка<span> 1-4 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/mhk.svg" alt=""></span>МХК<span> 5-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/iso.svg" alt=""></span>ИЗО<span> 1-6 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/fiz.svg" alt=""></span>Физическая культура<span> 1-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/world.svg" alt=""></span>Окружающий мир<span> 1-4 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/read.svg" alt=""></span>Литературное чтение<span> 1-4 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/french.svg" alt=""></span>Французский язык<span> 2-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/teh_boys.svg" alt=""></span>Технология (мальчики)<span> 5-11 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/correction.svg" alt=""></span>Математика<span> корр. школа, 1-4 классы</span></p>
+                                            <p><span><img src="../images/ico/predmets/vic.svg" alt=""></span>Викторины<span> 1-11 классы</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="b_vic">
+                                    <h2>Викторина «Осенние праздники и события России»</h2>
+                                    <div class="h-center">
+                                        <img src="../images/olindex/okt2016_viktorina.png" alt="">
+                                    </div>
+                                    <p>Министерство образования и науки Российской Федерации рекомендует в 2016/2017 учебном году включить в программы воспитания и социализации проведение мероприятий, посвящённых государственным праздникам Российской Федерации, памятным датам и событиям российской истории и культуры.</p>
+                                    <p>Викторина “Осенние праздники и события в России” поможет детям вспомнить хорошо известные праздничные даты (День учителя, День матери, День народного единства), а также познакомит с другими интересными праздниками: Всемирный день туризма, Международный день школьных библиотек, Всемирный день прав ребенка и мн. др.</p>
+                                    <p>Принять участие в викторине смогут все желающие с 1 по 11 класс. Задания представлены в увлекательной форме (кроссворды, ребусы, примеры, криптограммы, лабиринты) и красочно иллюстрированы.</p>
+                                </div>
+                                <div class="b_info">
+                                    <h2>Информация о проведении мероприятия</h2>
+                                    <p>Для участия в серии международных олимпиад «Октябрь 2016» вам нужно подать заявку в личном кабинете не позже срока окончания приема заявок и оплатить её.</p>
+                                    <p>Уже 12 октября во всех оплаченных заявках у вас появится возможность скачать задания олимпиад и внести ответы учащихся.</p>
+                                    <p>Вам нужно самостоятельно распечатать задания, раздать их учащимся, провести олимпиады в любое удобное для вас время с 12 по 26 октября и обязательно внести ответы до 26 октября для каждой оплаченной заявки.</p>
+                                    <p>Обратите внимание на то, что вы можете использовать раздачу паролей ученикам для самостоятельного ввода ими ответов и просмотра результатов, ошибок и решений.</p>
+                                    <p>В ближайшие 24 часа после окончания олимпиад, уже 27 октября, вы узнаете все результаты, а так же получите свои дипломы, свидетельства, благодарности и сертификаты.</p>
+                                </div>
+                            </div>
+                            <div class="nav_2">
+                                <div class="b_categ full" id="nav_2">
+                                    <img src="../images/olindex/women.png" alt="">
+                                    <h2>Выгоды учителям</h2>
+                                </div>
+                                <div class="b_comp">
+                                    <h2>Комплекты видеоуроков, сертификаты на олимпиады и купоны на вебинары</h2>
+                                    <p>По итогам мероприятия будет составлен рейтинг ТОП-1000 активных учителей или координаторов. Это учителя, которые привлекли к участию наибольшее количество учеников.</p>
+                                    <div class="h-center">
+                                        <img class="img-baner" src="../images/olindex/okt2016_teachers_gifts.png" alt="">
+                                    </div>
+                                    <p>1. Учителя, занявшие места с 1 по 250, смогут выбрать в подарок любой комплект с видеоуроками в электронном виде.</p>
+                                    <p>2. Учителя, занявшие места с 1 по 500, станут обладателями сертификатов на 5 бесплатных участников в следующей серии олимпиад.</p>
+                                    <p>3. Все учителя, попавшие в рейтинг ТОП-1000, получат купон на участие в вебинаре для учителей и свидетельство об участии в нём.</p>
+                                    <div class="h-center"><img src="../images/olindex/okt2016_teachers_gifts2.png" alt="" class="img-baner"></div>
+                                    <p>Как показали итоги прошлых мероприятий, чтобы попасть в ТОП-1 000 активных учителей, достаточно привлечь к участию примерно 15 учеников. В данном мероприятии это число может отличаться как в меньшую, так и в большую сторону в зависимости от активности учителей.</p>
+                                </div>
+                                <div class="b_baner_col c_right">
+                                    <div>
+                                        <h2>Компенсация расходов до 40%! Чем раньше подаете заявку, тем больше скидка!</h2>
+                                        <p>Чтобы сократить финансовые издержки на организацию олимпиад, мы компенсируем постоянным участникам до 40% расходов на распечатку заданий и наградных материалов, комиссию в банке и т.д. Размер компенсации может изменяться в зависимости от времени подачи заявки: чем раньше вы её подаете, тем больше скидка.</p>
+                                    </div>
+                                    <img src="../images/olindex/sq-baners/1.png" alt="">
+                                </div>
+                                <div class="b_baner_col c_left">
+                                    <img src="../images/olindex/sq-baners/2.png" alt="">
+                                    <div>
+                                        <h2>Бесплатные благодарности и свидетельства</h2>
+                                        <p>Все учителя и координаторы получат благодарности БЕСПЛАТНО за помощь в организации участия в мероприятии (в электронном виде).</p>
+                                        <p>Если же ваши ученики получат дипломы I, II или III степени, то вы как их учитель получите свидетельство о подготовке победителя (призёра) олимпиад по своему предмету.</p>
+                                    </div>
+                                </div>
+                                <div class="b_baner_col c_right">
+                                    <div>
+                                        <h2>Благодарственное письмо администрации школы</h2>
+                                        <p>Мы также подготовили благодарственные письма для администрации школы.</p>
+                                        <p>Школу не зря называют вторым домом: именно там дети проводят большую часть дня, учатся и общаются, занимаются творчеством и спортом и, конечно, добиваются успехов. Поэтому по итогам серии олимпиад «Октябрь 2016» мы хотим отметить благодарственными письмами тех, кто ведет ребят к этим победам, — педагогов и администрацию учебных заведений.</p>
+                                    </div>
+                                    <img src="../images/olindex/sq-baners/3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="nav_3">
+                                <div class="b_categ full" id="nav_3">
+                                    <img src="../images/olindex/man.png" alt="">
+                                    <h2>Подарки ученикам</h2>
+                                </div>
+                                <div class="b_baner_col c_right">
+                                    <div>
+                                        <h2>Все ученики получат дипломы и сертификаты в соответствии с занятыми местами в олимпиаде</h2>
+                                        <p>Каждое задание олимпиады имеет свою оценку (балл) в зависимости от сложности. Дипломы присваиваются по количеству набранных баллов следующим образом:</p>
+                                        <ul>
+                                            <li>более 95% от общего количества баллов — диплом I степени;</li>
+                                            <li>более 85%, но менее 95% — диплом II степени;</li>
+                                            <li>более 70%, но менее 85% — диплом III степени;</li>
+                                        </ul>
+                                        <p>Все, кто наберет меньше 70%, получат сертификат участника олимпиад. Наградные материалы выдаются в электронном виде в личном кабинете учителя или координатора.</p>
+                                    </div>
+                                    <img src="../images/olindex/sq-baners/4.png" alt="">
+                                </div>
+                                <div class="b_baner_col c_left">
+                                    <img src="../images/olindex/sq-baners/5.png" alt="">
+                                    <div>
+                                        <h2>Благодарность родителям</h2>
+                                        <p>Наравне с учителями огромный вклад в образование и воспитание детей вносят их родители. Они разделяют с ребенком все школьные успехи и неудачи, придают уверенности в себе, дарят заботу и поддержку. Поэтому родители всех участников олимпиад получат благодарность от проекта videouroki.net.</p>
+                                    </div>
+                                </div>
+                                <div class="b_baner_col c_right">
+                                    <div>
+                                        <h2>Все участники получат возможность обучиться игре в шахматы!</h2>
+                                        <p>Всех участников ждёт полный комплект видеоуроков по обучению игре в шахматы в электронном виде. Это игра, в которую можно играть в любом возрасте. Но, конечно, детям особенно полезно учиться играть в шахматы, поскольку это развивает логику и широту мышления. Все 20 видеоуроков будут доступны вам совершенно бесплатно! Отличное и полезное занятие в любое время года!</p>
+                                    </div>
+                                    <img src="../images/olindex/sq-baners/6.png" alt="">
+                                </div>
+                                <div class="b_bonus full">
+                                    <h2>Дополнительные подарки, которые каждый участник сможет распечатать по своему желанию</h2>
+                                    <p>Прикладное творчество — любимое занятие многих детей, поэтому им наверняка понравятся красивые заготовки для интересных поделок.</p>
+                                    <p>Эти подарки вы найдете в вашем личном кабинете в разделе «Результаты и награды». А ученики смогут скачать их, перейдя по своим личным ссылкам.</p>
+                                    <p>На этот раз учитель может распечатать их по своему желанию, потому что об этих подарках не рассказывается в рекламной листовке, и каждый ученик вместе со своими родителями сможет зайти по выданной ссылке, скачать их и распечатать самостоятельно.</p>
+                                    <h3>Медали победителям и призёрам</h3>
+                                    <div class="h-center"><img src="../images/olindex/okt2016_medal.png" alt="" class="img-baner"></div>
+                                    <p>Каждому победителю и призеру будет приятно получить медаль, напоминающую о достигнутых успехах в учебе. Вы можете вручить награды ученикам на торжественной линейке или внеклассном мероприятии в присутствии родителей.</p>
+                                    <h3>Настольная игра для победителей и призеров «Вокруг света»</h3>
+                                    <div class="h-center"><img src="../images/olindex/okt2016_boardgame.png" alt="" class="img-baner"></div>
+                                    <p>Настольные игры появились чуть ли не раньше самих столов — еще 4 000 лет назад! И они по-прежнему очень популярны. Сейчас в продаже можно встретить игры самой разной тематики, но, как правило, их стоимость довольно высока. Теперь у ваших учеников есть отличная возможность получить интересную настольную игру в подарок. Она поможет весело провести время, не выходя из дома. Участники игры смогут не только общаться друг с другом, но и развивать логику, мышление и внимательность.</p>
+                                    <h3>Планнер всем участникам олимпиад</h3>
+                                    <div class="h-center"><img src="../images/olindex/okt2016_planer.png" alt="" class="img-baner"></div>
+                                    <p>Чтобы стать успешным человеком, необходимо еще со школьных лет развивать деловые качества. В этом ученикам поможет планнер — простой и удобный бланк-календарь для планирования дел. Благодаря ему отметки о важных событиях и встречах всегда будут перед глазами. Планнер - лучший помощник в борьбе с забывчивостью!</p>
+                                    <h3>Линейка с расписанием уроков и звонков всем участникам</h3>
+                                    <div class="h-center"><img src="../images/olindex/okt2016_schedule.png" alt="" class="img-baner"></div>
+                                    <p>Полезный предмет в арсенале любого школьника: расписание уроков и звонков всегда будет на виду, и не придется лишний раз открывать дневник.</p>
+                                </div>
+                            </div>
+                            <div class="nav_4">
+                                <div class="b_intr" id="nav_4">
+                                    <h2 class="h1">Интересные и доступные задания по всем предметам</h2>
+                                    <p>Задания в наших олимпиадах разрабатываются так, чтобы заинтересовать и увлечь любого ученика. Ведь, независимо от возраста и оценок в дневнике, все ребята любят красивые иллюстрации и разнообразные упражнения. Поэтому скучать им точно не придется! Их ждут различные загадки, ребусы, лабиринты, кроссворды, криптограммы — словом, все то, что дети с удовольствием выполняют, играя в квесты на компьютере.</p>
+                                    <h2>Примеры наших заданий</h2>
+                                    <div class="slider-wrp sl-1">
+                                        <div class="slider">
+                                            <div>
+                                                <img src="../images/olindex/slider/1.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="../images/olindex/slider/2.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="../images/olindex/slider/3.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="../images/olindex/slider/4.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="../images/olindex/slider/5.png" alt="">
+                                            </div>
+                                            <div>
+                                                <img src="../images/olindex/slider/6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="arrow sl-prev">
+                                                <svg width="13px" height="21px" viewBox="0 0 9 16"><path fillRule="evenodd" d="M-0.01 8C-0.01 8 7.05 0.37 7.05 0.37 7.49-0.11 8.21-0.11 8.65 0.37 9.09 0.84 9.09 1.62 8.65 2.1 8.65 2.1 3.19 8 3.19 8 3.19 8 8.65 13.91 8.65 13.91 9.09 14.38 9.09 15.16 8.65 15.64 8.21 16.12 7.49 16.12 7.05 15.64 7.05 15.64-0.01 8-0.01 8Z"/></svg>
+                                        </div>
+                                        <div class="arrow sl-next">
+                                                <svg width="13px" height="21px" viewBox="0 0 9 16"><path class="arrow" fillRule="evenodd" d="M 9.01 8C 9.01 8 1.93 15.63 1.93 15.63 1.49 16.11 0.77 16.11 0.33 15.63-0.12 15.15-0.12 14.38 0.33 13.9 0.33 13.9 5.8 8 5.8 8 5.8 8 0.33 2.09 0.33 2.09-0.12 1.61-0.12 0.84 0.33 0.36 0.77-0.12 1.49-0.12 1.93 0.36 1.93 0.36 9.01 8 9.01 8Z"></svg>
+                                        </div>
+                                    </div>
+                                    <p>Важно отметить, что мы предлагаем задания для учеников разной степени подготовки. Поэтому даже слабые ученики имеют шансы решить часть заданий, участвуя в наших олимпиадах. Ну а для сильных мы подготовили более серьёзные задачи, для решения которых нужно приложить усилия.</p>
+                                    <p class="primer_links">В олимпиадах представлены задания трёх видов. Это <span class="brdr">одиночный</span> выбор, <span class="brdr">множественный</span> выбор и указание ответа <span class="brdr">в виде строки</span> (например, указать ответ решенной задачи или ввести полученный термин при разгадывании кроссворда).</p>
+                                </div>
+                                <div class="b_primer x1 v-center">
+                                    <img src="../images/olindex/exp/1.png" alt="">
+                                    <img src="../images/olindex/exp/2.png" alt="">
+                                    <img src="../images/olindex/exp/3.png" alt="">
+                                </div>
+                                <p>Теперь ваши ученики смогут убедиться, что учеба может быть по-настоящему интересной! Как и в известных телевикторинах, вначале предлагаются несложные вопросы, а затем для поиска правильного ответа придется задействовать и логику, и память, и внимание, и нестандартное мышление.</p>
+                            </div>
+                            <div class="nav_5">
+                                <div class="b_intr" id="nav_5">
+                                    <h2 class="h1">Простое, удобное и комфортное участие</h2>
+                                    <p>Каждый учитель, родитель или ученик может легко принять участие в этом мероприятии. Для этого достаточно пройти простую процедуру регистрации на сайте и заполнить в профиле данные, необходимые для получения наградных материалов.</h2>
+                                    <div class="h-center">
+                                            <img class="img-baner" src="../images/olindex/baner.png" alt="">
+                                    </div>
+                                    <p>Нажимаем ссылку «Регистрация» или кнопку «Подать заявку». </p>
+                                    <p>Вводим свой имейл и любой придуманный пароль, который позже нужен будет для входа, и нажимаем «Зарегистрироваться».</p>
+                                    <p>Далее переходим в профиль и указываем данные, которые будут необходимы для получения наградных материалов, квитанций и дополнительных подарков. </p>
+                                    <p>После этого вы можете подать заявки на участие.</p>
+                                </div>
+                                <h2>Удобная и быстрая подача заявки</h2>
+                                <div class="b_primer v-center">
+                                    <div>
+                                        <img src="../images/olindex/steps/1.png" alt="">
+                                        <p>1. Нажимаем кнопку «Подать заявку».</p>
+                                    </div>
+                                    <div>
+                                        <img src="../images/olindex/steps/2.png" alt="">
+                                        <p>2. Выбираем предмет и мероприятие.</p>
+                                    </div>
+                                    <div>
+                                        <img src="../images/olindex/steps/3.png" alt="">
+                                        <p>3. Указываем количество участников и нажимаем кнопку «Подать заявку».</p>
+                                    </div>
+                                </div>
+                                <h2>Комфортная работа с заявками</h2>
+                                <p>После подачи заявок они отобразятся у вас в разделе “Мои заявки” личного кабинета, и вы сможете легко и просто работать с ними. Вы сможете выбирать и совершать различные действия с выбранными заявками, изменять в них данные.</p>
+                                <p>Например, если вы координатор, а олимпиаду проводит другой учитель, то вы сможете изменить ФИО учителя и учреждение образования для наградных материалов.</p>
+                                <p>Вы также можете оплачивать заявки отдельно или сразу несколько одним платежом.</p>
+                                <div class="h-center"><img src="../images/olindex/req1.png" alt="" class="img-baner"></div>
+                                <p>Все действия по получению заданий, результатов и вводу ответов будут отображаться в правой стороне каждой оплаченной заявки.</p>
+                                <div class="h-center"><img src="../images/olindex/req2.png" alt="" class="img-baner"></div>
+                                <h2>Самостоятельный ввод ответов учениками</h2>
+                                <p>Не обязательный, но очень удобный пункт для каждого учителя и ученика. Вы можете самостоятельно добавить всех учащихся и их ответы в заявке.  Но у вас  также есть возможность раздать своим ученикам данные для доступа на страницу ввода ответов (ссылку и пароль). Для этого вам нужно распечатать одну страничку со списком учеников и их доступами и раздать каждому ученику его данные.</p>
+                                <div class="h-center"><img src="../images/olindex/vvod.png" alt="" class="img-baner"></div>
+                                <p>Ученики смогут однократно ввести все свои ответы самостоятельно или при помощи родителей. Если вдруг они допустили  при вводе техническую ошибку, то учитель в своем личном кабинете может это исправить.</p>
+                                <p>Здесь же по окончании мероприятия они смогут самостоятельно получить все свои награды, посмотреть ошибки и разборы правильных решений.</p>
+                                <h2>Просмотр результатов, ошибок и решений по окончании</h2>
+                                <div class="h-center"><img src="../images/olindex/prosmotr.png" alt="" class="img-baner"></div>
+                                <p>В наших олимпиадах  полноценно проводится работа над ошибками.</p>
+                                <p>Каждый участник может посмотреть результаты выполнения своей работы с указанием ошибок и правильных ответов.</p>
+                                <div class="h-center"><img src="../images/olindex/test.png" alt="" class="img-baner"></div>
+                                <p>Обратите внимание на то, что мы показываем даже частично правильные ответы. В этом примере ученик выбрал пункты «б» и «в». Пункт «б» оказался неправильным ответом (выделено красным), а «в» — правильным (выделено зеленым). Но в общем ответ не засчитан.</p>
+                                <p>Более того, многие задачи даются с подробными решениями, которые можно посмотреть после публикации итогов.</p>
+                                <div class="h-center"><img src="../images/olindex/answ.png" alt="" class="img-baner"></div>
+                                <p>Для получения решений перейдите по ссылке "Ответы и решения к мероприятию...". У вас скачается документ с ответами, а также решениями к тем заданиям, которые этого требуют.</p>
+                                <p>А ученики вместе с родителями, если вы им выдали пароль доступа к самостоятельному вводу ответов, с этими же данными смогут зайти и посмотреть все это самостоятельно, в том числе скачать наградные материалы и разборы всех решений.</p>
+                                <h2>Интересные рейтинги и сравнения</h2>
+                                <div class="h-center"><img src="../images/olindex/rate.png" alt="" class="img-baner"></div>
+                                <p>Каждый участник будет знать, сколько баллов он набрал, какой процент заданий он выполнил, какое место он получил среди учеников в одной заявке и среди всех участников вообще в этой олимпиаде. Эта информация будет отображаться в результатах мероприятия в итоговой таблице каждой заявки.</p>
+                            </div>
+                            <div class="b_otz full nav_6">
+                                <h2 class="h1" id="nav_6">Отзывы</h2>
+                                <p>Десятки тысяч учителей и сотни тысяч учеников уже принимали участие в наших мероприятиях и рассказали о своих впечатлениях.</p>
+                                <h2>Более 1 000 отзывов на нашем сайте</h2>
+                                <div class="slider-wrp sl-2">
+                                    <div class="slider-2">
+                                        <div class="sl_item">
+                                            <p>Выражаю искреннюю благодарность организаторам мероприятия за оперативность, интересные задания. Мои ребята хотят и в дальнейшем принимать участие в таких олимпиадах и я тоже надеюсь на сотрудничество с вашей командой. В следующий раз привлеку к участию и других учителей-предметников. Я рада, что первое участие моих ребят в международной олимпиаде прошла успешно. Желаю вашей команде удачи во всем!</p>
+                                            <div class="v-center">
+                                                <img src="../images/profile/2.png" alt="">
+                                                <p>Наумова Светлана Григорьевна<span>Муниципальное бюджетное общеобразовательное учреждение Орловская средняя общеобразовательная школа №2</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="sl_item">
+                                            <p>Выражаю искреннюю благодарность организаторам мероприятия за оперативность, интересные задания. Мои ребята хотят и в дальнейшем принимать участие в таких олимпиадах и я тоже надеюсь на сотрудничество с вашей командой. В следующий раз привлеку к участию и других утересные задания. Мои ребята хотят и в дальнейшем принимать участие в таких олимпиадах и я тоже надеюсь на сотрудничество с вашей командой. В следующий раз привлеку к участию и других учителей-предметников. Я рада, что первое участие моих ребят в международной олимпиаде прошла успешно. Желаю вашей команде удачи во всем!</p>
+                                            <div class="v-center">
+                                                <img src="../images/profile/2.png" alt="">
+                                                <p>Наумова Светлана Григорьевна<span>Муниципальное бюджетное общеобразовательное учреждение Орловская средняя общеобразовательная школа №2</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="arrow sl-prev">
+                                            <svg width="13px" height="21px" viewBox="0 0 9 16"><path fillRule="evenodd" d="M-0.01 8C-0.01 8 7.05 0.37 7.05 0.37 7.49-0.11 8.21-0.11 8.65 0.37 9.09 0.84 9.09 1.62 8.65 2.1 8.65 2.1 3.19 8 3.19 8 3.19 8 8.65 13.91 8.65 13.91 9.09 14.38 9.09 15.16 8.65 15.64 8.21 16.12 7.49 16.12 7.05 15.64 7.05 15.64-0.01 8-0.01 8Z"/></svg>
+                                    </div>
+                                    <div class="arrow sl-next">
+                                            <svg width="13px" height="21px" viewBox="0 0 9 16"><path class="arrow" fillRule="evenodd" d="M 9.01 8C 9.01 8 1.93 15.63 1.93 15.63 1.49 16.11 0.77 16.11 0.33 15.63-0.12 15.15-0.12 14.38 0.33 13.9 0.33 13.9 5.8 8 5.8 8 5.8 8 0.33 2.09 0.33 2.09-0.12 1.61-0.12 0.84 0.33 0.36 0.77-0.12 1.49-0.12 1.93 0.36 1.93 0.36 9.01 8 9.01 8Z"></svg>
+                                    </div>
+                                </div>
+                                <h2>Отзывы в интернете на сайтах школ и страницах учителей</h2>
+                                <p>Многие учителя уже принимали участие в олимпиадах проекта «Видеоуроки в Интернет» и с гордостью показывают свои достижения на страницах <strong>десятков  школьных и личных сайтов.</strong> Попробуйте сделать запрос "олимпиады videouroki.net" в <span class="red">Я</span>ндекс…</p>
+                                <p>Нам особенно нравится смотреть на довольные и счастливые лица детей с наградами! Это так здорово!</p>
+                                <div class="slider-wrp sl-4">
+                                        <div class="slider-4">
+                                            <div class="v-center b_img_col">
+                                                <img src="../images/olindex/students_photo2.png" alt="">
+                                                <img src="../images/olindex/students_photo1.png" alt="">
+                                            </div>
+                                            <div class="v-center b_img_col">
+                                                <img src="../images/olindex/students_photo2.png" alt="">
+                                                <img src="../images/olindex/students_photo1.png" alt="">
+                                            </div>
+                                            <div class="v-center b_img_col">
+                                                <img src="../images/olindex/students_photo2.png" alt="">
+                                                <img src="../images/olindex/students_photo1.png" alt="">
+                                            </div>
+                                        </div>
+                                    <div class="arrow sl-prev">
+                                            <svg width="13px" height="21px" viewBox="0 0 9 16"><path fillRule="evenodd" d="M-0.01 8C-0.01 8 7.05 0.37 7.05 0.37 7.49-0.11 8.21-0.11 8.65 0.37 9.09 0.84 9.09 1.62 8.65 2.1 8.65 2.1 3.19 8 3.19 8 3.19 8 8.65 13.91 8.65 13.91 9.09 14.38 9.09 15.16 8.65 15.64 8.21 16.12 7.49 16.12 7.05 15.64 7.05 15.64-0.01 8-0.01 8Z"/></svg>
+                                    </div>
+                                    <div class="arrow sl-next">
+                                            <svg width="13px" height="21px" viewBox="0 0 9 16"><path class="arrow" fillRule="evenodd" d="M 9.01 8C 9.01 8 1.93 15.63 1.93 15.63 1.49 16.11 0.77 16.11 0.33 15.63-0.12 15.15-0.12 14.38 0.33 13.9 0.33 13.9 5.8 8 5.8 8 5.8 8 0.33 2.09 0.33 2.09-0.12 1.61-0.12 0.84 0.33 0.36 0.77-0.12 1.49-0.12 1.93 0.36 1.93 0.36 9.01 8 9.01 8Z"></svg>
+                                    </div>
+                                </div>
+                                <h2>Видеоотзывы от учителей, координаторов и участников олимпиад</h2>
+                                <div class="slider-wrp sl-3">
+                                    <div class="slider-3">
+                                        <iframe width="100%" height="140" src="https://www.youtube.com/embed/zZniIug9Qrc" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="100%" height="140" src="https://www.youtube.com/embed/zZniIug9Qrc" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="100%" height="140" src="https://www.youtube.com/embed/zZniIug9Qrc" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="100%" height="140" src="https://www.youtube.com/embed/zZniIug9Qrc" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="100%" height="140" src="https://www.youtube.com/embed/zZniIug9Qrc" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="100%" height="140" src="https://www.youtube.com/embed/zZniIug9Qrc" frameborder="0" allowfullscreen></iframe>
+                                        <iframe width="100%" height="140" src="https://www.youtube.com/embed/zZniIug9Qrc" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="arrow sl-prev">
+                                            <svg width="13px" height="21px" viewBox="0 0 9 16"><path fillRule="evenodd" d="M-0.01 8C-0.01 8 7.05 0.37 7.05 0.37 7.49-0.11 8.21-0.11 8.65 0.37 9.09 0.84 9.09 1.62 8.65 2.1 8.65 2.1 3.19 8 3.19 8 3.19 8 8.65 13.91 8.65 13.91 9.09 14.38 9.09 15.16 8.65 15.64 8.21 16.12 7.49 16.12 7.05 15.64 7.05 15.64-0.01 8-0.01 8Z"/></svg>
+                                    </div>
+                                    <div class="arrow sl-next">
+                                            <svg width="13px" height="21px" viewBox="0 0 9 16"><path class="arrow" fillRule="evenodd" d="M 9.01 8C 9.01 8 1.93 15.63 1.93 15.63 1.49 16.11 0.77 16.11 0.33 15.63-0.12 15.15-0.12 14.38 0.33 13.9 0.33 13.9 5.8 8 5.8 8 5.8 8 0.33 2.09 0.33 2.09-0.12 1.61-0.12 0.84 0.33 0.36 0.77-0.12 1.49-0.12 1.93 0.36 1.93 0.36 9.01 8 9.01 8Z"></svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b_q nav_7" id="nav_7">
+                                <h2 class="h1">Ответы на вопросы по участию в олимпиадах</h2>
+                                <h3 class="brdr">Как участвовать или как будет проходить олимпиада?</h3>
+                                <div><p>Кратко участие описано на этой странице. Поcмотрите <a href="#">информацию о мероприятии</a> и <a href="#">как участвовать</a> на этой странице.</p>
+                                <p>Если же у вас технические вопросы, то рекомендуем скачать вот эти инструкции: <a href="#">Скачать подробные инструкции по участию в олимпиадах VIDEOUROKI.NET</a></p></div>
+                                <h3 class="brdr">Что делать если я не могу попасть в личный кабинет?</h3>
+                                <div><p>Если вдруг вы забыли свой пароль для входа в личный кабинет, то всегда можете восстановить его. Для этого в окне входа нажмите ссылку “Вспомнить пароль” и введите имейл, на который вы регистрировались. Далее вам на почту придет письмо со ссылкой, пройдя по которой вы сможете заменить пароль и войти на сайт, используя новые данные.</p></div>
+                                <h3 class="brdr">Кто может принять участие в олимпиадах?</h3>
+                                <div><p>В международных олимпиадах имеют право участвовать школьники и учащиеся общеобразовательных учреждений, колледжей, средних специальных, профессионально-технических учреждений. Учителя, координаторы, преподаватели и родители помогают организовать участие в них.</p></div>
+                                <h3 class="brdr">Как оценивается работа участников и подводятся итоги?</h3>
+                                <div><p>Каждое задание олимпиады имеет свою оценку (балл) в зависимости от сложности. Ученик, который набрал более 95% от общего количества баллов, получит диплом I степени, если более 85%, но менее 95%, то диплом II степени, и если 70% или более, но менее 85%, то ученик получает диплом III степени. Все, кто наберет меньше 70%, получат сертификаты участника олимпиад. </p></div>
+                                <h3 class="brdr">Когда и где можно посмотреть результаты участия?</h3>
+                                <div><p>Подведение итогов и публикация результатов производится в день окончания мероприятия, который указан в положении, и доступно в разделе “Результаты и награды” личного кабинета. Именно там вы сможете посмотреть все результаты участия, скачать наградные материалы, посмотреть ошибки учеников и скачать ответы и разборы решений для каждой олимпиады, в которой принимали участие.</p></div>
+                                <h3 class="brdr">Как попасть в ТОП учителей, чтобы получить главные подарки?</h3>
+                                <div><p>Для этого достаточно, как показали итоги прошлых мероприятий, привлечь к участию примерно 15 учеников. В данном мероприятии это число может отличаться как в меньшую, так и в большую сторону в зависимости от активности учителей.</p></div>
+                                <h3 class="brdr">Как долго проходит оплата?</h3>
+                                <div><p>Если вы делаете оплату через электронную платежную систему, то она пройдет мгновенно, сразу после совершения операции. </p><p>Если же вы выбрали способ оплаты по квитанции, то обычно оплата проходит в течение 1-5 банковских дней (чаще всего 2-3 дня). </p><p>Если оплата не пройдет в указанные сроки, то вам будет предложено загрузить копию квитанции, по которой мы сможем отыскать ваш платеж и отметить заявки оплаченными. </p></div>
+                                <h3 class="brdr">Можно ли оплатить несколько заявок одним платежом?</h3>
+                                <div><p>Да, вы можете это сделать. </p><p>Выпишите необходимые вам заявки на разные параллели классов. Далее поставьте чекбоксы на все заявки, которые хотите оплатить, и в появившемся дополнительном блоке, где указано общее количество заявок и сумма, нажмите “Оплатить онлайн” или по квитанции. </p><p>Как только оплата пройдет (примерно 1-5 банковских дней), мы отметим все ваши оплаченные заявки, и вы сможете участвовать по ним во всех выбранных вами олимпиадах.</p></div>
+                                <h3 class="brdr">Можно ли исправить ошибочно введенные ответы ученика?</h3>
+                                <div><p>Вы можете редактировать ответы учащихся до публикации итогов олимпиад. </p></div>
+                                <h3 class="brdr">Что делать если ученик заболел и не смог принять участие в олимпиаде?</h3>
+                                <div><p>В этом случае у вас в течение ближайшего месяца после окончания олимпиад остается возможность ввести его ответы и получить все результаты и награды. Поэтому даже в этом случае ученик сможет принять полноценное участие в мероприятии.</p></div>
+                                <h3 class="brdr">Что делать если в наградных материалах ошибка в ФИО или названии УО?</h3>
+                                <div><p>Скорее всего эта ошибка была допущена вами при заполнении профиля или при подаче и редактировании заявки. Это легко поправить. </p>
+                                <ul>
+                                    <li>Если ошибка в вашем ФИО, то, скорее всего, она есть и в вашем профиле. Исправьте её там.</li>
+                                    <li>Если вы координатор и ошибка в ФИО учителя в отдельной заявке, то прямо в ней нажмите “Редактировать данные” и исправьте ошибку.</li>
+                                    <li>Если ошибка в ФИ ученика, то зайдите в этой заявке по ссылке “Внести ответы” и на открывшейся странице со списком участников исправьте ошибку.</li>
+                                    <li>Если ошибка в названии УО во всех заявках, то, скорее всего,  ошибка у вас в профиле, если в одной заявке, то отредактируйте заявку.</li>
+                                </ul>
+                                <p>После этих правок вы сможете заново скачать наградные материалы с исправленными ошибками. <span class="red">Внимание!</span> Есть ограничения на изменение данных после публикации итогов олимпиад, поэтому постарайтесь заранее проверить все введенные вами данные для получения корректных наградных материалов сразу. </p></div>
+                                <h3 class="brdr">Куда обратиться, если у меня остались вопросы?</h3>
+                                <div><p>Если у вас остались еще вопросы, то напишите нам письмо на имейл <a href="mailto:proekt@videouroki.net">proekt@videouroki.net</a> , и мы с радостью вам поможем. </p></div>
+                            </div>
+                            <div class="b_why nav_8">
+                                <h2 class="h1" id="nav_8">Почему стоит принять участие в этом мероприятии?</h2>
+                                <div class="why_col">
+                                    <div class="v-center">
+                                        <img src="../images/ico/g-gift.svg" alt="">
+                                        <div>
+                                            <h3>Приятные и полезные подарки.</h3>
+                                            <p>Активные учителя получат ценные призы и полезные материалы для своей работы, а ученики смогут получить интересные подарки, которые можно распечатать и сделать своими руками.</p>
+                                        </div>
+                                    </div>
+                                    <div class="v-center">
+                                        <img src="../images/ico/g_adv_tasks.svg" alt="">
+                                        <div>
+                                            <h3>Интересные задания олимпиад</h3>
+                                            <p>разработаны для учащихся разных возрастов и уровня знаний, красочно и оригинально оформлены. Поэтому их с удовольствием будут выполнять даже те ученики, которые скучают на обычных уроках или стесняются устно отвечать у доски.</p>
+                                        </div>
+                                    </div>
+                                    <div class="v-center">
+                                        <img src="../images/ico/g-vvod.svg" alt="">
+                                        <div>
+                                            <h3>Самостоятельный ввод ответов и получение результатов</h3>
+                                            <p>учениками или их родителями. Каждый координатор может раздать своим ученикам данные для ввода ответов и получения результатов. Это позволит учителю упростить проведение мероприятия, ученику — убедиться в объективности полученных результатов, а родителю — в честности проведения мероприятия и сбора организационного  взноса.</p>
+                                        </div>
+                                    </div>
+                                    <div class="v-center">
+                                        <img src="../images/ico/g_adv_errors.svg" alt="">
+                                        <div>
+                                            <h3>Просмотр ошибок и решений по окончании мероприятия.</h3>
+                                            <p>Каждый ученик вместе со своими родителями и учитель по окончании мероприятия смогут получить доступ к просмотру всех совершенных ошибок и правильному решению заданий, что позволит качественно провести работу над ошибками.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="why_col">
+                                    <div class="v-center">
+                                        <img src="../images/ico/g-like.svg" alt="">
+                                        <div>
+                                            <h3>Максимально простая организация.</h3>
+                                            <p>Весь процесс проведения мероприятия организован максимально удобно: просто подаете заявки, скачиваете задания, проводите олимпиаду, вносите ответы в своем личном кабинете и там же получаете результаты и награды.</p>
+                                        </div>
+                                    </div>
+                                    <div class="v-center">
+                                        <img src="../images/ico/moneta.svg" alt="">
+                                        <div>
+                                            <h3>Доступная стоимость, компенсация расходов и скидки</h3>
+                                            <p>постоянным участникам. Мы поощряем активных учителей и стараемся сделать для них наиболее приемлемые условия участия. Ведь мы уверены в качестве наших олимпиад, и самое главное для нас — это принести пользу как можно большему количеству участников.</p>
+                                        </div>
+                                    </div>
+                                    <div class="v-center">
+                                        <img src="../images/ico/adv_diploma.svg" alt="">
+                                        <div>
+                                            <h3>Бесплатные красивые наградные материалы</h3>
+                                            <p>получит каждый ученик, координатор и учитель. Красочные свидетельства, благодарности, сертификаты и дипломы обязательно пригодятся вам для украшения и увеличения ценности вашего портфолио. Ведь проект videouroki.net - один из самых популярных сайтов среди учителей в русскоязычном интернете.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b_doc">
+                                <h2 class="h1">Документы и инструкции</h2>
+                                <div class="instructions">
+                                    <p>
+                                        <a href="#"><img src="../images/ico/file/img.png" alt="">Листовка для демонстрации детям и родителям</a>
+                                    </p>
+                                    <p>
+                                        <a href="#"><img src="../images/ico/file/img.png" alt="">Листовка для демонстрации учителям</a>
+                                    </p>
+                                    <p>
+                                        <a href="#"><img src="../images/ico/file/zip.png" alt="">Положение о проведении серии олимпиад «Октябрь 2016»</a>
+                                    </p>
+                                    <p>
+                                        <a href="#"><img src="../images/ico/file/zip.png" alt="">Приказ о проведении серии олимпиад «Октябрь 2016»</a>
+                                    </p>
+                                    <p>
+                                        <a href="#"><img src="../images/ico/file/zip.png" alt="">Договор на оказание услуг по организации проведения олимпиад</a>
+                                    </p>
+                                    <p class="all">
+                                        <a href="#"><img src="../images/ico/file/doc.png" alt="">Инструкции по участию в олимпиадах videouroki.net</a>
+                                    </p>
+                                </div>
+                                <div class="btn_wrp">
+                                    <div class="btn green big">Хочу участвовать</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <aside class="col-lg-4 col-md-12 col-md-offset-4 col-lg-offset-0" id="right">
+                        <div class="wrp wanna">
+                            <h2>Хотите принять участие?</h2>
+                            <div class="v-center">
+                                <div class="circle">1</div>
+                                <p>Подайте заявку <span>до 26 октября</span></p>
+                            </div>
+                            <div class="v-center">
+                                <div class="circle">2</div>
+                                <p>Получите задания <span>c 12 октября</span></p>
+                            </div>
+                            <div class="v-center">
+                                <div class="circle">3</div>
+                                <p>Внесите ответы <span>до 26 октября</span></p>
+                            </div>
+                            <div class="v-center">
+                                <div class="circle">4</div>
+                                <p>Получите награды <span>до 27 октября</span></p>
+                            </div>
+                        </div>
+                        <div class="wrp list">
+                            <h2>Скачать листовки</h2>
+                            <div class="v-center">
+                                <a href="#">
+                                    <img src="../images/proversebya_listovka.png" alt="">
+                                    Для учеников
+                                </a>
+                                <a href="#">
+                                    <img src="../images/proversebya_listovka.png" alt="">
+                                    Для учителей
+                                </a>
+                            </div>
+                        </div>
+                        <div class="wrp instructions">
+                            <h2>Документы и инструкции</h2>
+                            <p>
+                                <a href="#"><img src="../images/ico/file/zip.png" alt="">Положение о проведении серии олимпиад «Октябрь 2016»</a>
+                            </p>
+                            <p>
+                                <a href="#"><img src="../images/ico/file/zip.png" alt="">Приказ о проведении серии олимпиад «Октябрь 2016»</a>
+                            </p>
+                            <p>
+                                <a href="#"><img src="../images/ico/file/zip.png" alt="">Договор на оказание услуг по организации проведения олимпиад</a>
+                            </p>
+                            <p class="all">
+                                <a href="#"><img src="../images/ico/file/doc.png" alt="">Инструкции по участию в олимпиадах videouroki.net</a>
+                            </p>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-16 col-sm-4 col-md-3">
+                    <p>© 2008–2016 ООО «КОМПЭДУ»</p>
+                    <div class="social">
+                        <a href="#">
+                            <svg width="32px" height="19px" viewBox="0 0 32 19"><path fillRule="evenodd" d="M 15.36 18.01C 15.36 18.01 17.24 18.01 17.24 18.01 17.24 18.01 17.81 17.94 18.1 17.64 18.36 17.37 18.35 16.85 18.35 16.85 18.35 16.85 18.32 14.41 19.49 14.05 20.64 13.7 22.12 16.4 23.69 17.45 24.87 18.23 25.77 18.06 25.77 18.06 25.77 18.06 29.97 18.01 29.97 18.01 29.97 18.01 32.16 17.87 31.12 16.21 31.03 16.07 30.51 14.97 28 12.72 25.37 10.35 25.72 10.74 28.89 6.65 30.82 4.16 31.59 2.65 31.35 2 31.12 1.38 29.7 1.54 29.7 1.54 29.7 1.54 24.98 1.57 24.98 1.57 24.98 1.57 24.63 1.52 24.37 1.67 24.12 1.82 23.95 2.16 23.95 2.16 23.95 2.16 23.21 4.09 22.21 5.72 20.11 9.18 19.27 9.36 18.92 9.15 18.12 8.65 18.32 7.14 18.32 6.07 18.32 2.72 18.85 1.32 17.3 0.96 16.79 0.84 16.41 0.76 15.1 0.75 13.41 0.73 11.99 0.76 11.18 1.14 10.64 1.39 10.23 1.96 10.48 1.99 10.79 2.03 11.5 2.18 11.88 2.67 12.36 3.31 12.34 4.74 12.34 4.74 12.34 4.74 12.62 8.68 11.69 9.17 11.06 9.5 10.18 8.82 8.31 5.68 7.35 4.08 6.62 2.3 6.62 2.3 6.62 2.3 6.48 1.97 6.23 1.8 5.93 1.58 5.51 1.51 5.51 1.51 5.51 1.51 1.02 1.54 1.02 1.54 1.02 1.54 0.35 1.56 0.1 1.84-0.12 2.09 0.08 2.62 0.08 2.62 0.08 2.62 3.6 10.57 7.57 14.57 11.22 18.25 15.36 18.01 15.36 18.01 15.36 18.01 15.36 18.01 15.36 18.01Z"/></svg></a>
+                        <a href="#">
+                            <svg width="26px" height="25px" viewBox="0 0 26 25"><path fillRule="evenodd" d="M 24.33-0C 24.33-0 1.96-0 1.96-0 1.19-0 0.57 0.62 0.57 1.38 0.57 1.38 0.57 23.62 0.57 23.62 0.57 24.38 1.19 25 1.96 25 1.96 25 14 25 14 25 14 25 14 15.32 14 15.32 14 15.32 10.72 15.32 10.72 15.32 10.72 15.32 10.72 11.54 10.72 11.54 10.72 11.54 14 11.54 14 11.54 14 11.54 14 8.76 14 8.76 14 5.53 15.98 3.77 18.88 3.77 20.27 3.77 21.46 3.88 21.81 3.92 21.81 3.92 21.81 7.3 21.81 7.3 21.81 7.3 19.8 7.3 19.8 7.3 18.22 7.3 17.92 8.04 17.92 9.13 17.92 9.13 17.92 11.54 17.92 11.54 17.92 11.54 21.68 11.54 21.68 11.54 21.68 11.54 21.19 15.32 21.19 15.32 21.19 15.32 17.92 15.32 17.92 15.32 17.92 15.32 17.92 25 17.92 25 17.92 25 24.33 25 24.33 25 25.09 25 25.71 24.38 25.71 23.62 25.71 23.62 25.71 1.38 25.71 1.38 25.71 0.62 25.09-0 24.33-0Z"/></svg>
+                        </a>
+                        <a href="#">
+                            <svg width="26px" height="19px" viewBox="0 0 26 19"><path fillRule="evenodd" d="M 25.75 14.46C 25.75 14.46 25.5 16.18 24.75 16.93 23.79 17.92 22.72 17.93 22.23 17.99 18.71 18.24 13.43 18.25 13.43 18.25 13.43 18.25 6.89 18.19 4.88 18 4.32 17.89 3.06 17.92 2.11 16.93 1.35 16.18 1.11 14.46 1.11 14.46 1.11 14.46 0.86 12.45 0.86 10.44 0.86 10.44 0.86 8.55 0.86 8.55 0.86 6.54 1.11 4.52 1.11 4.52 1.11 4.52 1.35 2.81 2.11 2.05 3.06 1.06 4.14 1.06 4.63 1 8.15 0.75 13.42 0.75 13.42 0.75 13.42 0.75 13.43 0.75 13.43 0.75 13.43 0.75 18.71 0.75 22.23 1 22.72 1.06 23.79 1.06 24.75 2.05 25.5 2.81 25.75 4.52 25.75 4.52 25.75 4.52 26 6.54 26 8.55 26 8.55 26 10.44 26 10.44 26 12.45 25.75 14.46 25.75 14.46ZM 10.83 5.73C 10.83 5.73 10.83 12.72 10.83 12.72 10.83 12.72 17.62 9.24 17.62 9.24 17.62 9.24 10.83 5.73 10.83 5.73Z"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-16 links">
+                    <h4>Для учителя</h4>
+                    <a href="#">Разработки</a>
+                    <a href="video.html">Видеоуроки</a>
+                    <a href="#">Тесты</a>
+                    <a href="#">Комплекты</a>
+                    <a href="#">Олимпиады</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-16 links">
+                    <h4>О проекте</h4>
+                    <a href="#">О нас</a>
+                    <a href="#">Обратная связь</a>
+                    <a href="#">Вопросы и ответы</a>
+                    <a href="#">Блог</a>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-xs-16 links">
+                    <h4>Компания</h4>
+                    <a href="#">Вакансии</a>
+                    <a href="#">Друзьям</a>
+                </div>
+            </div>
+            <div class="row v-center">
+                <div class="col-md-8 col-xs-16">
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">Лицензия на продукты</a>
+                </div>
+                <div class="col-md-8 col-xs-16">
+                    <div class="share pull-right">
+                        <script type="text/javascript" src="//yastatic.net/es5-shims/0.0.2/es5-shims.min.js" charset="utf-8"></script> <script type="text/javascript" src="//yastatic.net/share2/share.js" charset="utf-8"></script> <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,moimir,gplus" data-counter=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#bot" id="to-top">
+        <svg width="50px" height="50px" viewBox="0 0 50 50"><circle cx="25.00" cy="25.00" r="25.00" fill="rgb(0,0,0)" opacity="0.37"/><path fillRule="evenodd" d="M 33.94 24.46C 33.94 24.46 25.89 16.3 25.89 16.3 25.32 15.73 24.41 15.73 23.84 16.3 23.84 16.3 15.79 24.46 15.79 24.46 14.88 25.38 15.52 26.97 16.81 26.97 16.81 26.97 20.43 26.97 20.43 26.97 21.23 26.97 21.88 27.62 21.88 28.43 21.88 28.43 21.88 32.51 21.88 32.51 21.88 33.71 22.83 34.68 24.01 34.68 24.01 34.68 25.72 34.68 25.72 34.68 26.9 34.68 27.86 33.71 27.86 32.51 27.86 32.51 27.86 28.43 27.86 28.43 27.86 27.62 28.5 26.97 29.31 26.97 29.31 26.97 32.92 26.97 32.92 26.97 34.21 26.97 34.85 25.38 33.94 24.46Z" fill="rgb(241,241,241)"/></svg>
+    </a>
+    <div class="overlay"></div>
+    <script src="../res/jquery-2.2.3.min.js"></script>
+    <script src="../res/jquery.nicefileinput.min.js"></script>
+    <script src="../js/upload.js"></script>
+    <script src="../res/jquery.validate.min.js"></script>
+    <script src="../res/perfectScrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../res/lightslider/lightslider.min.js"></script>
+    <script src="../res/jquery.sticky.js"></script>
+    <script src="../res/jquery.viewport.mini.js"></script>
+    <script src="../js/aside-left.js"></script>
+    <script src="../js/olimp.js"></script>
+    <script src="../js/global.js"></script>
+    <script src="../res/autosize-master/autosize.min.js"></script>
+</body>
+</html>
