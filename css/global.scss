@@ -5327,5 +5327,55 @@ input.btn {
 		}
 	}
 }
+.b_que{
+	&__left{
+		margin-left: -30px;
+		max-width: 440px;
+		position: relative;
+		&_sortable{
+			padding-top: 20px;
+		}
+		&_placeholder{
+			height: 42px;
+			border: 1px dashed #d6d6d6;
+		}
+		&_item{
+			display: flex;
+			height: 42px;
+			align-items: center;
+			cursor: pointer;
+			&:hover,
+			&.current{
+				background-color: #f9f9f9;
+				.b_que__left_handler{
+					opacity: 1;
+				}
+			}
+			&.new{
+
+			}
+		}
+		&_handler{
+			width: 40px;
+			height: 40px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			opacity: 0;
+		}
+		&_ico{
+			margin-right: 6px;
+			height: 46px;
+			width: 20px;
+			display: flex;
+			align-items: center;
+		}
+		span{
+			font-size: 0.88em;
+			font-weight: 400;
+		}
+	}
+}
 
 //@import 'videouroki.css';

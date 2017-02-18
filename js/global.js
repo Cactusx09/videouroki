@@ -279,7 +279,6 @@ $(document).ready(function () {
     });
     //textarea autosize
     autosize($('textarea'));
-
     //selects
     changeSelect();
 	//add test time checkbox
@@ -291,6 +290,11 @@ $(document).ready(function () {
 			$(this).nextAll().addClass('disabled');
 			$(this).nextAll('input').prop('disabled',true);
 		}
+	});
+	//sortable b_que
+	$( ".b_que__left_sortable").sortable({
+		items: '.sortable',
+		placeholder: 'b_que__left_placeholder'
 	});
 
     $('.input-list input').click(function (event) {
