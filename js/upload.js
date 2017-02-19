@@ -1,9 +1,20 @@
 $(document).ready(function(){
      //file input
     var text = $("input[type=file]").attr('data-text');
-    $("input[type=file]").nicefileinput({
-        label : 'Выбрать файл'
-    });
+
+	$("input[type=file]").each(function(){
+		var btn = $(this).data('btn');
+		if($(this).data('btn')){
+			$(this).nicefileinput({
+				label : btn
+			});
+		}else{
+			$(this).nicefileinput({
+				label : 'Выбрать файл'
+			});
+		}
+	});
+
     $(".NFI-filename").val(text);
     $("input[type=file]").on('change',function(){
         $(".NFI-button").addClass('hide-for-pre');
