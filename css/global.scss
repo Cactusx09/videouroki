@@ -950,7 +950,6 @@ footer .row:last-of-type a {
 .visible-pop {
     overflow: visible!important;
     visibility: visible!important;
-    max-height: 999px!important;
     opacity: 1!important
 }
 .overlay,.popup {
@@ -972,20 +971,17 @@ footer .row:last-of-type a {
     left: 50%;
     top: 50%;
     z-index: 9999;
-    -webkit-transform: perspective(1px) translateY(-50%) translateX(-50%) translateZ(0);
-    transform: perspective(1px) translateY(-50%) translateX(-50%) translateZ(0);
+	position: absolute;
     background-color: #fff;
     box-shadow: 0 3px 10px 0 rgba(0,0,0,.35);
     width: 362px;
+	margin-top: 22vh;
     border-radius: 2px;
-    -webkit-transition: opacity .35s;
     transition: opacity .35s;
-    -webkit-backface-visibility: hidden!important;
-    backface-visibility: hidden;
-    -webkit-font-smoothing: antialiased;
-    outline: transparent solid 1px;
+	margin-left: -181px;
 	&.template{
 		width: 600px;
+		margin-left: -300px;
 	}
 }
 #close_question{
@@ -1188,7 +1184,8 @@ footer .row:last-of-type a {
 }
 #rules {
     width: 620px;
-    padding: 0 20px 0 0
+    padding: 0 20px 0 0;
+	margin-left: -310px;
 }
 #rules .perfect-scroll {
     overflow: visible!important;
@@ -1835,7 +1832,8 @@ a:hover.tooltips>span {
 }
 #premium-pop {
     width: 600px;
-    padding: 0
+    padding: 0;
+	margin-left: -300px;
 }
 #premium-pop .col {
     display: inline-block;
@@ -4100,13 +4098,15 @@ input.btn {
     bottom: 20px
 }
 #edit-pop {
-    width: 500px
+    width: 500px;
+	margin-left: -250px;
 }
 #edit-pop input[type=text] {
     margin-bottom: 25px
 }
 #photo-pop {
-    width: 540px
+    width: 540px;
+	margin-left: -270px;
 }
 #photo-pop .NFI-wrapper,#photo-pop img.w100 {
     margin-bottom: 20px
