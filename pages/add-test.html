@@ -176,6 +176,7 @@
                                 	<div class="tabs">
                                 	    <a href="#" class="active"><span class="brdr">Настройки</span></a>
                                 	    <a href="#"><span class="brdr">Вопросы</span></a>
+                                	    <a href="#" class="disabled"><span class="brdr">Вопросы</span></a>
                                 	</div>
                                 	<a href="#" target="_blank" class="add_test__tabshead_howto">Как добавить тест ?</a>
                                 </div>
@@ -216,7 +217,7 @@
                                             <div class="col-sm-13 col-xs-16">
                                                 <div class="select-wrp-auto w30">
 													<select>
-														<option value="0">Выберите класс</option>
+														<option value="0">Выберите класс тест тест тест тест тест</option>
 														<option value="1">1</option>
 														<option value="2">2</option>
 														<option value="3">3</option>
@@ -263,8 +264,8 @@
 															<option value="7">7</option>
 														</select>
 													</div>
-                                               		<a href="#">Посмотреть шаблон</a>
-                                               		<a href="#">Создать шаблон</a>
+                                               		<a href="#" class="open-view_template">Посмотреть шаблон</a>
+                                               		<a href="#" class="open-create_template">Создать шаблон</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -347,7 +348,8 @@
                                             </div>
                                         </div>
                                         <div class="hr">
-                                            <input type="submit" class="btn" value="Создать тест">
+                                            <input type="submit" class="btn green _disabled" value="Создать тест">
+                                            <h6><span>Чтобы создать тест надо заполнить поля:</span> <small>текст вопроса.</small></h6>
                                         </div>
                                     </form></div>
                                     <div class="tab b_que__tab"><form action="">
@@ -544,7 +546,7 @@
                                         	</div>
                                         </div>
                                         <div class="hr">
-                                            <input type="submit" class="btn" value="Перейти к тесту">
+                                            <input type="submit" class="btn green" value="Перейти к тесту">
                                             <h6><span>Чтобы перейти к тесту надо заполнить поля:</span> <small>текст вопроса.</small></h6>
                                         </div>
                                     </form></div>
@@ -625,6 +627,139 @@
             </ul>
             <div class="pull-right btn close-pop">Закрыть</div>
             <br class="clear">
+        </div>
+    </div>
+    <div class="popup template" id="create_template">
+        <div class="perfect-scroll">
+            <h2>Создание нового шаблона оценки <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+            <div class="template__head">
+            	<small>Шаблон</small>
+            	<input type="number" value="5" min="5">
+            	<small>-балльный</small>
+            	<div class="btn">Создать</div>
+            </div>
+            <div class="template__table">
+            	<div class=template__table_head>
+					<span>Оценка</span>
+					<span>Необходимый минимум баллов, %</span>
+					<span>Альтернативное название</span>
+				</div>
+            	<div class="perfect-scroll">
+            		<table class="results-table">
+						<tbody>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="5"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="85"></td>
+								<td class="template__table_text"><input type="text" value="Текс текст текст"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="4"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="70"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="3"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="50"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="2"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="25"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="1"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="0"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="1"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="0"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+						</tbody>
+					</table>
+            	</div>
+            </div>
+            <br class="clear">
+            <div class="template__btns">
+            	<div class="btn close-popup">Отмена</div>
+            	<div class="btn green">Сохранить</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup template" id="view_template">
+        <div class="perfect-scroll">
+            <h2>Мой шаблон 1, 5-балльная <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+            <div class="template__table">
+            	<div class=template__table_head>
+					<span>Оценка</span>
+					<span>Необходимый минимум баллов, %</span>
+					<span>Альтернативное название</span>
+				</div>
+            	<div class="perfect-scroll">
+            		<table class="results-table">
+						<tbody>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="5"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="85"></td>
+								<td class="template__table_text"><input type="text" value="Текс текст текст"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="4"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="70"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="3"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="50"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="2"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="25"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="1"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="0"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+							<tr>
+								<td class="dis"><input type="number" min="0" value="1"></td>
+								<td class="dis"><input type="number" min="0" max="100" value="0"></td>
+								<td class="template__table_text"><input type="text" value="—"></td>
+							</tr>
+						</tbody>
+					</table>
+            	</div>
+            </div>
+            <br class="clear">
+            <div class="template__btns">
+            	<div class="template__btns_del">
+            		<svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"><path d="M13 4L12 4 12 13C12 13.5 11.5 14 11 14L3 14C2.5 14 2 13.5 2 13L2 4 1 4C0.5 4 0 3.5 0 3 0 2.5 0.5 2 1 2L4 2 4 1C4 0.5 4.5 0 5 0L9 0C9.5 0 10 0.5 10 1L10 2 13 2C13.5 2 14 2.5 14 3 14 3.5 13.5 4 13 4ZM8 2L6 2 6 3 8 3 8 2ZM10 6C10 5.5 9.5 5 9 5L5 5C4.5 5 4 5.5 4 6L4 11 4 11C4 11.5 4.5 12 5 12L9 12C9.5 12 10 11.5 10 11L10 6ZM8 11L6 11C5.5 11 5 10.5 5 10 5 9.5 5.5 9 6 9L8 9C8.5 9 9 9.5 9 10 9 10.5 8.5 11 8 11ZM8 8L6 8C5.5 8 5 7.5 5 7 5 6.5 5.5 6 6 6L8 6C8.5 6 9 6.5 9 7 9 7.5 8.5 8 8 8Z" fill="rgb(204, 204, 204)"/></svg>
+					<span>Удалить шаблон</span>
+            	</div>
+            	<div class="btn close-popup">Отмена</div>
+            	<div class="btn green">Сохранить</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup visible-pop" id="close_question">
+        <div class="perfect-scroll">
+            <h2>Вопрос не был сохранён <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+            <p>Сохранить его, или отменить выполненные изменения?</p>
+            <br class="clear">
+            <div class="template__btns">
+            	<div class="btn close-popup">Отменить изменения</div>
+            	<div class="btn green">Сохранить вопрос</div>
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="video_link">
+        <div class="perfect-scroll">
+            <h2>Вставьте ссылку на видео <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+            <textarea rows="1"></textarea>
         </div>
     </div>
 

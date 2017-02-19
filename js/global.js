@@ -233,9 +233,23 @@ $(document).ready(function () {
         e.preventDefault();
         $('#rules, .overlay').addClass('visible-pop');
     });
-    $('.open-photo').click(function (e) {
+	$('.open-photo').click(function (e) {
         e.preventDefault();
         $('#photo-pop, .overlay').addClass('visible-pop');
+    });
+    $('.open-view_template').click(function (e) {
+        e.preventDefault();
+        $('#view_template, .overlay').addClass('visible-pop');
+		$('.perfect-scroll').perfectScrollbar('update');
+    });
+	$('.b_que__atach_youtube').click(function (e) {
+        e.preventDefault();
+        $('#video_link, .overlay').addClass('visible-pop');
+    });
+	$('.open-create_template').click(function (e) {
+        e.preventDefault();
+        $('#create_template, .overlay').addClass('visible-pop');
+		$('.perfect-scroll').perfectScrollbar('update');
     });
     $('.popup .open-register, .popup .open-login, .popup .open-password').click(function () {
         $(this).parent().parent('.popup').removeClass('visible-pop');
@@ -331,36 +345,44 @@ $(document).ready(function () {
         }
     });
     //////validate
-    /* $("form").each(function (index) {
-     var it = $(this);
-     it.validate({
-     rules: {
-     mail: {required: true},
-     password: {required: true},
-     uo: {required: true},
-     stay: {required: false}
-     },
-     messages: {},
-     errorPlacement: function (error, element) {
-
-     },
-
-     success: function () {
-
-     },
-     highlight: function (element, errorClass) {
-     $(element).closest('.input-error').addClass('active');
-     $(element).addClass('error');
-     $('.popup-bot.error').addClass('active');
-     setTimeout(function () {
-     $('.popup-bot.error').removeClass('active');
-     }, 5000);
-     },
-     unhighlight: function (element, errorClass, validClass) {
-     $(element).removeClass('error');
-     }
-     });
-     });*/
+//    $("form").each(function (index) {
+//		var it = $(this);
+//		it.validate({
+//			rules: {
+//				mail: {
+//					required: true
+//				},
+//				password: {
+//					required: true
+//				},
+//				uo: {
+//					required: true
+//				},
+//				stay: {
+//					required: false
+//				}
+//			},
+//			messages: {},
+//			errorPlacement: function (error, element) {
+//
+//			},
+//
+//			success: function () {
+//
+//			},
+//			highlight: function (element, errorClass) {
+//				$(element).closest('.input-error').addClass('active');
+//				$(element).addClass('error');
+//				$('.popup-bot.error').addClass('active');
+//				setTimeout(function () {
+//					$('.popup-bot.error').removeClass('active');
+//				}, 5000);
+//			},
+//			unhighlight: function (element, errorClass, validClass) {
+//				$(element).removeClass('error');
+//			}
+//		});
+//	});
     left_menu();
     //request checkbox border | logic
     $('.chekbox-border').change(function () {
