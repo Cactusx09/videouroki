@@ -837,7 +837,7 @@ footer .row:last-of-type a {
     -webkit-transition: max-height .25s;
     transition: max-height .25s;
     max-height: 0;
-    overflow: hidden
+    overflow: hidden;
 }
 #user-menu {
     width: 220px;
@@ -950,7 +950,8 @@ footer .row:last-of-type a {
 .visible-pop {
     overflow: visible!important;
     visibility: visible!important;
-    opacity: 1!important
+    opacity: 1!important;
+	max-height: 1299px;
 }
 .overlay,.popup {
     position: fixed;
