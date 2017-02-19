@@ -5260,6 +5260,24 @@ label.css-radio {
     width: 75%!important
 }
 .add_test{
+	&__tabshead{
+		position: relative;
+		&_howto{
+			font-size: 0.81em;
+			border-bottom: 1px dotted #bbb;
+			color: #666666 !important;
+			line-height: 1.1;
+			text-decoration: none !important;
+			transition: .25s;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -12px;
+			&:hover{
+				color: #000 !important;
+			}
+		}
+	}
 	&__system{
 		display: flex;
 		align-items: center;
@@ -5388,6 +5406,9 @@ label.css-radio {
 					color: #666;
 				}
 			}
+		}
+		form{
+			padding-right: 0 !important;
 		}
 	}
 	&__left{
