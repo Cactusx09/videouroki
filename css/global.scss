@@ -5713,6 +5713,9 @@ label.css-radio {
 					transition: .25s;
 				}
 				&:hover{
+					span{
+						color: #ed2325;
+					}
 					path{
 						fill: #ed2325;
 					}
@@ -5737,6 +5740,9 @@ label.css-radio {
 				transition: .2s;
 				&:hover{
 					background-color: #ebebeb;
+				}
+				&:active{
+					box-shadow: none;
 				}
 				svg{
 					margin-right: 10px;
