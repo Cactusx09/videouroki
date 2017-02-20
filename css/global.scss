@@ -4930,7 +4930,7 @@ label.css-radio {
 	}
 	.row{
 		&.add_test__help{
-			display: block;
+			display: block !important;
 		}
 		&.disabled{
 			pointer-events: none;
@@ -4956,7 +4956,7 @@ label.css-radio {
 				border-color: #e5e5e5;
 			}
 			&_height{
-				display: none;
+				display: none !important;
 			}
 		}
 	}
