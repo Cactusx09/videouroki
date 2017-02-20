@@ -356,6 +356,13 @@ $(document).ready(function () {
 	});
     //selects
     changeSelect();
+	$('.add_test__time_use').click(function(){
+		if($(this).find('input').is(':checked')){
+			$('.add_test__help').removeClass('disabled');
+		}else{
+			$('.add_test__help').addClass('disabled');
+		}
+	});
 	//add test time checkbox
 	$('.add_test__time_box').click(function(){
 		if($(this).find('input').is(':checked')){
