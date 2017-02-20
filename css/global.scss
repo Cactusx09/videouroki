@@ -111,7 +111,7 @@ input,textarea {
     -webkit-transition: .2s;
     transition: .2s;
 	&:disabled{
-		border-color: #f5f5f5;
+		border-color: #e5e5e5;
 	}
 }
 textarea {
@@ -5410,6 +5410,7 @@ label.css-radio {
 			margin-top: -8px;
 			&:hover{
 				color: #04c !important;
+				border-color: #04c;
 			}
 		}
 		.disabled{
@@ -5464,10 +5465,17 @@ label.css-radio {
 			font-family: "OpenSans";
 			font-size: 0.88em;
 			padding: 10px 20px;
-			border-radius: 2px 0 0 2px;
 			border: 1px solid #cccccc;
 			transition: .2s;
 			cursor: pointer;
+			&:first-of-type{
+				border-top-left-radius: 2px;
+				border-bottom-left-radius: 2px;
+			}
+			&:last-of-type{
+				border-top-right-radius: 2px;
+				border-bottom-right-radius: 2px;
+			}
 			&:hover{
 				background-color: #f1f1f1;
 			}
@@ -5502,6 +5510,7 @@ label.css-radio {
 			font-size: 0.94em;
 			font-weight: 700;
 			margin-top: 31px;
+			padding-bottom: 11px;
 			background-color: #f2f2f2;
 			&._disabled{
 				opacity: .7;
@@ -5543,6 +5552,20 @@ label.css-radio {
 			label{
 				color: #999;
 				opacity: .4;
+			}
+			.add_test__time{
+				input{
+					border-color: #f5f5f5;
+					color: #ccc;
+				}
+				color: #ccc;
+				.input_number{
+					svg{
+						opacity: .2;
+					}
+				}
+			}textarea{
+				border-color: #f5f5f5;
 			}
 		}
 	}
@@ -5638,37 +5661,26 @@ label.css-radio {
 			height: 42px;
 			align-items: center;
 			cursor: pointer;
-			white-space: nowrap;
-			text-overflow: ellipsis;
-			position: relative;
+			padding-right: 20px;
+			span{
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				max-width: 100%;
+				display: block;
+				overflow: hidden;
+				font-size: 0.88em;
+				font-weight: 400;
+			}
 			&:hover,
 			&.current{
 				background-color: #f9f9f9;
 				.b_que__left_handler{
 					opacity: 1;
 				}
-				&:before{
-					background: linear-gradient(to right, rgba(249,249,249,0.17) 0%, rgba(249,249,249,0.47) 32%, rgba(249,249,249,0.9) 71%, rgba(249,249,249,1) 100%);
-					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f9f9f9', GradientType=1 );
-				}
-			}
-			&:before{
-				content: '';
-				position: absolute;
-				right: 0;
-				top: 0;
-				z-index: 1;
-				width: 40px;
-				height: 100%;
-				background: linear-gradient(to right,rgba(252,252,252,0) 0,rgba(252,252,252,0.6) 50%,rgba(252,252,252,1) 76%,#fcfcfc 100%);
-				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc',endColorstr='#fcfcfc',GradientType=1)
-			}
-			&.new{
-
 			}
 		}
 		&_handler{
-			width: 40px;
+			min-width: 40px;
 			height: 40px;
 			display: flex;
 			justify-content: center;
@@ -5679,13 +5691,9 @@ label.css-radio {
 		&_ico{
 			margin-right: 6px;
 			height: 46px;
-			width: 20px;
+			min-width: 20px;
 			display: flex;
 			align-items: center;
-		}
-		span{
-			font-size: 0.88em;
-			font-weight: 400;
 		}
 		&_add{
 			padding: 10px;
@@ -5750,6 +5758,9 @@ label.css-radio {
 			}
 			&:hover{
 				color: #04c;
+				span{
+					border-color: #04c;
+				}
 			}
 		}
 		.b_que__right_placeholder{
@@ -5807,6 +5818,7 @@ label.css-radio {
 				&:hover{
 					span{
 						color: #ed2325;
+						border-color: #ed2325;
 					}
 					path{
 						fill: #ed2325;
@@ -5844,12 +5856,15 @@ label.css-radio {
 	}
 	&__atachments{
 		display: flex;
-		justify-content: space-between;
+		justify-content: flex-start;
 	}
 	&__atach{
 		display: inline-flex;
 		align-items: center;
 		cursor: pointer;
+		&:not(:last-of-type){
+			margin-right: 30px;
+		}
 		svg{
 			margin-right: 10px;
 			margin-top: -2px;
@@ -5868,6 +5883,7 @@ label.css-radio {
 				border-bottom: 1px dotted  #999;
 				&:hover{
 					color: #04c;
+					border-color: #04c;
 				}
 			}
 		}
@@ -5879,6 +5895,7 @@ label.css-radio {
 			transition: .25s;
 			&:hover{
 				color: #04c;
+				border-color: #04c;
 			}
 		}
 	}
