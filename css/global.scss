@@ -1027,16 +1027,16 @@ footer .row:last-of-type a {
 			position: relative;
 			border-top: 1px solid #e6e6e6;
 			border-bottom: 1px solid  #e6e6e6;
-		}
-		.results-table{
 			width: 100%;
-			margin: 0;
 		}
 		td{
 			padding-bottom: 10px !important;
 			padding-top: 10px !important;
 			font-size: 0.92em !important;
 			min-width: 140px;
+			&:nth-of-type(2){
+				text-align: center;
+			}
 			&:first-of-type{
 				padding-left: 30px !important;
 			}
@@ -1044,6 +1044,9 @@ footer .row:last-of-type a {
 		tr{
 			&:nth-of-type(2n){
 				background-color: #fcfcfc;
+			}
+			&:not(:first-of-type) {
+				border-top: 1px solid #e6e6e6;
 			}
 		}
 		&_head{
@@ -5530,12 +5533,15 @@ label.css-radio {
 		&__tabshead{
 			display: flex;
 			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
 			&_howto{
 				position: static;
 				order: -1;
 				margin-right: auto;
 				margin-top: 0;
 				margin-bottom: 10px;
+				right: auto;
 			}
 		}
 		.w75{
@@ -5798,6 +5804,26 @@ label.css-radio {
 	.b_que__right_btns-quedelete{
 		margin-right: auto;
 	}
+	.popup{
+		left: 0 !important;
+		margin-left: 0 !important;
+		margin-top: 0 !important;
+	}
+	.template .results-table td:first-of-type,
+	.template .results-table td{
+		padding-left: 0 !important;
+	}
+	.template__table{
+		.results-table{
+			margin: 0 !important;
+			max-width: 100%;
+		}
+	}
+	.template__table td{
+		input[type="number"]{
+			margin-left: -5px;
+		}
+	}
 }
 @media only screen and (max-width: 655px) {
     .olindex h1 {
@@ -5852,6 +5878,25 @@ label.css-radio {
 	}
 	.b_que__right{
 		max-width: 100%;
+	}
+	.template__table{
+		.perfect-scroll{
+			max-height: 60vh;
+			height: auto;
+		}
+	}
+	.template__table_head{
+		flex-direction: column;
+		span{
+			counter-increment: th;
+			&:before{
+				content: counter(th) '.';
+				margin-right: 5px;
+			}
+			&:last-of-type{
+				margin-left: 0;
+			}
+		}
 	}
 }
 @media only screen and (max-width: 560px) {
@@ -5931,7 +5976,7 @@ label.css-radio {
 		}
 	}
 	.add_test__radio{
-		flex-wrap: wrap;
+		flex-direction: column;
 		label{
 			min-width: 200px;
 			text-align: center;
@@ -5970,6 +6015,15 @@ label.css-radio {
 	.b_que__tab .hr{
 		margin-left: 0 !important;
 		margin-right: 0 !important;
+	}
+	.template__btns{
+		flex-wrap: wrap;
+		&_del{
+			width: 100%;
+			margin-left: auto;
+			margin-bottom: 30px;
+			text-align: right;
+		}
 	}
 }
 @media only screen and (max-width: 480px) {
@@ -6110,6 +6164,14 @@ label.css-radio {
 	}
 	.b_que__tab .hr{
 		margin: 0 !important;
+	}
+	.template__head{
+		flex-wrap: wrap;
+		.btn{
+			margin-left: 0;
+			width: 100%;
+			margin-top: 10px;
+		}
 	}
 }
 @media only screen and (max-width: 350px) {
