@@ -321,16 +321,49 @@ $(document).ready(function () {
 			sl_tabs.refresh();
 		}
 	});
+	//input number arrows
+	$('.input_number__arrup').click(function(){
+		var input = $(this).closest('.input_number').find('input[type="number"]'),
+			max = input.attr('max'),
+			n = parseInt(input.val()),
+			value = 0;
+		if(max != null){
+			if(n>=max){
+				value = n;
+			} else{
+				value = n+1;
+			}
+		}else{
+			value = n+1;
+		}
+		input.val(value);
+	});
+	$('.input_number__arrdown').click(function(){
+		var input = $(this).closest('.input_number').find('input[type="number"]'),
+			min = input.attr('min'),
+			n = parseInt(input.val()),
+			value = 0;
+		if(min != null){
+			if(n<=min){
+				value = n;
+			} else{
+				value = n-1;
+			}
+		}else{
+			value = n-1;
+		}
+		input.val(value);
+	});
     //selects
     changeSelect();
 	//add test time checkbox
 	$('.add_test__time_box').click(function(){
 		if($(this).find('input').is(':checked')){
 			$(this).nextAll().removeClass('disabled');
-			$(this).nextAll('input').prop('disabled',false);
+			$(this).nextAll('.input_number').removeClass('disabled').find('input').prop('disabled',false);
 		}else{
 			$(this).nextAll().addClass('disabled');
-			$(this).nextAll('input').prop('disabled',true);
+			$(this).nextAll('.input_number').addClass('disabled').find('input').prop('disabled',true);
 		}
 	});
 	//sortable b_que

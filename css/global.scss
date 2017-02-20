@@ -104,12 +104,15 @@ select {
 }
 input,textarea {
     background-color: #fff;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #ccc;
     padding: 9px 19px;
     width: 100%;
     font: 400 .88em OpenSans;
     -webkit-transition: .2s;
-    transition: .2s
+    transition: .2s;
+	&:disabled{
+		border-color: #f5f5f5;
+	}
 }
 textarea {
     width: 100%!important;
@@ -1101,7 +1104,7 @@ footer .row:last-of-type a {
 				margin-bottom: -2px;
 			}
 			span{
-				border-bottom: 1px dotted  #bbb;
+				border-bottom: 1px dotted  #999;
 				line-height: 1;
 			}
 			margin-left: 10px;
@@ -5393,9 +5396,10 @@ label.css-radio {
 .add_test{
 	&__tabshead{
 		position: relative;
+		margin-top: -15px;
 		&_howto{
 			font-size: 0.81em;
-			border-bottom: 1px dotted #bbb;
+			border-bottom: 1px dotted #999;
 			color: #666666 !important;
 			line-height: 1.1;
 			text-decoration: none !important;
@@ -5403,7 +5407,7 @@ label.css-radio {
 			position: absolute;
 			right: 0;
 			top: 50%;
-			margin-top: -12px;
+			margin-top: -8px;
 			&:hover{
 				color: #04c !important;
 			}
@@ -5420,10 +5424,9 @@ label.css-radio {
 		justify-content: flex-start;
 		a{
 			color: #666666;
-			font-family: OpenSans;
 			font-size: 0.81em;
 			margin-left: 18px;
-			border-bottom: 1px dotted #666;
+			border-bottom: 1px dotted #999;
 			text-decoration: none;
 			transition: .25s;
 			&:hover{
@@ -5479,17 +5482,15 @@ label.css-radio {
 		&_box{
 			height: 26px;
 		}
-		>input{
+		input{
 			width: 64px;
 			padding-right: 6px;
 			padding-left: 12px;
-			&.disabled{
-				opacity: .5;
-			}
 		}
 		small{
 			font-size: 0.81em;
 			margin-left: 10px;
+			transition: .3s;
 			&.disabled{
 				opacity: .5;
 			}
@@ -5501,11 +5502,15 @@ label.css-radio {
 			font-size: 0.94em;
 			font-weight: 700;
 			margin-top: 31px;
+			background-color: #f2f2f2;
 			&._disabled{
 				opacity: .7;
 				background-color: #f7f7f7 !important;
-				color: #000;
+				color: #999;
 				pointer-events: none;
+			}
+			&:hover{
+				background-color: #eaeaea;
 			}
 		}
 		margin-top: 0 !important;
@@ -5531,8 +5536,76 @@ label.css-radio {
 	}
 	.row{
 		&.disabled{
-			opacity: .5;
 			pointer-events: none;
+			p{
+				color: #999 !important;
+			}
+			label{
+				color: #999;
+				opacity: .4;
+			}
+		}
+	}
+	#profile #center form p{
+		color: #333;
+	}
+}
+
+.input_number{
+	input[type=number] {
+	  -moz-appearance: textfield;
+	}
+	input[type=number]::-webkit-inner-spin-button,
+	input[type=number]::-webkit-outer-spin-button {
+	  -webkit-appearance: none;
+	  margin: 0;
+	}
+	position: relative;
+	&.disabled{
+		input{
+			color: #9a9a9a;
+		}
+		.input_number__arrup,
+		.input_number__arrdown{
+			opacity: 0.3;
+			cursor: default;
+			pointer-events: none;
+		}
+	}
+	&__arrup{
+		position: absolute;
+		right: 8px;
+		top: 3px;
+		height: 15px;
+		cursor: pointer;
+		width: 15px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: .2s;
+		&:hover{
+			path{
+				fill: #04c;
+			}
+		}
+	}
+	&__arrdown{
+		position: absolute;
+		right: 8px;
+		bottom: 3px;
+		width: 15px;
+		height: 15px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		transition: .2s;
+		&:hover{
+			path{
+				fill: #04c;
+			}
 		}
 	}
 }
@@ -5565,12 +5638,30 @@ label.css-radio {
 			height: 42px;
 			align-items: center;
 			cursor: pointer;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			position: relative;
 			&:hover,
 			&.current{
 				background-color: #f9f9f9;
 				.b_que__left_handler{
 					opacity: 1;
 				}
+				&:before{
+					background: linear-gradient(to right, rgba(249,249,249,0.17) 0%, rgba(249,249,249,0.47) 32%, rgba(249,249,249,0.9) 71%, rgba(249,249,249,1) 100%);
+					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f9', endColorstr='#f9f9f9', GradientType=1 );
+				}
+			}
+			&:before{
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 0;
+				z-index: 1;
+				width: 40px;
+				height: 100%;
+				background: linear-gradient(to right,rgba(252,252,252,0) 0,rgba(252,252,252,0.6) 50%,rgba(252,252,252,1) 76%,#fcfcfc 100%);
+				filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfcfc',endColorstr='#fcfcfc',GradientType=1)
 			}
 			&.new{
 
@@ -5654,7 +5745,7 @@ label.css-radio {
 				margin-bottom: -1px;
 			}
 			span{
-				border-bottom: 1px dotted  #bbb;
+				border-bottom: 1px dotted  #999;
 				line-height: 1;
 			}
 			&:hover{
@@ -5725,7 +5816,7 @@ label.css-radio {
 					color: #666666;
 					font-size: 0.81em;
 					font-weight: 400;
-					border-bottom: 1px dotted  #aaa;
+					border-bottom: 1px dotted  #999;
 					line-height: 1;
 				}
 			}
