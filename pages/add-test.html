@@ -246,7 +246,7 @@
                                             </div>
                                         </div>
                                         <h2>Настройки теста</h2>
-                                        <div class="row v-center">
+                                        <div class="row v-center field_to_top">
                                             <div class="col-sm-3 col-xs-16 pl0">
                                                 <p>Система оценки</p>
                                             </div>
@@ -437,25 +437,20 @@
 												</div>
                                        			<div class="row v-center">
 													<div class="col-sm-4 col-xs-16 pl0">
-														<p>Подсказка</p>
-													</div>
-													<div class="col-sm-12 col-xs-16">
-														<input type="checkbox" name="checkboxG107" id="checkboxG107" class="css-checkbox" />
-														<label for="checkboxG107" class="css-label">Использовать</label>
-													</div>
-												</div>
-                                       			<div class="row disabled v-center">
-													<div class="col-sm-4 col-xs-16 pl0">
 														<p>Цена подсказки <a class="tooltips" href="#"><img src="../images/ico/tooltip.svg" alt=""><span>Фамилия, имя и отчество на наградных материалах.</span></a></p>
 													</div>
 													<div class="col-sm-12 col-xs-16">
 														<div class="add_test__time">
-															<div class="input_number">
-																<input type="number" value="3" min="1" max="3">
+															<div class="input_number disabled">
+																<input disabled type="number" value="3" min="1" max="3">
 																<div class="input_number__arrup"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="7"><path d="M5 0L9.8 4.7C10.1 5 10.1 5.5 9.8 5.8 9.5 6.1 9 6.1 8.7 5.8L5 2.1 1.3 5.8C1 6.1 0.5 6.1 0.2 5.8 -0.1 5.5-0.1 5 0.2 4.7L5 0Z" fill="rgb(0, 0, 0)"/></svg></div>
 																<div class="input_number__arrdown"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="7"><path d="M5 6L0.2 1.3C-0.1 1-0.1 0.5 0.2 0.2 0.5-0.1 1-0.1 1.3 0.2L5 3.9 8.7 0.2C9-0.1 9.5-0.1 9.8 0.2 10.1 0.5 10.1 1 9.8 1.3L5 6Z" fill="rgb(0, 0, 0)"/></svg></div>
 															</div>
-															<small>балла</small>
+															<small class="disabled">балла</small>
+															<div class="add_test__time_use">
+																<input type="checkbox" name="checkboxG107" id="checkboxG107" class="css-checkbox" />
+																<label for="checkboxG107" class="css-label">Использовать</label>
+															</div>
 														</div>
 													</div>
 												</div>
@@ -478,7 +473,7 @@
 																<input type="file" data-btn="Изображение" accept="image/*">
 															</div>
 															<div class="b_que__atach">
-																<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M12 1.2C12 0.4 11.3-0.2 10.4 0L4.8 1.2C3.9 1.3 3.2 2.2 3.2 3L3.2 8.3C2.8 8.2 2.3 8.2 1.9 8.3 0.6 8.6-0.2 9.7 0.1 10.7 0.4 11.7 1.6 12.2 2.9 11.9 4.1 11.6 4.8 10.7 4.8 9.7L4.8 4.2 10.4 3 10.4 6.8C10 6.7 9.5 6.7 9.1 6.8 7.8 7.1 7 8.2 7.3 9.2 7.6 10.2 8.8 10.7 10.1 10.4 11.3 10.1 12 9.2 12 8.3L12 1.5C12 1.5 12 1.3 12 1.2Z" fill="rgb(153, 153, 153)"/></svg>
+																<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12"><path d="M12 1.2C12 0.4 11.3-0.2 10.4 0L4.8 1.2C3.9 1.3 3.2 2.2 3.2 3L3.2 8.3C2.8 8.2 2.3 8.2 1.9 8.3 0.6 8.6-0.2 9.7 0.1 10.7 0.4 11.7 1.6 12.2 2.9 11.9 4.1 11.6 4.8 10.7 4.8 9.7L4.8 4.2 10.4 3 10.4 6.8C10 6.7 9.5 6.7 9.1 6.8 7.8 7.1 7 8.2 7.3 9.2 7.6 10.2 8.8 10.7 10.1 10.4 11.3 10.1 12 9.2 12 8.3L12 1.5C12 1.5 12 1.3 12 1.2Z" fill="rgb(153, 153, 153)"/></svg>
 																<input type="file" data-btn="Звуковой файл" accept="audio/*">
 															</div>
 															<div class="b_que__atach">
