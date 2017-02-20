@@ -358,10 +358,11 @@ $(document).ready(function () {
     changeSelect();
 	$('.add_test__time_use').click(function(){
 		if($(this).find('input').is(':checked')){
-			$('.add_test__help').removeClass('disabled');
+			$('.add_test__help').removeClass('disabled_height');
 		}else{
-			$('.add_test__help').addClass('disabled');
+			$('.add_test__help').addClass('disabled_height');
 		}
+		sl_tabs.refresh();
 	});
 	//add test time checkbox
 	$('.add_test__time_box').click(function(){

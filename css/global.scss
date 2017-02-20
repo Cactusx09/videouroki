@@ -4925,6 +4925,9 @@ label.css-radio {
 		}
 	}
 	.row{
+		&.add_test__help{
+			display: block;
+		}
 		&.disabled{
 			pointer-events: none;
 			p{
@@ -4947,6 +4950,9 @@ label.css-radio {
 				}
 			}textarea{
 				border-color: #e5e5e5;
+			}
+			&_height{
+				display: none;
 			}
 		}
 	}
