@@ -321,6 +321,11 @@ $(document).ready(function () {
 			sl_tabs.refresh();
 		}
 	});
+	//add test page question height
+	if (window.matchMedia('(min-width: 1249.5px)').matches) {
+		var h = $('.b_que__right').outerHeight();
+		$('.b_que__left').css('max-height', h + 'px');
+	}
 	//input number arrows
 	$('.input_number__arrup').click(function(){
 		var input = $(this).closest('.input_number').find('input[type="number"]'),
