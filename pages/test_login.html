@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../res/bootstrap.grid.min.css">
+    <link rel="stylesheet" href="../webfonts/fonts.css">
+    <link rel="stylesheet" href="../res/perfectScrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <header class="test_header">
+    	<div class="container">
+    		<div class="test_header__body">
+    			<a href="index.html"><img src="../images/logo.png" alt=""></a>
+    		</div>
+    	</div>
+    </header>
+
+    <section class="test_main">
+		<div class="container">
+			<div class="test_main__box_login">
+				<h2>Укажите ваши данные</h2>
+				<form action="" method="post">
+					<div class="input-wrp">
+						<p>Фамилия</p>
+						<div class="input-error">
+							<input name="surname" type="text" placeholder="Введите вашу фамилию">
+							<span>Неправильно указан e-mail</span>
+						</div>
+					</div>
+					<div class="input-wrp">
+						<p>Имя</p>
+						<div class="input-error">
+							<input name="name" type="text" placeholder="Введите ваше имя">
+							<span>Неправильно указан e-mail</span>
+						</div>
+					</div>
+					<div class="input-wrp">
+						<p>Класс, например: 4 «А»</p>
+						<div class="input-error">
+							<input name="number_name" type="text" placeholder="Номер и название класса">
+							<span>Неправильно указан e-mail</span>
+						</div>
+					</div>
+					<input type="submit" class="btn green" value="Начать тест">
+				</form>
+			</div>
+		</div>
+    </section>
+
+
+    <div class="overlay"></div>
+    <div class="popup" id="video_link">
+        <div class="perfect-scroll">
+            <h2>Вставьте ссылку на видео <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+            <textarea rows="1"></textarea>
+        </div>
+    </div>
+
+    <script src="../res/jquery-2.2.3.min.js"></script>
+    <script src="../res/jquery.validate.min.js"></script>
+    <script src="../res/perfectScrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../res/autosize-master/autosize.min.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/global.js"></script>
+</body>
+</html>
