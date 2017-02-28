@@ -123,6 +123,7 @@ input[type=password]:focus,input[type=text]:focus,textarea:focus {
     border-color: #000;
     color: #000
 }
+::-webkit-file-upload-button { cursor:pointer; }
 .NFI-wrapper {
     display: -webkit-box!important;
     display: -ms-flexbox!important;
@@ -2224,7 +2225,7 @@ a:hover.tooltips>span {
         position: relative
     }
     #center .block .pl0 {
-        height: auto;
+	height: auto !important;
         padding-bottom: 15px
     }
     #center .info {
@@ -3065,7 +3066,7 @@ input.error:focus,textarea.error:focus {
 }
 #index #center .thumb img {
     float: right;
-    width: auto
+    width: auto !important;
 }
 #index #right .news-wrp .v-center {
     position: absolute;
@@ -4964,6 +4965,82 @@ label.css-radio {
 		color: #333;
 	}
 }
+#center .mytests{
+	&__row{
+		height: 125px;
+		padding-top: 20px !important;
+		padding-right: 25px !important;
+		p{
+			font-size: 1.4rem;
+			color: #666;
+		}
+		&-about{
+			margin-bottom: 0 !important;
+		}
+		&_txt{
+			height: 103px !important;
+			display: flex;
+			flex-direction: column;
+		}
+		&_bot{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: auto;
+			margin-bottom: 20px;
+			.info{
+				position: static;
+			}
+		}
+		&_btns{
+			display: flex;
+			a{
+				display: flex;
+				align-items: center;
+				font-size: 0.69em;
+				text-decoration: none !important;
+				color: #666;
+				&:not(:last-of-type){
+					margin-right: 20px;
+				}
+				&:first-of-type{
+					margin-left: 2px;
+				}
+				span{
+					@extend .brdr;
+					white-space: nowrap;
+					margin-left: 6px;
+				}
+				&:last-of-type{
+					&:hover{
+						color: #ed2325;
+						span{
+							border-color: #ed2325;
+						}
+						path{
+							fill: #ed2325;
+						}
+					}
+				}
+				&:hover{
+					color: #04c;
+					span{
+						border-color: #04c;
+					}
+					path{
+						fill: #04c;
+					}
+				}
+			}
+		}
+	}
+	.more{
+		svg{
+			margin-right: 9px;
+			margin-bottom: -1px;
+		}
+	}
+}
 
 .input_number{
 	input[type=number] {
@@ -5579,6 +5656,15 @@ label.css-radio {
 			margin-top: 3px;
 		}
 	}
+	#center .mytests__row{
+		height: auto;
+		&_bot{
+			margin-top: 15px;
+		}
+	}
+	#center .mytests__row_txt{
+		height: auto !important;
+	}
 }
 @media only screen and (max-width: 767.5px) {
     #olimp #center.req .pay .v-center,#olimp #center.req .wrp.request,#olimp #right .list .v-center {
@@ -5838,6 +5924,24 @@ label.css-radio {
 			margin-left: -5px;
 		}
 	}
+	#center .mytests{
+		&__row{
+			&_bot{
+				flex-wrap: wrap;
+				margin-bottom: -5px;
+				.info{
+					padding-top: 0;
+				}
+			}
+			&_btns{
+				margin-top: 7px;
+				flex-wrap: wrap;
+			}
+		}
+	}
+	#center .mytests__row-about{
+		padding-left: 15px !important;
+	}
 }
 @media only screen and (max-width: 655px) {
     .olindex h1 {
@@ -6037,6 +6141,17 @@ label.css-radio {
 			margin-left: auto;
 			margin-bottom: 30px;
 			text-align: right;
+		}
+	}
+	#center .mytests{
+		&__row_btns{
+			justify-content: center;
+			a{
+				margin-top: 10px;
+				margin-bottom: 5px;
+				margin-right: 9px !important;
+				margin-left: 9px !important;
+			}
 		}
 	}
 }
