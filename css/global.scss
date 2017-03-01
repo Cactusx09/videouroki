@@ -2735,27 +2735,39 @@ input[type=checkbox].css-checkbox {
     border: 0
 }
 input[type=checkbox].css-checkbox+label.css-label {
-    padding-left: 25px;
-    height: 16px;
-    display: inline-block;
-    line-height: 16px;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    vertical-align: middle;
-    cursor: pointer;
-    font-size: .81em;
-    margin-bottom: 15px
+    position: relative;
+	padding-left: 27px;
+	margin-bottom: 15px;
+	font-size: .81em;
+	display: inline-block;
+	&:before{
+		content: '';
+		top: 0.15em;
+		left: 0;
+		position: absolute;
+		width: 23px;
+		height: 16px;
+		line-height: 16px;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		vertical-align: middle;
+		cursor: pointer;
+	}
 }
 input[type=checkbox].css-checkbox:checked+label.css-label {
-    background-position: 0 -16px
+	&:before{
+		background-position: 0 -16px
+	}
 }
 label.css-label {
-    background-image: url(../images/csscheckbox_866723c70a8a3b81cb63046c666ca908.png);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none
+	&:before{
+		background-image: url(../images/csscheckbox_866723c70a8a3b81cb63046c666ca908.png);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none
+	}
 }
 label.css-label.disabled {
     cursor: default!important;
@@ -4733,29 +4745,43 @@ input[type=radio].css-checkbox {
 }
 
 input[type=radio].css-checkbox + label.css-radio {
-	padding-left: 21px;
-	height: 16px;
-	display: inline-block;
-	line-height: 16px;
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	font-size: 16px;
-	vertical-align: middle;
+	position: relative;
 	cursor: pointer;
+	padding-left: 23px;
+	&:before{
+		content: '';
+		position: absolute;
+		width: 17px;
+		height: 17px;
+		height: 16px;
+		left: 0;
+		top: 2px;
+		display: inline-block;
+		line-height: 16px;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		font-size: 16px;
+		vertical-align: middle;
+		cursor: pointer;
+	}
 }
 
 input[type=radio].css-checkbox:checked + label.css-radio {
-	background-position: 0 -16px;
+	&:before{
+		background-position: 0 -16px;
+	}
 }
 
 label.css-radio {
-	background-image: url(../images/csscheckbox_24e5696bd4770db0f255dcba48907c13.png);
-	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
+	&:before{
+		background-image: url(../images/csscheckbox_24e5696bd4770db0f255dcba48907c13.png);
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+		-khtml-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+	}
 }
 
 .nav_5 h2 {
@@ -4868,7 +4894,10 @@ label.css-radio {
 		display: flex;
 		align-items: center;
 		&_box{
-			height: 26px;
+			height: 18px;
+			label{
+				height: 20px;
+			}
 		}
 		input{
 			width: 64px;
@@ -5262,7 +5291,7 @@ label.css-radio {
 				cursor: pointer;
 			}
 			&choose{
-				height: 26px;
+				height: 20px;
 				margin-right: 5px;
 			}
 			&delete{
@@ -5396,7 +5425,6 @@ label.css-radio {
 			display: flex;
 			align-items: center;
 			p{
-				margin-right: 30px;
 				font-size: 0.81em;
 				span{
 					color: #999;
@@ -5404,6 +5432,7 @@ label.css-radio {
 			}
 			&_time{
 				font-size: 0.81em;
+				margin-left: 30px;
 				small{
 					color: #ccc;
 					font-size: 1.1em;
@@ -5416,6 +5445,7 @@ label.css-radio {
 		}
 		progress[value]{
 			width: 100px;
+			margin-left: 30px;
 			height: 4px;
 			border-radius: 2px;
 			margin-right: 12px;
@@ -5535,6 +5565,24 @@ label.css-radio {
 					}
 				}
 			}
+			&._errors{
+				&._current{
+					.test_main__left{
+						&_circle{
+							display: flex;
+						}
+					}
+				}
+				.test_main{
+					&__left{
+						&_circle{
+							svg{
+								transform: none;
+							}
+						}
+					}
+				}
+			}
 			&_icon{
 				min-width: 40px;
 			}
@@ -5554,7 +5602,7 @@ label.css-radio {
 			}
 		}
 		&__right{
-			padding-left: 40px;
+			padding-left: 30px;
 			padding-top: 25px;
 			flex-grow: 2;
 			display: flex;
@@ -5601,12 +5649,38 @@ label.css-radio {
 			}
 			&_labels{
 				margin-top: 25px;
+				margin-bottom: 30px;
 				display: flex;
 				justify-content: flex-start;
+				&._disabled{
+					pointer-events: none;
+					cursor: default;
+				}
 				label{
 					font-size: 0.88em !important;
-					margin-bottom: 30px !important;
+					margin-bottom: 22px !important;
 					display: block !important;
+					z-index: 0;
+					&:after{
+						position: absolute;
+						width: calc(100% + 20px);
+						height: calc(100% + 18px);
+						opacity: .15;
+						content: '';
+						top: -9px;
+						left: -10px;
+						z-index: -1;
+					}
+					&._green{
+						&:after{
+							background-color: #40b336;
+						}
+					}
+					&._red{
+						&:after{
+							background-color: #ed2325;
+						}
+					}
 				}
 				>div{
 					max-width: 430px;
@@ -5637,6 +5711,21 @@ label.css-radio {
 			border-top: 1px solid  #e6e6e6;
 			display: flex;
 			justify-content: flex-end;
+			align-items: center;
+			a{
+				color: #666666;
+				font-family: "Open Sans";
+				font-size: 0.81em;
+				font-weight: 400;
+				margin-right: 20px;
+				text-decoration: none;
+				&:hover{
+					color: #04c;
+					span{
+						border-color: #04c;
+					}
+				}
+			}
 			.btn{
 				height: 42px;
 				font-size: 0.88em;
@@ -5658,6 +5747,7 @@ label.css-radio {
 		&__txt{
 			position: relative;
 			padding-right: 25px;
+			padding-left: 10px;
 			figure{
 				margin-bottom: 40px;
 				figcaption{
@@ -5668,14 +5758,24 @@ label.css-radio {
 				}
 			}
 			input[type="text"]{
-				margin-bottom: 40px;
+				margin-bottom: 35px;
+				margin-top: -10px;
+				padding-left: 17px;
+				&._green{
+					border: 1px solid #40b336;
+					background-color: rgba(64, 179, 54, 0.15);
+				}
+				&._red{
+					border: 1px solid #ed2325;
+					background-color: rgba(237, 35, 37, 0.15);
+				}
 			}
 			>h3{
 				margin-bottom: 25px;
 			}
 			audio{
 				margin-bottom: 45px;
-				width: 100%;
+				width: calc(100% + 51px) !important;
 				border-radius: 2px;
 			}
 			img{
@@ -5692,6 +5792,34 @@ label.css-radio {
 			}
 			>p{
 				margin-bottom: 40px;
+			}
+			h3{
+				&._error{
+					color: #ed2325;
+					margin-bottom: 15px;
+					+p{
+						font-size: 0.94em;
+						span{
+							color: #999;
+						}
+					}
+					svg{
+						margin-bottom: -2px;
+					}
+				}
+				&._true{
+					color: #40b336;
+					margin-bottom: 15px;
+					+p{
+						font-size: 0.94em;
+						span{
+							color: #999;
+						}
+					}
+					svg{
+						margin-bottom: -3px;
+					}
+				}
 			}
 		}
 		&__results{

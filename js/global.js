@@ -310,8 +310,12 @@ $(document).ready(function () {
     });
     //custom scroll
     $('.perfect-scroll').perfectScrollbar();
+    $('.perfect-scroll-y').perfectScrollbar({
+		suppressScrollX: true
+	});
     $(window).resize(function () {
         $('.perfect-scroll').perfectScrollbar('update');
+		$('.perfect-scroll-y').perfectScrollbar('update');
     });
     //textarea autosize
     $('textarea').each(function(){
