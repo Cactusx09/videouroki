@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../res/bootstrap.grid.min.css">
+    <link rel="stylesheet" href="../webfonts/fonts.css">
+    <link rel="stylesheet" href="../res/perfectScrollbar/perfect-scrollbar.css">
+    <link rel="stylesheet" href="../css/global.css">
+</head>
+<body>
+    <header class="test_header">
+    	<div class="container">
+    		<div class="test_header__body">
+    			<a href="index.html"><img src="../images/logo.png" alt=""></a>
+    		</div>
+    	</div>
+    </header>
+
+    <section class="test_main">
+		<div class="container">
+			<div class="test_main__table">
+				<h1>Результаты теста «Объекты окружающего мира»</h1>
+				<div class="test_main__table_info">
+					<p>Тест содержит 18 заданий, можно набрать 45 максимальных баллов.</p>
+					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M11 10L10 9 10 8C10 7.2 9.7 7 9 7L3 7C2.3 7 2 7.2 2 8L2 9 1 10C0.3 10 0 9.8 0 9L0 4.2C0 3.5 0.3 3 1 3L11 3C11.7 3 12 3.2 12 4L12 9C12 9.8 11.7 10 11 10ZM10 4C9.5 4 9 4.5 9 5 9 5.6 9.5 6 10 6 10.6 6 11 5.4 11 5 11 4.4 10.6 4 10 4ZM8 2L4 2C3.4 2 3 1.6 3 1 3 0.4 3.4 0 4 0L8 0C8.6 0 9 0.4 9 1 9 1.6 8.6 2 8 2ZM4 8L8 8C8.7 8 9 8.2 9 9L9 11C9 11.8 8.7 12 8 12L4 12C3.3 12 3 11.8 3 11L3 9C3 8.2 3.3 8 4 8ZM4 11L8 11 8 9 4 9 4 11Z" fill="rgb(153, 153, 153)"/></svg> <span class="brdr">Распечатать</span></a>
+					<a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"><path d="M11 11L7 11 7 12 0 11 0 1 7 0 7 1 11.5 1C11.8 1 12 1.2 12 1.5L12 10C12 10.3 11.3 11 11 11ZM5 4L4 4 3.4 5.3 3 4 2 4 3 6 2 8 3 8 3.3 6.3 4 8 5 8 4 6 5 4ZM11.5 1.5L7.1 1.5 7 2 8 2 8 3 7 3 7 4 8 4 8 5 7 5 7 6 8 6 8 7 7 7 7 8 8 8 8 9 7 9 7 10 11.5 10.1 11.5 1.5ZM11 3L9 3 9 2 11 2 11 3ZM11 5L9 5 9 4 11 4 11 5ZM11 7L9 7 9 6 11 6 11 7ZM11 9L9 9 9 8 11 8 11 9Z" fill="rgb(32, 116, 75)"/></svg> <span class="brdr">Сохранить в Excel</span></a>
+				</div>
+				<div class="test_main__table_selects">
+                     <p>Показывать</p>
+					<div class="select-wrp-auto">
+						<select hidden>
+							<option value="0">все классы</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select>
+					</div>
+					<div class="select-wrp-auto w50">
+						<select hidden>
+							<option value="0">всеx учеников</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select>
+					</div>
+					<div class="select-wrp-auto">
+						<select hidden>
+							<option value="0">за всё время</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select>
+					</div>
+				</div>
+				<div class="test_main__table_tbl perfect-scroll">
+					<table>
+						<thead>
+							<tr>
+								<th>Дата</th>
+								<th>Ученик</th>
+								<th>Класс</th>
+								<th>Пройден, мин.</th>
+								<th>Выполнено</th>
+								<th>Верно</th>
+								<th>Баллов</th>
+								<th>Оценка</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>30.01.2017</td>
+								<td><a href="#">Константин Константинопольский</a></td>
+								<td>2 «А», мой класс</td>
+								<td>18:22</td>
+								<td>14</td>
+								<td>15</td>
+								<td>12</td>
+								<td><b>9</b></td>
+							</tr>
+							<tr>
+								<td>30.01.2017</td>
+								<td><a href="#">Константин Константинопольский</a></td>
+								<td>2 «А», мой класс</td>
+								<td>18:22</td>
+								<td>14</td>
+								<td>15</td>
+								<td>12</td>
+								<td><b>9</b></td>
+							</tr>
+							<tr>
+								<td>30.01.2017</td>
+								<td><a href="#">Константин Константинопольский</a></td>
+								<td>2 «А», мой класс</td>
+								<td>18:22</td>
+								<td>14</td>
+								<td>15</td>
+								<td>12</td>
+								<td><b>9</b></td>
+							</tr>
+							<tr>
+								<td>30.01.2017</td>
+								<td><a href="#">Константин Константинопольский</a></td>
+								<td>2 «А», мой класс</td>
+								<td>18:22</td>
+								<td>14</td>
+								<td>15</td>
+								<td>12</td>
+								<td><b>9</b></td>
+							</tr>
+							<tr>
+								<td>30.01.2017</td>
+								<td><a href="#">Константин Константинопольский</a></td>
+								<td>2 «А», мой класс</td>
+								<td>18:22</td>
+								<td>14</td>
+								<td>15</td>
+								<td>12</td>
+								<td><b>9</b></td>
+							</tr>
+							<tr>
+								<td>30.01.2017</td>
+								<td><a href="#">Константин Константинопольский</a></td>
+								<td>2 «А», мой класс</td>
+								<td>18:22</td>
+								<td>14</td>
+								<td>15</td>
+								<td>12</td>
+								<td><b>9</b></td>
+							</tr>
+							<tr>
+								<td>30.01.2017</td>
+								<td><a href="#">Константин Константинопольский</a></td>
+								<td>2 «А», мой класс</td>
+								<td>18:22</td>
+								<td>14</td>
+								<td>15</td>
+								<td>12</td>
+								<td><b>9</b></td>
+							</tr>
+							<tr>
+								<td>30.01.2017</td>
+								<td><a href="#">Константин Константинопольский</a></td>
+								<td>2 «А», мой класс</td>
+								<td>18:22</td>
+								<td>14</td>
+								<td>15</td>
+								<td>12</td>
+								<td><b>9</b></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<a href="#" class="btn">Показать ещё ...</a>
+			</div>
+		</div>
+    </section>
+
+
+    <div class="overlay"></div>
+    <div class="popup" id="video_link">
+        <div class="perfect-scroll">
+            <h2>Вставьте ссылку на видео <div class="close-pop pull-right"><svg width="10px" height="10px" viewBox="0 0 10 10"><path fillRule="evenodd" d="M 6.41 5C 6.41 5 9.24 7.83 9.24 7.83 9.63 8.22 9.63 8.85 9.24 9.24 8.85 9.63 8.22 9.63 7.83 9.24 7.83 9.24 5 6.41 5 6.41 5 6.41 2.17 9.24 2.17 9.24 1.78 9.63 1.15 9.63 0.76 9.24 0.37 8.85 0.37 8.22 0.76 7.83 0.76 7.83 3.59 5 3.59 5 3.59 5 0.76 2.17 0.76 2.17 0.37 1.78 0.37 1.15 0.76 0.76 1.15 0.37 1.78 0.37 2.17 0.76 2.17 0.76 5 3.58 5 3.58 5 3.58 7.83 0.76 7.83 0.76 8.22 0.37 8.85 0.37 9.24 0.76 9.63 1.15 9.63 1.78 9.24 2.17 9.24 2.17 6.41 5 6.41 5Z"/></svg></div></h2>
+            <textarea rows="1"></textarea>
+        </div>
+    </div>
+
+    <script src="../res/jquery-2.2.3.min.js"></script>
+    <script src="../res/jquery.validate.min.js"></script>
+    <script src="../res/perfectScrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../res/autosize-master/autosize.min.js"></script>
+    <script src="../js/select.js"></script>
+    <script src="../js/global.js"></script>
+</body>
+</html>
