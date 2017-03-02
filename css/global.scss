@@ -3510,7 +3510,7 @@ h2.mt50 {
 }
 .results-table {
     text-align: center;
-    width: calc(100% + 60px);
+    width: calc(100% + 50px);
     margin: 0 -30px -35px
 }
 .results-table th {
@@ -5412,6 +5412,7 @@ label.css-radio {
 	&_header{
 		background-color: #f9f9f9;
 		padding: 24px 0;
+		z-index: 555;
 		.container{
 			max-width: 1080px;
 		}
@@ -5484,8 +5485,9 @@ label.css-radio {
 			box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
 			border-radius: 2px;
 			padding: 20px 40px 20px 0;
+			margin-top: 20px;
 			background-color: #ffffff;
-			height: calc(100vh - 112px);
+			min-height: calc(100vh - 111px);
 			display: flex;
 			align-items: stretch;
 			justify-content: space-between;
@@ -5515,6 +5517,7 @@ label.css-radio {
 		&__left{
 			max-width: 320px;
 			min-width: 320px;
+			max-height: 0;
 			position: relative;
 			border-right: 1px solid  #e6e6e6;
 			&_circle{
@@ -5588,6 +5591,14 @@ label.css-radio {
 					.test_main__left{
 						&_circle{
 							display: flex;
+						}
+					}
+					.test_main__item_txt{
+						small{
+							color: #999;
+						}
+						p{
+							color: #999;
 						}
 					}
 				}
@@ -5995,15 +6006,32 @@ label.css-radio {
 				}
 			}
 			&_tbl{
-				width: calc(100% + 40px);
-				margin-left: -20px;
 				position: relative;
 				.ps-scrollbar-x-rail{
 					opacity: .6;
 				}
 				table{
-					min-width: 1000px;
 					text-align: left;
+					&.results-table{
+						width: calc(100% + 40px);
+						margin-left: -20px;
+						margin-bottom: 0;
+						td{
+							font-size: 0.81em;
+							color: #000;
+							padding-top: 14px;
+							padding-bottom: 14px;
+							padding-left: 0;
+
+							a{
+								color: #000;
+								font-size: 1em;
+							}
+						}
+						td,th{
+							padding-right: 15px;
+						}
+					}
 					border-bottom: 1px solid  #e6e6e6;
 					thead{
 						tr{
@@ -6037,15 +6065,6 @@ label.css-radio {
 									}
 								}
 							}
-						}
-					}
-					td{
-						font-size: 0.81em;
-						color: #000;
-						padding-top: 14px;
-						padding-bottom: 14px;
-						a{
-							color: #000;
 						}
 					}
 				}
@@ -6685,7 +6704,7 @@ label.css-radio {
 			}
 			&__ui{
 				flex-wrap: wrap;
-				max-width: 251px;
+				max-width: 261px;
 				p{
 					&:first-of-type{
 						flex-basis: 100%;
@@ -6728,6 +6747,50 @@ label.css-radio {
 			}
 			&:nth-of-type(3){
 				margin-top: 10px;
+			}
+		}
+	}
+	.test_main__table_tbl table.results-table td{
+		text-align: left;
+		&:nth-of-type(1){
+			&:before{
+				content: 'Дата';
+			}
+		}
+		&:nth-of-type(2){
+			&:before{
+				content: 'Ученик';
+			}
+		}
+		&:nth-of-type(3){
+			&:before{
+				content: 'Класс';
+			}
+		}
+		&:nth-of-type(4){
+			&:before{
+				content: 'Пройден, мин.';
+			}
+		}
+		&:nth-of-type(5){
+			&:before{
+				content: 'Выполнено';
+			}
+		}
+		&:nth-of-type(6){
+			&:before{
+				content: 'Верно';
+			}
+		}
+		&:nth-of-type(7){
+			&:before{
+				content: 'Баллов';
+			}
+		}
+		&:nth-of-type(8){
+			padding-left: 35% !important;
+			&:before{
+				content: 'Оценка';
 			}
 		}
 	}
@@ -6832,6 +6895,18 @@ label.css-radio {
 				margin-left: 0;
 				margin-top: 5px;
 			}
+		}
+	}
+	.test_main__results{
+		padding-top: 30px;
+		margin-left: 20px;
+		h1{
+			font-size: 1.4em;
+			margin-left: 10px;
+			margin-right: 10px;
+		}
+		&_rate{
+			font-size: 10em;
 		}
 	}
 }
@@ -7131,6 +7206,24 @@ label.css-radio {
 		padding-left:  20px;
 		padding-right: 20px;
 	}
+	.test_main__results{
+		margin-left: 0;
+		h1{
+			font-size: 1.3em;
+		}
+		&_rate{
+			font-size: 7em;
+		}
+		&_stat{
+			justify-content: flex-start;
+			padding-left: 17px;
+			flex-direction: column;
+			align-items: flex-start;
+			i{
+				min-width: 30px;
+			}
+		}
+	}
 }
 @media only screen and (max-width: 400px) {
     body {
@@ -7198,6 +7291,11 @@ label.css-radio {
 		h1{
 			font-size: 1.3em;
 		}
+	}
+	.test_main__table_tbl table.results-table td,
+	.test_main__table_tbl table.results-table td:nth-of-type(8),
+	.results-table td{
+		padding-left: 47% !important;
 	}
 }
 @media only screen and (max-width: 350px) {

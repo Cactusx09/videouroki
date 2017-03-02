@@ -330,6 +330,11 @@ $(document).ready(function () {
 		var h = $('.b_que__right').outerHeight();
 		$('.b_que__left').css('max-height', h + 'px');
 	}
+	if($('*').is('.test_header')){
+		$('.test_header').sticky({
+			zIndex: 999
+		});
+	}
 	//input number arrows
 	$('.input_number__arrup').click(function(){
 		var input = $(this).closest('.input_number').find('input[type="number"]'),
@@ -347,6 +352,14 @@ $(document).ready(function () {
 		}
 		input.val(value);
 	});
+	//test_main box
+	if($('*').is('.test_main__left')){
+		if (window.matchMedia('(min-width: 1023.5px)').matches) {
+			var hBox = $('.test_main__box').height();
+			$('.test_main__left').css('max-height',hBox+'px');
+			$('.perfect-scroll').perfectScrollbar('update');
+		}
+	}
 	$('.input_number__arrdown').click(function(){
 		var input = $(this).closest('.input_number').find('input[type="number"]'),
 			min = input.attr('min'),
