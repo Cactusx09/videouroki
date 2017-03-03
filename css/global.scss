@@ -5436,7 +5436,7 @@ label.css-radio {
 .test{
 	&_header{
 		background-color: #f9f9f9;
-		padding: 24px 0;
+		padding: 13px 0;
 		.container{
 			max-width: 1080px;
 		}
@@ -5450,6 +5450,10 @@ label.css-radio {
 		&__body{
 			display: flex;
 			justify-content: space-between;
+			align-items: center;
+			>a{
+				margin-top: -2px;
+			}
 		}
 		&__ui{
 			display: flex;
@@ -5914,9 +5918,16 @@ label.css-radio {
 					height: 100%;
 				}
 			}
-			>p{
+			>p,.test_main__right_question{
 				margin-bottom: 40px;
 			}
+			.test_main__right_question{
+				font-size: 0.94em;
+				span{
+					color: #999;
+				}
+			}
+
 			h3{
 				&._error{
 					color: #ed2325;
@@ -5934,12 +5945,6 @@ label.css-radio {
 				&._true{
 					color: #40b336;
 					margin-bottom: 15px;
-					+p{
-						font-size: 0.94em;
-						span{
-							color: #999;
-						}
-					}
 					svg{
 						margin-bottom: -3px;
 					}
@@ -6439,6 +6444,9 @@ label.css-radio {
 	#center .mytests__row_txt{
 		height: auto !important;
 	}
+	.test_main__item{
+
+	}
 	.test{
 		&_header,
 		&_main{
@@ -6449,15 +6457,16 @@ label.css-radio {
 				height: auto;
 				min-height:calc(100vh - 112px);
 				flex-wrap: wrap;
+				padding-top: 5px;
 			}
 			&__left{
-				max-width: 100%;
-				width: 100%;
+				max-width: calc(100% + 40px);
+				width: calc(100% + 40px);
 				max-height: 300px;
 				border-right: none;
 				border-bottom: 1px solid  #e6e6e6;
 				padding-right: 0;
-				min-width: 100%;
+				min-width: calc(100% + 40px);
 			}
 			&__item{
 				min-height: 70px;
@@ -6780,9 +6789,6 @@ label.css-radio {
 				&_wrp{
 					flex-wrap: wrap;
 				}
-				&_txt{
-
-				}
 			}
 		}
 		&_main__right_labels{
@@ -6818,6 +6824,18 @@ label.css-radio {
 			&:nth-of-type(3){
 				margin-top: 10px;
 			}
+		}
+	}
+	.test_main__table_tbl table.results-table{
+		tr{
+			margin-bottom: -1px !important;
+			padding-top: 15px;
+			padding-bottom: 15px;
+		}
+		td{
+			border: none;
+			padding-top: 8px;
+			padding-bottom: 8px;
 		}
 	}
 	.test_main__table_tbl table.results-table td{
@@ -6950,6 +6968,9 @@ label.css-radio {
 					flex-wrap: wrap;
 				}
 			}
+			&__left{
+				min-width: calc(100% + 20px);
+			}
 			&__next{
 				margin-left: 10px;
 			}
@@ -6970,7 +6991,8 @@ label.css-radio {
 					}
 				}
 				&_time{
-					margin-left: 0;
+					order: 2;
+					margin-top: 2px;
 				}
 			}
 		}
@@ -7268,6 +7290,9 @@ label.css-radio {
 		&_main{
 			&__box{
 				padding-right: 2px;
+			}
+			&__left{
+				min-width: calc(100% + 2px);
 			}
 			&__right{
 				&_head{
