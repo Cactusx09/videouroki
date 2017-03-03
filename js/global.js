@@ -332,9 +332,8 @@ $(document).ready(function () {
 	}
 	if($('*').is('.test_header')){
 		if (window.matchMedia('(min-width: 655.5px)').matches) {
-			$('.test_header').sticky({
-				zIndex: 999
-			});
+			var height = $('.test_header').innerHeight();
+			$('.test_header__fix').css('height',height);
 		}
 	}
 	//input number arrows

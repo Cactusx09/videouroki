@@ -4784,6 +4784,31 @@ label.css-radio {
 	}
 }
 
+
+::-webkit-scrollbar
+{
+  width: 14px;  /* for vertical scrollbars */
+  height: 14px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: #f2f2f2;
+}
+
+::-webkit-scrollbar-thumb
+{
+	background: #ccc;
+	border-radius: 4px;
+
+	&:hover{
+		background: #bbb;
+	}
+	&:active{
+		background: #666;
+	}
+}
+
 .nav_5 h2 {
     text-align: center
 }
@@ -5415,6 +5440,11 @@ label.css-radio {
 		.container{
 			max-width: 1080px;
 		}
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: 0;
+		z-index: 9999;
 		margin-bottom: 20px;
 		border-bottom: 1px solid #e6e6e6;
 		&__body{
@@ -6926,6 +6956,7 @@ label.css-radio {
 		}
 		&_header{
 			margin-bottom: 0;
+			position: static;
 			&__ui{
 				flex-direction: column;
 				&_wrp{
