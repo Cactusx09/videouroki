@@ -5412,7 +5412,6 @@ label.css-radio {
 	&_header{
 		background-color: #f9f9f9;
 		padding: 24px 0;
-		z-index: 555;
 		.container{
 			max-width: 1080px;
 		}
@@ -5425,11 +5424,34 @@ label.css-radio {
 		&__ui{
 			display: flex;
 			align-items: center;
+			flex-grow: 2;
+			margin-left: 20px;
 			p{
 				font-size: 0.81em;
 				span{
 					color: #999;
 				}
+			}
+			&_txt{
+				max-width: 603px;
+				margin-right: auto;
+				p{
+					color: #999;
+				}
+			}
+			&_wrp{
+				display: flex;
+				justify-content: center;
+			}
+			&_progress{
+				display: flex;
+				align-items: center;
+			}
+			&_testname{
+				white-space: nowrap;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				color: #666 !important;
 			}
 			&_time{
 				font-size: 0.81em;
@@ -5679,8 +5701,6 @@ label.css-radio {
 			&_labels{
 				margin-top: 25px;
 				margin-bottom: 30px;
-				display: flex;
-				justify-content: flex-start;
 				&._disabled{
 					pointer-events: none;
 					cursor: default;
@@ -5710,12 +5730,6 @@ label.css-radio {
 						&:after{
 							background-color: #ed2325;
 						}
-					}
-				}
-				>div{
-					max-width: 430px;
-					&:first-of-type{
-						margin-right: 40px;
 					}
 				}
 				input[type="radio"] +label{
@@ -6012,6 +6026,7 @@ label.css-radio {
 				}
 				table{
 					text-align: left;
+					background-color: #fff;
 					&.results-table{
 						width: calc(100% + 40px);
 						margin-left: -20px;
@@ -6237,6 +6252,15 @@ label.css-radio {
 			}
 		}
 	}
+	.test{
+		&_header{
+			&__ui{
+				&_txt{
+					max-width: 450px;
+				}
+			}
+		}
+	}
 }
 @media only screen and (min-width: 1023.5px) {
     .mb {
@@ -6407,6 +6431,26 @@ label.css-radio {
 			}
 			&__item{
 				min-height: 70px;
+			}
+		}
+		&_header{
+			padding-top: 15px;
+			padding-bottom: 15px;
+			&__ui{
+				&_txt{
+					max-width: 350px;
+				}
+				&_wrp{
+					flex-wrap: wrap;
+					justify-content: flex-end;
+				}
+				&_time{
+					order: -1;
+					margin-bottom: 3px;
+				}
+				&_time{
+					margin-right: 0;
+				}
 			}
 		}
 	}
@@ -6697,21 +6741,17 @@ label.css-radio {
 	.test{
 		&_header{
 			&__body{
+				flex-direction: column;
 				align-items: center;
-				>a{
-					margin-right: 30px;
-				}
 			}
 			&__ui{
-				flex-wrap: wrap;
-				max-width: 261px;
-				p{
-					&:first-of-type{
-						flex-basis: 100%;
-					}
+				margin-left: 0;
+				margin-top: 10px;
+				&_wrp{
+					flex-wrap: wrap;
 				}
-				progress[value]{
-					margin-left: 0;
+				&_txt{
+
 				}
 			}
 		}
@@ -6884,6 +6924,25 @@ label.css-radio {
 				margin-left: 10px;
 			}
 		}
+		&_header{
+			margin-bottom: 0;
+			&__ui{
+				flex-direction: column;
+				&_wrp{
+					margin-top: 10px;
+				}
+				&_txt{
+					max-width: 440px;
+					text-align: center;
+					p{
+						max-width: 100%;
+					}
+				}
+				&_time{
+					margin-left: 0;
+				}
+			}
+		}
 	}
 	.test_main__item{
 		padding-left: 20px;
@@ -7048,17 +7107,6 @@ label.css-radio {
 		}
 	}
 	.test{
-		&_header{
-			&__body{
-				flex-direction: column;
-				>a{
-					margin-right: 0;
-				}
-			}
-			&__ui{
-				margin-top: 14px;
-			}
-		}
 		&_main{
 			&__next{
 				p{
@@ -7201,6 +7249,13 @@ label.css-radio {
 				padding-right: 20px;
 			}
 		}
+		&_header{
+			&__ui{
+				&_txt{
+					max-width: 320px;
+				}
+			}
+		}
 	}
 	.test_main__table{
 		padding-left:  20px;
@@ -7279,6 +7334,16 @@ label.css-radio {
 				}
 			}
 		}
+		&_header{
+			&__ui{
+				&_txt{
+					max-width: 280px;
+				}
+			}
+		}
+	}
+	.test_main__next{
+		padding-right: 0;
 	}
 	.test_main__table{
 		&_info{

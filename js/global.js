@@ -331,9 +331,11 @@ $(document).ready(function () {
 		$('.b_que__left').css('max-height', h + 'px');
 	}
 	if($('*').is('.test_header')){
-		$('.test_header').sticky({
-			zIndex: 999
-		});
+		if (window.matchMedia('(min-width: 655.5px)').matches) {
+			$('.test_header').sticky({
+				zIndex: 999
+			});
+		}
 	}
 	//input number arrows
 	$('.input_number__arrup').click(function(){
