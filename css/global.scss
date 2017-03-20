@@ -1044,7 +1044,13 @@ footer .row:last-of-type a {
 				text-align: center;
 			}
 			&:first-of-type{
-				padding-left: 30px !important;
+				display: flex;
+				justify-content: center;
+				padding-left: 0 !important;
+				input[type="text"]{
+					width: 100%;
+					margin-left: -15px;
+				}
 			}
 		}
 		tr{
@@ -1062,6 +1068,9 @@ footer .row:last-of-type a {
 			span{
 				font-size: 0.69em;
 				color: #666;
+				&:first-of-type{
+					padding-left: 11px;
+				}
 				&:last-of-type{
 					margin-right: 38px;
 					margin-left: -15px;
