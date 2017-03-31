@@ -6148,7 +6148,6 @@ label.css-radio {
 .blitz{
 	$bb: 1px dotted #ccc;
 
-
 	a:hover{
 		text-decoration: none;
 	}
@@ -6159,23 +6158,26 @@ label.css-radio {
 	}
 	&_header{
 		h1{
+			font-family: OpenSans;
 			margin-bottom: 32px;
 		}
+		h4{
+			margin-top: -20px;
+			font-family: OpenSans;
+			color:  #999999;
+			font-size: 13px;
+		}
 		h5{
+			font-family: OpenSans;
 			font-size: 14px;
 		}
-	}
-	&_content{
-
 	}
 	&__item{
 		&_head{
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			i{
-
-			}
+			cursor: pointer;
 		}
 		&_bottom{
 			display: flex;
@@ -6215,8 +6217,7 @@ label.css-radio {
 				font-weight: bold;
 				border-bottom: 1px solid #858585;
 			}
-		}
-									//
+		}													//
 		&_arrow{
 			cursor: pointer;
 		}
@@ -6233,7 +6234,60 @@ label.css-radio {
 				text-decoration: none;
 			}
 		}
-
+	}
+}
+.blitz{
+	&_test{
+		margin-top: 37px;
+		.test_right_labels{
+			margin-top: 25px;
+   			margin-bottom: 30px;
+			label{
+				margin-bottom: 15px !important;
+				font-size: 0.88em !important;
+    			display: block !important;
+    			z-index: 0;
+			}
+		}
+		&__next{
+			color: #ed2325;
+		}
+		&__pick{
+			color: #999999;
+		}
+	}
+	&_btn{
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		label{
+			font-family: OpenSans;
+			color:  #999999;
+			font-size: 13px;
+			.kolichestvo{
+				color: #000000;
+			}
+		}
+		button{
+			margin-left: 20px;
+			background-color:  #f2f2f2;
+			box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.25);
+			font-family: OpenSans;
+			color:  #000000;
+			font-size: 15px;
+			font-weight: bold;
+			width: 118px;
+			height: 52px;
+		}
+		input{
+			margin-left: 20px;
+			font-family: OpenSans;
+			color: #fefefe;
+			font-size: 15px;
+			font-weight: bold;
+			width: 190px;
+			height: 52px;
+		}
 	}
 }
 
