@@ -168,6 +168,15 @@ $(document).ready(function () {
         var top = $(id).offset().top;
         $('body,html').animate({scrollTop: top - 60});
     });
+	//blitz item head
+	$('.blitz__item_head h2').click(function(){
+		var el = $(this),
+			item = el.closest('.blitz__item'),
+			content = item.find('.blitz__item_bottom'),
+			arrow = item.find('.blitz__item_arrow');
+		content.toggleClass('_active');
+		arrow.toggleClass('_active');
+	});
     //pop
     $('.click').click(function (e) {
         e.stopPropagation();

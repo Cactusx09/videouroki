@@ -6160,21 +6160,19 @@ label.css-radio {
 	}
 	&_header{
 		h1{
-			font-family: OpenSans;
 			margin-bottom: 32px;
 			cursor: default;
 		}
 		h4{
 			margin-top: -20px;
-			font-family: OpenSans;
 			color:  #999999;
-			font-size: 13px;
+			font-size: 0.81em;
 			cursor: default;
 		}
 		h5{
-			font-family: OpenSans;
-			font-size: 14px;
+			font-size: 0.88em;
 			cursor: default;
+			font-weight: 400;
 		}
 	}
 	&__item{
@@ -6182,17 +6180,28 @@ label.css-radio {
 			display: flex;
 			justify-content: flex-start;
 			align-items: center;
-			cursor: pointer;
 		}
 		&_bottom{
 			display: flex;
 			flex-direction: column;
-			margin: 13px 0 34px;
+			margin: 13px 0 23px;
+			display: none;
+			overflow: hidden;
+			&._active{
+				display: block;
+				.blitz__item_prompt{
+					@for $n from 1 through 33{
+						&:nth-of-type(#{$n}){
+							animation: down .1s*$n !important;
+						}
+					}
+				}
+			}
 		}
 		i{
 			min-width: 21px;
-    		text-align: center;
 			display: flex;
+			justify-content: center;
 		}
 		&_prompt{
 			display: flex;
@@ -6200,53 +6209,65 @@ label.css-radio {
 			align-items: center;
 			&_panel{
 				margin: 5px 10px 5px 15px;
-				line-height: 21px;
-				font-size: 14px;
-				font-family: OpenSans;
-				border-bottom: $bb;
-				color:  #000000;
-				span{
-					font-family: OpenSans;
-					border-bottom: $bb;
+				a{
 					color:  #000000;
+					&:first-of-type{
+						margin-right: 10px;
+						line-height: 1;
+						font-size: 0.88em;
+						border-bottom: 1px solid #ccc;
+					}
+				}
+				span{
+					color: #000000;
 				}
 				p{
-					font-family: OpenSans;
 					border-bottom: $bb;
 					color:  #000000;
-					font-size: 14px;
+					font-size: 0.88em;
 				}
 			}
 			&_get_1{
-				margin-top: 4px;
 				color:  #0044cc !important;
-				font-size: 11px;
-				font-family: "Open Sans";
+				font-size: 0.69em;
+				height: 15px;
 				border-bottom: 1px solid #99b4eb;
 			}
 			&_get_2{
-				margin-top: 4px;
-				color: #858585 !important;
-				font-size: 11px;
-				font-family: "Open Sans";
-				border-bottom: 1px solid #858585;
+				color: #666666;
+				font-size: 0.69em;
+				height: 15px;
+				border-bottom: 1px solid #666;
 			}
 		}
 		&_arrow{
-			cursor: pointer;
+			transition: .3s;
+			&._active{
+				transform: rotate(-180deg);
+			}
 		}
 		h2{
-			margin: 3px 15px 3px 15px;
-			border-bottom: $bb;
+			margin: 3px 5px 3px 15px;
+			cursor: pointer;
+			user-select: none;
+			span{
+				border-bottom: $bb;
+				line-height: 0.5;
+			}
 		}
 		h3{
 			cursor: default;
 		}
 		&_get{
-			margin: 0 5px;
-			font-size: 11px;
-
+			margin-left: 8px;
+			margin-top: 3px;
+			font-size: 0.69em;
+			display: flex;
+			align-items: center;
 			color: #999999 !important;
+			i{
+				margin-right: 5px;
+			}
 			&:hover{
 				text-decoration: none;
 			}
@@ -6464,6 +6485,10 @@ label.css-radio {
 	}
 }
 
+@keyframes down {
+	from { opacity: 0; transform: translateY(-35px)}
+	to { opacity: 1; transform: none;}
+}
 @keyframes shake{
   0% { transform: rotate(0deg);}
   50% { transform: rotate(0deg);}
