@@ -7624,6 +7624,21 @@ label.css-radio {
 				margin-left: 0;
 			}
 		}
+		&__item{
+			h2{
+				margin-left: 25px;
+				margin-top: -16px;
+			}
+			&_get{
+				margin-left: 25px;
+			}
+			&_head {
+				display: flex;
+				flex-direction: column;
+				justify-content: flex-start;
+				align-items: flex-start;
+			}
+		}
 	}
 }
 @media only screen and (max-width: 480px) {
