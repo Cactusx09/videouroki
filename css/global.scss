@@ -6212,36 +6212,30 @@ label.css-radio {
 				margin: 5px 10px 5px 15px;
 				a{
 					color:  #000000;
-
 					&:first-of-type{
 						margin-right: 10px;
-						line-height: 1;
-						font-size: 0.88em;
-						border-bottom: 1px solid #ccc;
+						font-size: 14px;//0.88em
+						span{
+							display: inline;
+							border-bottom: 1px solid #ccc;
+							line-height: 0.02em;
+							&:hover{
+								border-bottom: none;
+							}
+						}
 					}
-					&:hover{
-						border-bottom: none;
-					}
-				}
-				span{
-					color: #000000;
-				}
-				p{
-					border-bottom: $bb;
-					color:  #000000;
-					font-size: 0.88em;
 				}
 			}
 			&_get_1{
 				color:  #0044cc !important;
-				font-size: 0.69em;
+				font-size: 11px;//0.69em;
 				height: 15px;
 				border-bottom: 1px solid rgba(0, 68, 204, 0.4);
 				line-height: 1.57;
 			}
 			&_get_2{
 				color: #666 !important;
-				font-size: 0.69em;
+				font-size: 11px;
 				height: 15px;
 				border-bottom: 1px solid #666;
 				line-height: 1.57;
@@ -6271,7 +6265,7 @@ label.css-radio {
 		&_get{
 			margin-left: 8px;
 			margin-top: 3px;
-			font-size: 0.69em;
+			font-size: 11px;
 			display: flex;
 			align-items: center;
 			color: #999999 !important;
@@ -6314,9 +6308,6 @@ label.css-radio {
 			svg{
 				padding-top: 5px;
 			}
-//			&._none{
-//				display: none;
-//			}
 		}
 		.active{
 			.bor{
@@ -6353,7 +6344,7 @@ label.css-radio {
    			margin-bottom: 30px;
 			label{
 				margin-bottom: 15px !important;
-				font-size: 0.88em !important;
+				font-size: 14px !important;
     			display: block !important;
     			z-index: 0;
 			}
@@ -6386,7 +6377,6 @@ label.css-radio {
 			white-space: nowrap;
 			font-family: OpenSans;
 			color:  #000000;
-			font-size: 0.88em;
 			font-size: 15px;
 			font-weight: bold;
 			min-width: 100px;
@@ -6692,6 +6682,12 @@ label.css-radio {
 			.confetti{
 				display: none;
 			}
+			&__center h3{
+				width: 100%;
+			}
+			&__center h2{
+				width: 100%;
+			}
 		}
 	}
 }
@@ -6842,9 +6838,6 @@ label.css-radio {
 	#center .mytests__row_txt{
 		height: auto !important;
 	}
-	.test_main__item{
-
-	}
 	.test{
 		&_header,
 		&_main{
@@ -6897,6 +6890,19 @@ label.css-radio {
 	.test_main__table_info a{
 		margin-left: 0;
 		font-size: 1.0em;
+	}
+	.blitz{
+		&_header{
+			h1{
+				font-size: 27px;
+			}
+			h5{
+				font-size: 14px;
+			}
+		}
+		&__item h2{
+			font-size: 18px;
+		}
 	}
 }
 @media only screen and (max-width: 767.5px) {
@@ -7281,7 +7287,7 @@ label.css-radio {
 		}
 	}
 }
-@media only screen and (max-width: 655px) {
+@media only screen and (max-width: 661.9px) {
     .olindex h1 {
         padding-right:100px
     }
@@ -7420,6 +7426,15 @@ label.css-radio {
 		}
 	}
 	.blitz{
+		&_tab{
+			flex-direction: column;
+			&__test{
+				margin-bottom: 10px;
+			}
+			.point{
+				display: none;
+			}
+		}
 		&_result{
 			&__left{
 				display: none;
@@ -7431,7 +7446,17 @@ label.css-radio {
 				}
 			}
 		}
+
+		&_btn{
+			button{
+				margin-left: 10px;
+			}
+			input{
+				margin-left: 10px;
+			}
+		}
 	}
+
 }
 @media only screen and (max-width: 560px) {
     .olindex .b_predmets_flex,.olindex .b_primer {
@@ -7590,24 +7615,13 @@ label.css-radio {
 		}
 	}
 	.blitz{
-		&_header{
-			h1{
-				font-size: 1.3em;
-			}
-		}
 		&_btn{
 			flex-direction: column;
 			button{
 				margin: 15px 0;
 			}
-		}
-		&_tab{
-			flex-direction: column;
-			&__test{
-				margin-bottom: 10px;
-			}
-			.point{
-				display: none;
+			input{
+				margin-left: 0;
 			}
 		}
 	}
