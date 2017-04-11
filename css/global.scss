@@ -6212,11 +6212,15 @@ label.css-radio {
 				margin: 5px 10px 5px 15px;
 				a{
 					color:  #000000;
+
 					&:first-of-type{
 						margin-right: 10px;
 						line-height: 1;
 						font-size: 0.88em;
 						border-bottom: 1px solid #ccc;
+					}
+					&:hover{
+						border-bottom: none;
 					}
 				}
 				span{
@@ -6232,13 +6236,15 @@ label.css-radio {
 				color:  #0044cc !important;
 				font-size: 0.69em;
 				height: 15px;
-				border-bottom: 1px solid #99b4eb;
+				border-bottom: 1px solid rgba(0, 68, 204, 0.4);
+				line-height: 1.57;
 			}
 			&_get_2{
-				color: #666666;
+				color: #666 !important;
 				font-size: 0.69em;
 				height: 15px;
 				border-bottom: 1px solid #666;
+				line-height: 1.57;
 			}
 		}
 		&_arrow{
@@ -6254,6 +6260,9 @@ label.css-radio {
 			span{
 				border-bottom: $bb;
 				line-height: 0.5;
+				&:hover{
+					border-bottom: none;
+				}
 			}
 		}
 		h3{
@@ -6305,9 +6314,9 @@ label.css-radio {
 			svg{
 				padding-top: 5px;
 			}
-			&._none{
-				display: none;
-			}
+//			&._none{
+//				display: none;
+//			}
 		}
 		.active{
 			.bor{
@@ -6406,6 +6415,7 @@ label.css-radio {
 		display: flex;
 		justify-content: space-around;
 		margin: 31px 0 20px;
+		cursor: default;
 		&__left{
 			display: block;
 			margin-top: 102px;
@@ -6461,6 +6471,9 @@ label.css-radio {
 					font-size: 13px;
 					font-weight: 400;
 					border-bottom: 1px solid #eee;
+					&:hover{
+						border-bottom: none;
+					}
 				}
 			}
 			.res{
