@@ -6168,6 +6168,7 @@ label.css-radio {
 			color:  #999999;
 			font-size: 0.81em;
 			cursor: default;
+			font-weight: normal;
 		}
 		h5{
 			font-size: 0.88em;
@@ -6292,13 +6293,30 @@ label.css-radio {
 			display: flex;
 			font-size: 13px;
 			font-weight: bold;
-			color: #40b336;
+			color: #ccc;
 			border-radius: 50%;
-			border: 4px solid #40b336;
+			border: 4px solid #ccc;
 			padding: 3px 8px;
+			width: 32px;
 			&:hover{
-				color: #1b990f;
-				border-color: #1b990f;
+				color: #e3e3e3;
+				border-color: #e3e3e3;
+			}
+			svg{
+				padding-top: 5px;
+			}
+			&._none{
+				display: none;
+			}
+		}
+		.active{
+			.bor{
+				color: #40b336;
+				border: 4px solid #40b336;
+				&:hover{
+					color: #1b990f;
+					border-color: #1b990f;
+				}
 			}
 		}
 		.point{
@@ -6322,7 +6340,7 @@ label.css-radio {
 	&_test{
 		margin-top: 37px;
 		.test_right_labels{
-			margin-top: 25px;
+			margin-top: 15px;
    			margin-bottom: 30px;
 			label{
 				margin-bottom: 15px !important;
@@ -6482,6 +6500,9 @@ label.css-radio {
 				width: 277px;
 			}
 		}
+	}
+	._none{
+		display: none;
 	}
 }
 

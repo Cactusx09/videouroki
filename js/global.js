@@ -177,6 +177,17 @@ $(document).ready(function () {
 		content.toggleClass('_active');
 		arrow.toggleClass('_active');
 	});
+	////////////////////////////////////////////////////////////////
+	//blitz_result
+	$('.result_btn').click(function(){
+		$('.blitz_content').addClass('_none');
+		$('.blitz_result').eq(0).removeClass('_none');
+		$('.blitz_tab__test').removeClass('active');
+		$('.blitz_tab__test .bor').eq(0).addClass('_none');
+		$('.blitz_tab__test .bor').eq(1).removeClass('_none');
+		$('.blitz_tab__result').addClass('active');
+	})
+
     //pop
     $('.click').click(function (e) {
         e.stopPropagation();
